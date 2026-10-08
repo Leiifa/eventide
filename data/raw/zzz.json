@@ -1,0 +1,789 @@
+{
+  "game": {
+    "id": "zzz",
+    "name": "Zenless Zone Zero",
+    "shortName": "ZZZ",
+    "currentVersion": "3.2",
+    "nextVersion": "3.3",
+    "nextVersionDate": "2026-10-21",
+    "officialUrl": "https://zenless.hoyoverse.com/en-us/",
+    "notes": "Version 3.2 \"Their Secret Histories\" has been live since 2026-09-09 and runs 42 days, ending 2026-10-21 06:00 (UTC+8). The Version 3.3 \"Journey to the Sky\" Special Program airs 2026-10-09 at 19:30 (UTC+8) with an exclusive redemption code, and the Version 3.3 update is expected on 2026-10-21."
+  },
+  "events": [
+    {
+      "id": "zzz-angels-support-operation",
+      "title": "Angels Support Operation",
+      "type": "Seasonal Event",
+      "status": "live",
+      "start": "2026-09-09",
+      "end": "2026-11-30",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Version 3.2 flagship rewards event giving away the three Angels of Delusion limited outfits for Nangong Yu, Aria and Sunna through limited-time missions.",
+      "description": "\"Next stop: the live venue to make all Delulus' hearts skip a beat!\" The version event hands out the Angels of Delusion limited outfits — Nangong Yu: Heartfelt Support, Aria: Cuteness Loading and Sunna: Delusions in Business. During Version 3.2, Proxies complete designated limited-time missions to choose two of the three outfits; completing the relevant Version 3.3 events finishes the full set. The outfits are event-only rewards and will not be sold in the shop once the events end. The event runs well past the version boundary, to 2026/11/30 03:59 (server time).",
+      "gameplay": "Open the Angels Support Operation event menu and complete its three limited-time event missions; each completed mission lets you claim one outfit of your choice from the three Angels of Delusion members.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 20 and complete Main Story Chapter 1 - Intermission"
+      ],
+      "rewards": [
+        {
+          "item": "Nangong Yu: Heartfelt Support",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "limited outfit; one of three selectable via Version 3.2 missions"
+        },
+        {
+          "item": "Aria: Cuteness Loading",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "limited outfit; one of three selectable via Version 3.2 missions"
+        },
+        {
+          "item": "Sunna: Delusions in Business",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "limited outfit; two are selectable during Version 3.2 and the third completes the set via Version 3.3 events"
+        }
+      ],
+      "rewardsSummary": "Free limited Angels of Delusion outfits — Nangong Yu: Heartfelt Support, Aria: Cuteness Loading and Sunna: Delusions in Business (two selectable from Version 3.2 missions, full set completed through Version 3.3 events)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official (Steam news hub)",
+      "sourceUrl": "https://steamcommunity.com/games/4162040/announcements/detail/714537487845820570",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-clink-clank-pinball-knight",
+      "title": "Clink, Clank, Pinball Knight!",
+      "type": "Minigame Event",
+      "status": "live",
+      "start": "2026-09-10",
+      "end": "2026-10-19",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Version 3.2 themed pinball minigame at Chic Bootique paying a Hamster Cage Pass, Polychromes and a set of exclusive Proxy accessories.",
+      "description": "\"In this barren world, the Pinball Knights fight destiny in their search for the essence of beauty!\" Proxies visit Kahkiboo, manager of Chic Bootique on Gear Street, and join forces with his pinball machine. Four themed Mission Mode stages unlock one after another, each opening a harder Challenge Mode stage with combat modifier bonuses; Agents drop in to help and unlock unique pinball traits as the event commissions progress. The official note adds: \"In the closed beta, all rights of final interpretation belong to the manager of Chic Bootique.\"",
+      "gameplay": "Launch pinballs with the flippers and use each pinball's exclusive skill plus the table's special mechanisms to eliminate enemy waves and protect the base; clear Mission Mode stages to unlock Challenge Mode variants with exclusive modifier bonuses.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 20 and complete Main Story Chapter 1 - Intermission",
+        "Recommended: Main Story Season 3 Chapter 2 \"The Long Goodbye\""
+      ],
+      "rewards": [
+        {
+          "item": "Proxy accessories \"Meow Top Hat\", \"Tartan Fairytale\", \"Silvermoon Ornament\", \"Whispered Star Wishes\", \"Pale Night Messenger\" & \"Adventure Journal\"",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "event-exclusive Proxy accessories from event commissions and stages"
+        },
+        {
+          "item": "Hamster Cage Pass",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity not published"
+        },
+        {
+          "item": "Polychrome",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "total not published"
+        },
+        {
+          "item": "Upgrade materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not published individually"
+        }
+      ],
+      "rewardsSummary": "Exclusive Proxy accessories (Meow Top Hat, Tartan Fairytale, Silvermoon Ornament, Whispered Star Wishes, Pale Night Messenger, Adventure Journal) + Hamster Cage Pass + Polychromes + upgrade materials (exact amounts not published)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official (Steam news hub)",
+      "sourceUrl": "https://steamcommunity.com/games/4162040/announcements/detail/714537487845820570",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-surprise-screening-plan",
+      "title": "Surprise Screening Plan",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-10-20",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "14-day check-in event paying 300 Polychromes, upgrade materials, the \"Eous's New Avatar\" avatar and a free Angels of Delusion outfit of your choice.",
+      "description": "A cumulative login event running 2026/09/23 10:00 – 2026/10/20 03:59 (server time). Check in on 14 separate days to claim each day's reward, culminating in a free Angels of Delusion limited outfit of your choice on day 14 (Nangong Yu: Heartfelt Support, Aria: Cuteness Loading or Sunna: Delusions in Business — claimable even if you don't yet own the Agent, once per Proxy). Rewards must be claimed on the event page; after all rewards are claimed the page closes at 04:00 the following day (server time).",
+      "gameplay": "Log in and complete the designated daily check-ins on 14 separate days during the event period, claiming each slot on the \"Surprise Screening Plan\" event page.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 5, complete the Main Story Prologue \"The Hare and the Proxy,\" and unlock the Event feature"
+      ],
+      "rewards": [
+        {
+          "item": "Polychrome",
+          "amount": 300,
+          "category": "currency",
+          "rarity": null,
+          "note": "check-in days 1, 3, 5, 7, 9, 11, 13: 30+30+40+40+40+60+60"
+        },
+        {
+          "item": "Senior Investigator Log",
+          "amount": 6,
+          "category": "xp",
+          "rarity": null,
+          "note": "check-in day 2"
+        },
+        {
+          "item": "W-Engine Energy Module",
+          "amount": 6,
+          "category": "material",
+          "rarity": null,
+          "note": "check-in day 6"
+        },
+        {
+          "item": "Original Chip",
+          "amount": 20,
+          "category": "material",
+          "rarity": null,
+          "note": "check-in day 8"
+        },
+        {
+          "item": "Ether Battery",
+          "amount": 1,
+          "category": "material",
+          "rarity": null,
+          "note": "check-in day 10"
+        },
+        {
+          "item": "Bangboo System Widget",
+          "amount": 6,
+          "category": "material",
+          "rarity": null,
+          "note": "check-in day 12"
+        },
+        {
+          "item": "Eous's New Avatar",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "event-exclusive avatar, check-in day 4"
+        },
+        {
+          "item": "Angels of Delusion outfit of your choice",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "check-in day 14: choose Nangong Yu: Heartfelt Support, Aria: Cuteness Loading or Sunna: Delusions in Business"
+        }
+      ],
+      "rewardsSummary": "300 Polychromes + 6 Senior Investigator Logs + 6 W-Engine Energy Modules + 20 Original Chips + 1 Ether Battery + 6 Bangboo System Widgets + \"Eous's New Avatar\" + one free Angels of Delusion outfit of your choice",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 / Zenless Zone Zero Official",
+      "sourceUrl": "https://game8.co/games/Zenless-Zone-Zero/archives/618094",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-diary-of-an-orbie-parent",
+      "title": "Diary of an Orbie Parent",
+      "type": "Minigame Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-10-19",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Tamagotchi-style virtual pet minigame with the Orbie-volution console, paying 300 Polychromes across ten pet-care milestones plus materials and Denny.",
+      "description": "\"Press a button to feed it, and max out your bond! Orbie is growing well today, too!\" Proxies acquire the Roscaelifer game console Orbie-volution and raise a virtual pet. Earn Grub (pet food) by logging in daily and spending battery charge, then feed Orbie — matcha cream cake raises Hyperfocus while stuffed bread raises Endurance — and keep its mood up by petting it or cleaning its home. The pet evolves through Hatchling, Budding and Mature stages into one of two final forms (Natural Scientist if Hyperfocus is highest, Flighty Operative if Endurance is highest), and sends up to two furniture gifts per day after five minutes online.",
+      "gameplay": "Log in daily to collect Grub, feed Orbie to level it and shape its Hyperfocus/Endurance attributes, improve its mood through petting and cleaning, and collect daily furniture gifts to decorate its home and unlock gift entries.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 20 and complete Main Story Chapter 1 - Intermission"
+      ],
+      "rewards": [
+        {
+          "item": "Polychrome",
+          "amount": 300,
+          "category": "currency",
+          "rarity": null,
+          "note": "sum of the ten published milestones (30 each: feed pet 3/6/9/12/15/18 times, unlock 6/12 gift entries, upgrade 1/2 pets to final form)"
+        },
+        {
+          "item": "Denny",
+          "amount": 50000,
+          "category": "currency",
+          "rarity": null,
+          "note": "5,000 × 10 milestones"
+        },
+        {
+          "item": "W-Engine Energy Module",
+          "amount": 6,
+          "category": "material",
+          "rarity": null,
+          "note": "2 × 3 feeding milestones"
+        },
+        {
+          "item": "Original Chip",
+          "amount": 18,
+          "category": "material",
+          "rarity": null,
+          "note": "6 × 3 feeding milestones"
+        },
+        {
+          "item": "Bangboo System Widget",
+          "amount": 6,
+          "category": "material",
+          "rarity": null,
+          "note": "2 × 3 pet-growth milestones"
+        },
+        {
+          "item": "Chosen Zookeeper profile title",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "unlock 16 gift entries"
+        },
+        {
+          "item": "Orbie furniture gifts",
+          "amount": null,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "daily gifts after 5 minutes online, maximum 2 per day; quantities not published"
+        },
+        {
+          "item": "City Fund EXP",
+          "amount": 1400,
+          "category": "other",
+          "rarity": null,
+          "note": "for completing all event missions"
+        }
+      ],
+      "rewardsSummary": "300 Polychromes + 50,000 Denny + 6 W-Engine Energy Modules + 18 Original Chips + 6 Bangboo System Widgets + \"Chosen Zookeeper\" profile title + Orbie furniture gifts + 1,400 City Fund EXP",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Zenless-Zone-Zero/archives/618169",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-chronicles-of-the-hobbling-crow",
+      "title": "Chronicles of the Hobbling Crow",
+      "type": "Story Event",
+      "status": "live",
+      "start": "2026-10-03",
+      "end": "2026-10-19",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Case-investigation event with Detective Crowe and Bangboo Hobble over smuggled Roscaelifer Carrot data, paying 360 Polychromes plus Boopons and materials across six commissions.",
+      "description": "\"When you eliminate the impossible, whatever remains, however improbable, must be the truth... right?\" Proxies reunite with Detective Crowe and the Bangboo Hobble at the Hobbling Crow Detective Agency as temporary detective assistants to investigate Roscaelifer's Carrot data being smuggled to the surface. A new case commission unlocks each day from October 3 (Secret Contact, Logistics Spy, Port of Entry Investigation, Boo-Controlled Arrest, Pins and Truth, Commemoration and Delivery): track suspects, use city surveillance cameras to gather clues, then fill out the detective's Truth Journal by placing the keywords correctly to close the case.",
+      "gameplay": "Track suspects and set up surveillance around the city to gather clues during each daily commission, then solve the case by placing the collected keywords accurately in the Truth Journal with Crowe.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 20 and complete Main Story Chapter 1 - Intermission"
+      ],
+      "rewards": [
+        {
+          "item": "Polychrome",
+          "amount": 360,
+          "category": "currency",
+          "rarity": null,
+          "note": "60 per commission × 6 commissions"
+        },
+        {
+          "item": "Denny",
+          "amount": 180000,
+          "category": "currency",
+          "rarity": null,
+          "note": "30,000 per commission × 6"
+        },
+        {
+          "item": "Senior Investigator Log",
+          "amount": 15,
+          "category": "xp",
+          "rarity": null,
+          "note": "5 each from Secret Contact, Port of Entry Investigation and Pins and Truth"
+        },
+        {
+          "item": "Original Chip",
+          "amount": 36,
+          "category": "material",
+          "rarity": null,
+          "note": "12 each from Logistics Spy, Boo-Controlled Arrest and Commemoration and Delivery"
+        },
+        {
+          "item": "Boopon",
+          "amount": 6,
+          "category": "gacha",
+          "rarity": null,
+          "note": "bonus for completing all event commissions"
+        },
+        {
+          "item": "City Fund EXP",
+          "amount": 1400,
+          "category": "other",
+          "rarity": null,
+          "note": "for completing all event commissions"
+        }
+      ],
+      "rewardsSummary": "360 Polychromes + 180,000 Denny + 15 Senior Investigator Logs + 36 Original Chips + 6 Boopons + 1,400 City Fund EXP",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Zenless-Zone-Zero/archives/618201",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-all-new-program",
+      "title": "All-New Program",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-09",
+      "end": "2026-10-20",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Version login event: log in for 7 days total to obtain Encrypted Master Tape ×10.",
+      "description": "The recurring version login event, running from after the Version 3.2 update until 2026/10/20 03:59 (server time). Accumulate 7 login days during the window (they need not be consecutive) to receive Encrypted Master Tape ×10 — ten pulls on limited Signal Search channels.",
+      "gameplay": "Log in on seven separate days during the event window and claim each login slot from the event page.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 5, complete the Main Story Prologue \"The Hare and the Proxy,\" and unlock the Event feature"
+      ],
+      "rewards": [
+        {
+          "item": "Encrypted Master Tape",
+          "amount": 10,
+          "category": "gacha",
+          "rarity": null,
+          "note": "log in for 7 days total"
+        }
+      ],
+      "rewardsSummary": "Encrypted Master Tape ×10 (10 limited-banner pulls) for 7 total login days",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official (Steam news hub)",
+      "sourceUrl": "https://steamcommunity.com/games/4162040/announcements/detail/714537487845820570",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-en-nah-into-your-lap",
+      "title": "\"En-Nah\" Into Your Lap",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-10-20",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Phase 2 login event: log in for 7 days total to obtain Boopon ×10.",
+      "description": "A second login event introduced with Version 3.2 Phase 2, running 2026/09/30 10:00 – 2026/10/20 03:59 (server time). Accumulate 7 login days during the window to receive Boopon ×10, the pull currency for Bangboo channels.",
+      "gameplay": "Log in on seven separate days during the event window and claim each login slot from the event page.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 5, complete the Main Story Prologue \"The Hare and the Proxy,\" and unlock the Event feature"
+      ],
+      "rewards": [
+        {
+          "item": "Boopon",
+          "amount": 10,
+          "category": "gacha",
+          "rarity": null,
+          "note": "log in for 7 days total"
+        }
+      ],
+      "rewardsSummary": "Boopon ×10 (10 Bangboo pulls) for 7 total login days",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official (Steam news hub)",
+      "sourceUrl": "https://steamcommunity.com/games/4162040/announcements/detail/714537487845820570",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-the-final-callback",
+      "title": "The Final Callback (Version 3.2 Phase 2)",
+      "type": "Trial Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-10-20",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Character trial event for the Phase 2 headliners Roxy and Promeia, paying 40 Polychromes plus logs and certification seals.",
+      "description": "Final Callback is the recurring character trial event: try out the featured Agents in their trial stages and claim rewards afterwards. The Version 3.2 Phase 2 iteration features Roxy (S-Rank Wind - Stun) and Promeia (S-Rank Ice - Anomaly, first rerun). Unlike previous Final Callback iterations, this one does not feature A-Rank characters following the implementation of custom searching.",
+      "gameplay": "Complete the individual Agent trial stages for Roxy and Promeia; each first clear pays out that Agent's trial rewards.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 8 to unlock the Events feature"
+      ],
+      "rewards": [
+        {
+          "item": "Polychrome",
+          "amount": 40,
+          "category": "currency",
+          "rarity": null,
+          "note": "20 per Agent trial (Roxy, Promeia)"
+        },
+        {
+          "item": "Official Investigator Log",
+          "amount": 10,
+          "category": "xp",
+          "rarity": null,
+          "note": "5 per Agent trial"
+        },
+        {
+          "item": "Basic Stun Certification Seal",
+          "amount": 10,
+          "category": "material",
+          "rarity": null,
+          "note": "Roxy trial"
+        },
+        {
+          "item": "Basic Anomaly Certification Seal",
+          "amount": 10,
+          "category": "material",
+          "rarity": null,
+          "note": "Promeia trial"
+        }
+      ],
+      "rewardsSummary": "40 Polychromes + 10 Official Investigator Logs + 10 Basic Stun Certification Seals + 10 Basic Anomaly Certification Seals (20 Polychromes per trial)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Zenless-Zone-Zero/archives/460378",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-vyrium-vacation-album",
+      "title": "Vyrium Vacation Album",
+      "type": "Web Event",
+      "status": "live",
+      "start": "2026-09-09",
+      "end": "2026-10-10",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Official web event planning a vacation for Claret and Roxy — 30 guaranteed Polychromes plus a draw for 100 Angels of Delusion plush toys.",
+      "description": "\"It's a day off at Flint Workshop! Claret and Roxy are planning their itinerary...\" Plan a vacation itinerary for the two Agents on the event page — sunset at Booastrum, the beaches of Vyrium, or some overtime — and unlock multiple endings. All completions pay Polychrome ×30 to the in-game mailbox; sharing your trip's ending in the comments with your HoYoLAB ID enters a draw for one of 100 Angels of Delusion plush toys (random), selected after the event ends.",
+      "gameplay": "Follow the web event link, make itinerary choices to reach an ending (there are several), then optionally comment your result with your HoYoLAB ID to enter the prize draw.",
+      "requirements": [
+        "A HoYoLAB account logged into the linked game account (completion rewards are sent to the in-game mailbox)"
+      ],
+      "rewards": [
+        {
+          "item": "Polychrome",
+          "amount": 30,
+          "category": "currency",
+          "rarity": null,
+          "note": "guaranteed for completing the web event"
+        },
+        {
+          "item": "Angels of Delusion plush toy (random)",
+          "amount": 1,
+          "category": "other",
+          "rarity": null,
+          "note": "physical prize draw — 100 randomly selected participants, awarded after the event ends"
+        }
+      ],
+      "rewardsSummary": "Polychrome ×30 guaranteed + a chance at one of 100 Angels of Delusion plush toys in the post-event draw",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero EN Official (Telegram)",
+      "sourceUrl": "https://t.me/zzz_official/2578",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-32-phase-2-signal-search",
+      "title": "Version 3.2 Phase 2 Signal Searches: Cindernight Respite (Roxy / Promeia)",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-10-20",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Phase 2 limited Signal Searches debut S-Rank Wind-Stun Agent Roxy alongside Promeia's first rerun, with the new S-Rank W-Engine channels.",
+      "description": "Version 3.2 Phase 2 opened on 2026-09-30 and runs until 2026-10-20. The \"Cindernight Respite\" Signal Search debuts S-Rank Agent Roxy (Wind - Stun) and runs alongside Promeia (S-Rank Ice - Anomaly) on her first rerun; Phase 1 featured Claret's debut on \"Bloodmoon Rising\" with Nangong Yu's rerun. The version's new S-Rank W-Engines are Crimson Thirst (Armorer) via its own \"Crimson Thirst\" Signal Search and Crimson Moon Casket (Stun) via the \"Crimson Moon Casket\" Signal Search. Version 3.2 also introduces custom searching on limited channels.",
+      "gameplay": "Spend Encrypted Master Tapes (or Polychromes converted into them) on the limited-time Signal Search channels to pull Agents and W-Engines; A-Rank W-Engine Catty Luck joins the pool in Version 3.2.",
+      "requirements": [],
+      "rewards": [],
+      "rewardsSummary": "No event rewards — limited Signal Search banner (pulls cost Encrypted Master Tapes)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Notebookcheck / Game8 / Zenless Zone Zero Official",
+      "sourceUrl": "https://www.notebookcheck.info/A-fase-2-da-versao-3-2-de-Zenless-Zone-Zero-ja-esta-disponivel-enquanto-a-versao-3-3-se-aproxima.1416559.0.html",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-redeem-codes",
+      "title": "Active Redeem Codes (October 2026)",
+      "type": "Redeem Codes",
+      "status": "live",
+      "start": "2026-09-09",
+      "end": "2026-10-20",
+      "datesPrecision": "approx",
+      "version": "3.2",
+      "summary": "The currently active Zenless Zone Zero redemption codes and what each one gives.",
+      "description": "Checked 8 Oct 2026 against Pocket Tactics (last updated 1 Oct), Game8 and MMO Culture listings. ZENLESSGIFT is the permanent newcomer code; ZZZVOID32, ZZZINK32 and ZZZGRIND32 are Version 3.2 promo codes first reported in mid-September and still listed as active. The Version 3.2 livestream code FLINTWORKS (Polychrome ×300, Senior Investigator Log ×2, W-Engine Energy Module ×3, Denny ×30,000) expired on 2026-08-30 and is not listed here. Limited codes can expire without notice, so redeem promptly. A fresh exclusive code is promised for the Version 3.3 Special Program on 2026-10-09.",
+      "gameplay": "Open the in-game menu, choose More > Redemption Code and enter the code exactly (case-sensitive), or redeem via the official code redemption website; rewards arrive by in-game mail and the mail auto-deletes after ~30 days.",
+      "requirements": [
+        "Complete the Prologue tutorial \"Business x Strangeness x Justness\" to unlock the mailbox and code redemption",
+        "Reach Inter-Knot Lv. 5"
+      ],
+      "rewards": [
+        {
+          "item": "Polychrome",
+          "amount": 50,
+          "category": "currency",
+          "rarity": null,
+          "note": "code ZENLESSGIFT"
+        },
+        {
+          "item": "Official Investigator Log",
+          "amount": 2,
+          "category": "xp",
+          "rarity": null,
+          "note": "code ZENLESSGIFT"
+        },
+        {
+          "item": "W-Engine Power Supply",
+          "amount": 3,
+          "category": "material",
+          "rarity": null,
+          "note": "code ZENLESSGIFT"
+        },
+        {
+          "item": "Bangboo Algorithm Module",
+          "amount": 1,
+          "category": "material",
+          "rarity": null,
+          "note": "code ZENLESSGIFT"
+        },
+        {
+          "item": "Polychrome",
+          "amount": 60,
+          "category": "currency",
+          "rarity": null,
+          "note": "20 each from ZZZVOID32, ZZZINK32 and ZZZGRIND32"
+        },
+        {
+          "item": "Denny",
+          "amount": 6666,
+          "category": "currency",
+          "rarity": null,
+          "note": "2,222 each from ZZZVOID32, ZZZINK32 and ZZZGRIND32"
+        }
+      ],
+      "codes": [
+        {
+          "code": "ZENLESSGIFT",
+          "note": "Polychrome ×50, Official Investigator Log ×2, W-Engine Power Supply ×3, Bangboo Algorithm Module ×1 — one redemption per account",
+          "permanent": true
+        },
+        {
+          "code": "ZZZVOID32",
+          "note": "Polychrome ×20, Denny ×2,222 — first reported 14 Sep 2026",
+          "expiryNote": "limited code — expiry unlisted"
+        },
+        {
+          "code": "ZZZINK32",
+          "note": "Polychrome ×20, Denny ×2,222 — first reported 12 Sep 2026",
+          "expiryNote": "limited code — expiry unlisted"
+        },
+        {
+          "code": "ZZZGRIND32",
+          "note": "Polychrome ×20, Denny ×2,222 — first reported 10 Sep 2026",
+          "expiryNote": "limited code — expiry unlisted"
+        }
+      ],
+      "rewardsSummary": "ZENLESSGIFT: 50 Polychrome + 2 Official Investigator Log + 3 W-Engine Power Supply + 1 Bangboo Algorithm Module; ZZZVOID32 / ZZZINK32 / ZZZGRIND32: 20 Polychrome + 2,222 Denny each (110 Polychrome + 6,666 Denny total)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Pocket Tactics / Game8",
+      "sourceUrl": "https://www.pockettactics.com/zenless-zone-zero/codes",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-data-bounty-combat-simulation",
+      "title": "Data Bounty: Combat Simulation",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-14",
+      "end": "2026-10-19",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Five-day double-rewards window: all Combat Simulation stage drops are doubled.",
+      "description": "\"There are many things that require your assistance, but you'll be well compensated~\" During the event, running 2026/10/14 04:00 – 2026/10/19 03:59 (server time), every clear of a Combat Simulation stage pays double rewards. It is one of the last Version 3.2 events to open, closing alongside the version's other short events.",
+      "gameplay": "Clear Combat Simulation stages as usual during the event window and receive double the normal stage drops.",
+      "requirements": [
+        "Unlock Combat Simulation in Main Story Chapter 1 \"Cat's Lost & Found\""
+      ],
+      "rewards": [
+        {
+          "item": "Combat Simulation stage rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "all Combat Simulation drops are doubled for the event duration; no fixed payout"
+        }
+      ],
+      "rewardsSummary": "Double drops from every Combat Simulation stage for five days (no fixed item payout)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official (Steam news hub)",
+      "sourceUrl": "https://steamcommunity.com/games/4162040/announcements/detail/714537487845820570",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-33-journey-to-the-sky-livestream",
+      "title": "Version 3.3 \"Journey to the Sky\" Special Program",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-09",
+      "end": "2026-10-09",
+      "datesPrecision": "exact",
+      "version": "3.3",
+      "summary": "Official Version 3.3 reveal stream on 2026-10-09 at 19:30 (UTC+8), promising an exclusive redemption code during the broadcast.",
+      "description": "The Zenless Zone Zero Version 3.3 \"Journey to the Sky\" Special Program begins on October 9 at 19:30 (UTC+8). The official teaser asks: \"How will Phoenix, descending from the sky, rewrite the fate of the Proxies?\" and notes that Severian, acting on the mayor's orders, has suddenly appeared on Quietude Isle — the stream will reveal the story behind Mr. Z and the two new Agents. HoYoverse confirms an exclusive redemption code will be dropped during the livestream.",
+      "gameplay": "Watch the Special Program on the official Zenless Zone Zero channels and redeem the exclusive livestream code when it is announced (typically valid only for a short window after the stream).",
+      "requirements": [],
+      "rewards": [
+        {
+          "item": "Exclusive livestream redemption code",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "officially promised for the broadcast; code and contents not yet announced"
+        }
+      ],
+      "rewardsSummary": "An exclusive redemption code is promised for the broadcast (contents unannounced until the stream)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official",
+      "sourceUrl": "https://zenless.hoyoverse.com/en-us/news/166552",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-33-phoenix-severian-signal-search",
+      "title": "Version 3.3 Signal Searches: Phoenix & Severian (Expected)",
+      "type": "Wish Banner",
+      "status": "upcoming",
+      "start": "2026-10-21",
+      "end": "2026-11",
+      "datesPrecision": "approx",
+      "version": "3.3",
+      "summary": "Phoenix and Severian are widely expected to headline the Version 3.3 Signal Searches, but HoYoverse has confirmed neither lineup nor dates.",
+      "description": "Phoenix Reffaella (introduced as one of Krampus's \"judges\") and Public Security Commissioner Severian Lowell received official Agent Records and animated teasers in September 2026, and both feature in the Version 3.3 Special Program announcement. Game8 states Version 3.3 \"will likely feature the release of Phoenix\" and that Phoenix is \"likely\" an S-Rank Agent who would get a Phase 1 debut banner; Severian and \"The Storyteller\" are listed as other possible 3.3 characters. Beyond the teasers nothing is officially confirmed — not which Agent debuts when, rarities, banner names or dates. The dates shown here merely assume the Version 3.3 launch on 2026-10-21 and a standard three-week Phase 1.",
+      "gameplay": "Would be limited Signal Search banners pulled with Encrypted Master Tapes, as usual — pending official confirmation at or after the October 9 Special Program.",
+      "requirements": [],
+      "rewards": [],
+      "rewardsSummary": "No rewards announced — expected gacha banner (pulls would cost Encrypted Master Tapes)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Zenless-Zone-Zero/archives/622039",
+      "confidence": "rumor",
+      "rumorNotes": "Officially only the Agent teasers and the Special Program announcement are confirmed. Banner lineup, order, rarities and dates are community expectation (Game8: \"likely\"); the shown dates are an estimate based on the confirmed 2026-10-21 version launch plus a typical ~3-week Phase 1. Everything should be treated as unconfirmed until the 2026-10-09 \"Journey to the Sky\" Special Program."
+    },
+    {
+      "id": "zzz-shadow-chase-showdown",
+      "title": "Shadow Chase Showdown",
+      "type": "Combat Event",
+      "status": "ended",
+      "start": "2026-09-16",
+      "end": "2026-10-05",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "HIA virtual combat score challenge with 6 Alliance and 3 Special Offensive stages, paying Tuning Calibrators and Polychromes.",
+      "description": "\"The most important part of becoming a Legendary Gamer is... Being able to create a miracle no matter what sort of virtual battle you're faced with.\" The HIA launched a virtual combat event for core club players, opened by talking to Nangong Yu in Lumina Square and finding Lyla at the HIA. Six Alliance stages (with Buff Effects, using trial Agents and Bangboo) and three Special Offensive stages (Tactical Buffs, trial Agents only) unlocked one per day. Special Offensive stages use a new scoring system: Damage Score, Technique Score and a Time Coefficient, with Claret able to stack Technique Combos for extra score multipliers.",
+      "gameplay": "Clear the daily-unlocking VR stages and chase high combat scores using the stage Buff Effects and Tactical Buffs; in Special Offensive stages chain Claret techniques within the time limit to build Technique Combo multipliers.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 20 and complete Main Story Chapter 1 - Intermission"
+      ],
+      "rewards": [
+        {
+          "item": "Polychrome",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "total not published"
+        },
+        {
+          "item": "Tuning Calibrator",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity not published"
+        },
+        {
+          "item": "Other upgrade materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not published individually"
+        }
+      ],
+      "rewardsSummary": "Tuning Calibrator + Polychromes + other upgrade materials (exact amounts not published)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official (Telegram)",
+      "sourceUrl": "https://t.me/zzz_official/2589",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "zzz-advanced-bounty-area-patrol",
+      "title": "Advanced Bounty: Area Patrol",
+      "type": "Other",
+      "status": "ended",
+      "start": "2026-09-23",
+      "end": "2026-09-28",
+      "datesPrecision": "exact",
+      "version": "3.2",
+      "summary": "Short double-rewards window in which all Area Patrol stage drops were doubled.",
+      "description": "\"Battle is almost upon us! Rest assured, the Defense Force will show you who we truly are.\" For five days (2026/09/23 04:00 – 2026/09/28 03:59, server time), clearing any Area Patrol stage granted double rewards. Two challenges were buffed each day, with buffs resetting daily at 04:00 (server time).",
+      "gameplay": "Clear Area Patrol stages during the event window to receive double drops, prioritising the two daily-buffed challenges.",
+      "requirements": [
+        "Reach Inter-Knot Lv. 21, complete the Reputation Rank-Up Mission \"Path of the Proxy I\", and unlock Area Patrol"
+      ],
+      "rewards": [
+        {
+          "item": "Area Patrol stage rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "all Area Patrol drops doubled during the event; no fixed payout"
+        }
+      ],
+      "rewardsSummary": "Double drops from all Area Patrol stages for five days (no fixed item payout)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Zenless Zone Zero Official (Steam news hub)",
+      "sourceUrl": "https://steamcommunity.com/games/4162040/announcements/detail/714537487845820570",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    }
+  ]
+}

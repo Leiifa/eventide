@@ -23,7 +23,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_DIR = os.path.join(ROOT, "data", "raw")
 OUT = os.path.join(ROOT, "data", "events.js")
 
-GAME_ORDER = ["genshin", "hsr", "wuwa", "enfield", "pgr"]
+GAME_ORDER = ["genshin", "hsr", "wuwa", "enfield", "pgr", "zzz"]
 
 DEFAULT_GAMES = {
     "genshin": {
@@ -45,6 +45,10 @@ DEFAULT_GAMES = {
     "pgr": {
         "id": "pgr", "name": "Punishing: Gray Raven", "shortName": "PGR",
         "accent": "#ff4d6d", "officialUrl": "https://pgr.kurogame.com/",
+    },
+    "zzz": {
+        "id": "zzz", "name": "Zenless Zone Zero", "shortName": "ZZZ",
+        "accent": "#ffe14d", "officialUrl": "https://zenless.hoyoverse.com/en-us/",
     },
 }
 

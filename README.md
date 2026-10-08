@@ -7,7 +7,7 @@ one board with rewards up front, dates down to the day, and rumors clearly label
 
 ## Games
 
-Genshin Impact · Honkai: Star Rail · Wuthering Waves · Arknights: Endfield · Punishing: Gray Raven
+Genshin Impact · Honkai: Star Rail · Wuthering Waves · Arknights: Endfield · Punishing: Gray Raven · Zenless Zone Zero
 
 ## Features
 

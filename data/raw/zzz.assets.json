@@ -1,0 +1,48 @@
+{
+  "game": {
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2d/4a/fb/2d4afb82-bdb9-cc80-b5b7-d1d7f515b2ae/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+    "banner": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b1/00/f4/b100f4ea-9ecf-6cad-6ca4-68ee31215a41/EN-2688-KV.jpg/2560x1440bb.jpg",
+    "publisher": "HoYoverse",
+    "developer": "miHoYo (COGNOSPHERE PTE. LTD.)",
+    "genre": "Urban fantasy action RPG",
+    "platforms": ["PC", "PS5", "Xbox Series X|S", "iOS", "Android"],
+    "releaseDate": "2024-07-04",
+    "description": "Zenless Zone Zero is an urban fantasy action RPG set in New Eridu, the last city standing after supernatural disasters called Hollows swallowed the world. Play as a Proxy — the legendary duo Phaethon — guiding a roster of Agents through shifting Hollows in fast, stylish real-time combat built around dodges, parries, chain attacks and attribute anomalies. Outside the Hollows you run a video store, befriend your Agents, raise Bangboo companions and dive into a pulpy story of interdimensional intrigue, all wrapped in a street-culture art style and a collectible Signal Search gacha."
+  },
+  "currencies": [
+    {
+      "name": "Polychrome",
+      "icon": "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/4c/Item_Polychrome.png/revision/latest?cb=20240807185318",
+      "note": "premium pull currency"
+    },
+    {
+      "name": "Master Tape",
+      "icon": "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/44/Item_Master_Tape.png/revision/latest?cb=20240530092942",
+      "note": "Signal Search pull item for the permanent channel; earned from events, milestone rewards and level-ups."
+    },
+    {
+      "name": "Encrypted Master Tape",
+      "icon": "https://static.wikia.nocookie.net/zenless-zone-zero/images/4/40/Item_Encrypted_Master_Tape.png/revision/latest?cb=20240530093116",
+      "note": "Signal Search pull item for limited-time Agent and W-Engine channels; paid out by login events and redeem codes."
+    },
+    {
+      "name": "Dennies",
+      "icon": "https://static.wikia.nocookie.net/zenless-zone-zero/images/a/a2/Item_Denny.png/revision/latest?cb=20220809111848",
+      "note": "Denny (plural Dennies) — universal currency for Agent, W-Engine and Bangboo upgrades and shop purchases."
+    }
+  ],
+  "banners": {
+    "zzz-angels-support-operation": "https://img.game8.co/4605411/320bd7c5c6ebe33f4f6c2c98290c5d4c.png/show",
+    "zzz-clink-clank-pinball-knight": "https://img.game8.co/4605416/b2df378bcea13ab33557ad996322f612.png/show",
+    "zzz-surprise-screening-plan": "https://img.game8.co/4605412/519e0434280ee60910aefc11304a6902.png/show",
+    "zzz-diary-of-an-orbie-parent": "https://img.game8.co/4605415/5423eb9b2525527b9d24e374d0175dfb.png/show",
+    "zzz-chronicles-of-the-hobbling-crow": "https://img.game8.co/4605410/384087c64e750e1900dc82e70f46f381.png/show",
+    "zzz-all-new-program": "https://img.game8.co/4605414/5c78fb2585fddc1c9a69b4fd33d3516f.png/show",
+    "zzz-en-nah-into-your-lap": "https://img.game8.co/4605417/6908ce6aa87c09cd410fd31870a1df93.png/show",
+    "zzz-the-final-callback": "https://img.game8.co/4636098/ecc8f833036d0911230d3d62ab48827b.png/show",
+    "zzz-vyrium-vacation-album": "https://img.game8.co/4614442/8d85a8cb340332f2eebce04bfcebec17.png/show",
+    "zzz-33-journey-to-the-sky-livestream": "https://img.game8.co/4639600/5280774106a7714943c7302a2fa248ac.png/show",
+    "zzz-shadow-chase-showdown": "https://img.game8.co/4606682/cb438a28892e189b3c82ec2d1da8c18c.png/show",
+    "zzz-data-bounty-combat-simulation": "https://img.game8.co/3991239/836ddad00fd14db671b2ecf20c753870.png/show"
+  }
+}
