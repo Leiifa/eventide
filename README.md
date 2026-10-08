@@ -5,7 +5,7 @@
 Eventide is a free tracker for gacha game events. Instead of juggling wikis and launchers, you get
 one board with rewards up front, dates down to the day, and rumors clearly labeled as rumors.
 
-                        [🌐 Visit Website](leiifa.github.io/eventide/)
+[🌐 Visit Website](https://leifa.github.io/eventide/)
 
 ## Games
 
