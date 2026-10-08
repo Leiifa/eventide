@@ -1,0 +1,42 @@
+name: data-freshness
+
+# Layer A of the Eventide data bot: daily mechanical maintenance.
+# Rebuilds the bundle (recomputes live/upcoming/ended from dates), validates
+# every raw file's images, and commits refreshed data. No research here —
+# research sweeps run on a schedule in the maintainer's agent.
+
+on:
+  schedule:
+    - cron: '17 3 * * *'   # daily 03:17 UTC (10:17 UTC+7)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild bundle (status recompute)
+        run: python scripts/build_data.py
+
+      - name: Validate asset URLs
+        run: python scripts/check_assets.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "eventide-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/events.js
+          if git diff --cached --quiet; then
+            echo "bundle unchanged — nothing to commit"
+          else
+            git commit -m "chore: daily data freshness rebuild"
+            git push
+          fi
