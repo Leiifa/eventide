@@ -1,0 +1,60 @@
+{
+  "game": {
+    "icon": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Genshin_Impact.png/revision/latest?cb=20240331104358",
+    "banner": "https://upload-static.hoyoverse.com/hk4e/upload/fb/common.jpg",
+    "publisher": "HoYoverse",
+    "developer": "miHoYo (COGNOSPHERE PTE. LTD.)",
+    "genre": "Open-world action RPG",
+    "platforms": ["PC", "PS5", "iOS", "Android"],
+    "releaseDate": "2020-09-28",
+    "description": "Genshin Impact is an open-world action RPG set in Teyvat, a vast fantasy world of seven nations ruled by the elemental gods. Play as the Traveler, searching for a lost sibling while exploring freely, climbing, gliding and swimming across a hand-crafted landscape and battling enemies with a party of characters whose elemental skills combine into powerful reactions. The game blends deep real-time combat with a character-collecting wish system, drop-in co-op play, and regular story-driven updates that expand the map and roster."
+  },
+  "currencies": [
+    {
+      "name": "Primogem",
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Item_Primogem.png/revision/latest?cb=20201117071158",
+      "note": "Premium currency spent on Intertwined/Acquaint Fates for wishes and on replenishing Original Resin; the main event reward."
+    },
+    {
+      "name": "Intertwined Fate",
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Item_Intertwined_Fate.png/revision/latest?cb=20201117073436",
+      "note": "Wish item used on limited Character Event Wishes and weapon banners."
+    },
+    {
+      "name": "Mora",
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/8/84/Item_Mora.png/revision/latest?cb=20210106073715",
+      "note": "Universal currency for character, weapon, talent and artifact upgrades."
+    },
+    {
+      "name": "Hero's Wit",
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Item_Hero%27s_Wit.png/revision/latest?cb=20201116222208",
+      "note": "Character EXP material granting 20,000 EXP; a staple event and login reward."
+    },
+    {
+      "name": "Adventurer's Experience",
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Adventurer%27s_Experience.png/revision/latest?cb=20201116222310",
+      "note": "Character EXP material granting 1,000 EXP, commonly given by redeem codes."
+    },
+    {
+      "name": "Crown of Insight",
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Item_Crown_of_Insight.png/revision/latest?cb=20201115225803",
+      "note": "Rare crown used to raise a character's talent to level 10; a top event reward."
+    }
+  ],
+  "banners": {
+    "genshin-silverwing-in-pursuit-of-the-moon": "https://upload-os-bbs.hoyolab.com/upload/2026/09/21/22f2f523e19349f439b81b1c8e7a18f4_168466381933631898.jpg",
+    "genshin-rainbows-end-resplendent-starlight": "https://upload-os-bbs.hoyolab.com/upload/2026/09/18/13731601c5ec188f8221e2179960f25d_6141209247962584870.jpg",
+    "genshin-across-the-frozen-wilds": "https://upload-os-bbs.hoyolab.com/upload/2026/09/18/0ecd95c825c314dc6e8b3adcf887c62e_2295844933519463330.jpg",
+    "genshin-tabletop-troupe": "https://upload-os-bbs.hoyolab.com/upload/2026/09/18/def098880dbaaff9a37a118be5e2aa7c_8925217987177651912.jpg",
+    "genshin-rekviem-for-the-underworld-archon-quest": "https://upload-os-bbs.hoyolab.com/upload/2026/09/20/b434c127f3396db3759a37da24b4d4c8_1087299026605301601.jpg",
+    "genshin-anniversary-memories-album": "https://upload-os-bbs.hoyolab.com/upload/2026/09/24/4a880707a0f74e8ff5d1e70a5ea58d29_7957990220660453419.jpg",
+    "genshin-starlit-gala-miliastra-wonderland": "https://upload-os-bbs.hoyolab.com/upload/2026/09/30/0/a8af53fafc255295172eff4b8dd9cfc3_1491427254591636197.jpeg",
+    "genshin-stygian-onslaught-oct-2026": "https://upload-os-bbs.hoyolab.com/upload/2026/09/28/40da7ab1ce17afd008e7a10c6ee6e67b_9220782174503197941.jpg",
+    "genshin-when-warm-winds-cavort": "https://upload-os-bbs.hoyolab.com/upload/2026/09/20/0280fb4b14ec01bb37bb3ee0253a108a_3087303024379459801.jpg",
+    "genshin-surging-ballad": "https://upload-os-bbs.hoyolab.com/upload/2026/09/20/194df26048090eade34d12649e298ec7_4840231091889886950.jpg",
+    "genshin-great-expeditionist-challenge": "https://upload-os-bbs.hoyolab.com/upload/2026/08/24/f7aa9696c4a261cfac3b8ce9759f0a7f_503834544847449902.jpg",
+    "genshin-trial-of-the-bastion": "https://upload-os-bbs.hoyolab.com/upload/2026/09/03/544816c83a10755f18b4440c00cc4642_5019772693419166182.jpg",
+    "genshin-overflowing-abundance-sept-2026": "https://upload-os-bbs.hoyolab.com/upload/2026/09/11/90b0cfd311a70e8037c464186db77b23_7790850674308966374.jpg",
+    "genshin-vesnas-patrol-mission": "https://fastcdn.hoyoverse.com/content-v2/hk4e/166131/32f6814fa4c9bb8b9eb185786ccede75_2334178089447995859.jpg"
+  }
+}

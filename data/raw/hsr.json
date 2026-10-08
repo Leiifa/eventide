@@ -1,0 +1,742 @@
+{
+  "game": {
+    "id": "hsr",
+    "name": "Honkai: Star Rail",
+    "shortName": "Star Rail",
+    "currentVersion": "4.6",
+    "nextVersion": "4.7",
+    "nextVersionDate": "2026-11-10",
+    "officialUrl": "https://hsr.hoyoverse.com/en-us/",
+    "notes": "Version 4.6 'Dance With the Beast Before Moonrise' live since 2026-09-27 (NA) / 2026-09-28 (EU/Asia); 4.7 expected 2026-11-10 (NA) / 2026-11-11 (EU/Asia)."
+  },
+  "events": [
+    {
+      "id": "hsr-love-ghosts-robots",
+      "title": "Love, Ghosts & Robots",
+      "type": "Building Event",
+      "status": "live",
+      "start": "2026-09-28",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Help Skott's mechatron workshop meet production quotas so he can reject an unwanted marriage proposal.",
+      "description": "Skott of the IPC finds himself facing an unwanted marriage proposal and ropes the Trailblazer into running his mechatron workshop to buy his way out. You assemble chips and design mechatrons across a series of production-line orders and Star Rating Assessment puzzle stages featuring characters like Dr. Ratio, Sushang, Aventurine, and Ruan Mei. Raising the workshop's production line and design levels unlocks story beats and a Trailblaze Fashion headwear.",
+      "gameplay": "Slot chips into assessment boards to hit target star ratings, complete workshop orders, and level up the production line to improve mechatron stats (B/A/S ranks). Puzzle-and-management gameplay with no direct combat.",
+      "requirements": [
+        "Complete the 'Good Hunting' Trailblaze Mission (part of Dance With the Beast Before Moonrise)",
+        "Trailblaze Level 21+ to unlock early via Finality's Vision"
+      ],
+      "rewards": [
+        {
+          "item": "Stellar Jade",
+          "amount": 1000,
+          "category": "currency",
+          "rarity": null,
+          "note": "from limited-time missions (100x3 assessments, 80x3 orders, 80x3 production line, 80/80/60 rank milestones); extra from design-level regular rewards not counted"
+        },
+        {
+          "item": "Self-Modeling Resin",
+          "amount": 1,
+          "category": "material",
+          "rarity": 5,
+          "note": "for completing all limited-time reward missions"
+        },
+        {
+          "item": "Tracks of Destiny",
+          "amount": 1,
+          "category": "material",
+          "rarity": 5,
+          "note": "clear 5 assessment stages milestone"
+        },
+        {
+          "item": "Lone Wolf Shades (Skott's Sunglasses)",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 4,
+          "note": "Trailblaze Fashion headwear, unlocked at design level 6"
+        },
+        {
+          "item": "Traveler's Guide",
+          "amount": 52,
+          "category": "xp",
+          "rarity": 3,
+          "note": "limited-time missions total"
+        },
+        {
+          "item": "Lost Crystal",
+          "amount": 32,
+          "category": "material",
+          "rarity": 3,
+          "note": "limited-time missions total"
+        },
+        {
+          "item": "Condensed Aether",
+          "amount": 18,
+          "category": "material",
+          "rarity": 3,
+          "note": "limited-time missions total"
+        },
+        {
+          "item": "The Fluffy Serialization Memorial Issue",
+          "amount": 36,
+          "category": "other",
+          "rarity": 3,
+          "note": "event material"
+        },
+        {
+          "item": "Credit",
+          "amount": 480000,
+          "category": "currency",
+          "rarity": null,
+          "note": "limited-time missions total"
+        }
+      ],
+      "rewardsSummary": "1,000+ Stellar Jade + 1 Self-Modeling Resin + 1 Tracks of Destiny + Lone Wolf Shades (Skott's Sunglasses) headwear + 52 Traveler's Guide + 32 Lost Crystal + 18 Condensed Aether + 36 The Fluffy Serialization Memorial Issue + 480,000 Credit",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/624403",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-wishpower-up-down-with-voracity",
+      "title": "Wishpower UP! Down with Voracity!",
+      "type": "Combat Event",
+      "status": "live",
+      "start": "2026-09-28",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Defeat Voracity-corrupted enemies to accumulate Wishpower and help Aha (Nihilux) recover her strength for milestone rewards.",
+      "description": "Enemies across the cosmos have been corrupted by the Voracity, and Aha needs Wishpower to fight back. Defeating corroded enemies grants Wishpower (4/10/40 depending on corruption level), which feeds a server-wide Suppression progress bar unlocking stacking combat buffs for everyone. First-time clears in Treasure Lightward endgame modes grant bonus Wishpower.",
+      "gameplay": "Fight Voracity-corrupted enemies anywhere (bonus for first clears in Treasure Lightward) and hit personal Wishpower milestones for rewards while server-wide progress unlocks global buffs.",
+      "requirements": [
+        "None listed"
+      ],
+      "rewards": [
+        {
+          "item": "Stellar Jade",
+          "amount": 500,
+          "category": "currency",
+          "rarity": null,
+          "note": "200 at 300 Wishpower + 300 at 1000 Wishpower"
+        },
+        {
+          "item": "Trendible Voucher",
+          "amount": 18,
+          "category": "gacha",
+          "rarity": null,
+          "note": "6 milestones x3; used for Astral Imagea draws"
+        },
+        {
+          "item": "Pulling a Beast's Tooth Medal",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 4,
+          "note": "commemorative medal at 2000 Wishpower"
+        }
+      ],
+      "rewardsSummary": "500 Stellar Jade + 18 Trendible Voucher + Pulling a Beast's Tooth medal (plus 30 Stellar Jade from the linked web event 'The Laughter Outsmarts miHoYo' share)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/624482",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-astral-imagea",
+      "title": "Astral Imagea",
+      "type": "Other",
+      "status": "live",
+      "start": "2026-09-28",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Collect the IPC's blind-box Astral Imagea pet toys, trade them with players, and display them in the new Party Car Pet House and Astral Imagea Park.",
+      "description": "The IPC's latest toy line, Astral Imagea, arrives as blind-box collectible critters in Classic and Collector's Editions (17 variants each, Kitty Furb and Chimera families). Draw with Trendible Vouchers, trade duplicates at the Trade Plaza, arrange pets in the Party Car's new Pet House, and show them off in the social Astral Imagea Park hub.",
+      "gameplay": "Spend Trendible Vouchers on the Astral Trendible Draw (1 voucher = 1 random Imagea; guarantee within 6 draws), then collect, trade, and display pets.",
+      "requirements": [
+        "Trailblaze Level 4+"
+      ],
+      "rewards": [
+        {
+          "item": "Trendible Voucher",
+          "amount": 6,
+          "category": "gacha",
+          "rarity": null,
+          "note": "free login gift during 4.6; 24 free total including 18 from Wishpower UP! event"
+        },
+        {
+          "item": "Astral Imagea Pet",
+          "amount": null,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "random blind-box pet per pull; 34 variants total (17 Classic, 17 Collector's Edition)"
+        }
+      ],
+      "rewardsSummary": "24 free Trendible Voucher (6 login + 18 from Wishpower event) for random Astral Imagea pets; extra vouchers cost Oneiric Shards",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/624461",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-gift-of-odyssey-4-6",
+      "title": "4.6 Gift of Odyssey",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-28",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Log in for 7 days (need not be consecutive) during Version 4.6 to claim 10 Star Rail Special Passes.",
+      "description": "The recurring version login event returns for Version 4.6. Check in on seven separate days during the event period to claim a total of ten Star Rail Special Passes from the event page.",
+      "gameplay": "Open the event page and claim the day's login reward; days do not need to be consecutive.",
+      "requirements": [
+        "None listed"
+      ],
+      "rewards": [
+        {
+          "item": "Star Rail Special Pass",
+          "amount": 10,
+          "category": "gacha",
+          "rarity": 4,
+          "note": "total across 7 login days"
+        }
+      ],
+      "rewardsSummary": "10 Star Rail Special Passes",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/413645",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-fate-contract-renewal",
+      "title": "Fate Contract: Renewal (Free Fate Collab Character)",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-07-24",
+      "end": "2026-11-11",
+      "datesPrecision": "approx",
+      "version": "4.4-4.6",
+      "summary": "Log in during the Fate/stay night collaboration rerun to claim a free 5-star Gilgamesh or Archer.",
+      "description": "As part of the Fate Collab Part 2 (featuring Rin Tohsaka and Gilgamesh), players can log in and claim a free copy of one of the Fate collaboration 5-star characters: Gilgamesh or Archer. The event runs from late July 2026 until the end of Version 4.6.",
+      "gameplay": "Simply log in during the event window and claim the free character from the event page.",
+      "requirements": [
+        "None listed"
+      ],
+      "rewards": [
+        {
+          "item": "Gilgamesh or Archer (5-star character selector)",
+          "amount": 1,
+          "category": "gacha",
+          "rarity": 5,
+          "note": "choose one free Fate collab 5-star character"
+        }
+      ],
+      "rewardsSummary": "1 free 5-star Fate collab character (Gilgamesh or Archer)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/408749",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-warp-banner-pearl",
+      "title": "Pearl Character Event Warp",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-09-27",
+      "end": "2026-11-10",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Version 4.6's new 5-star Ice/Elation character Pearl is featured for the entire patch alongside 4-stars Qingque, Xueyi, and Misha.",
+      "description": "Pearl, a new 5-star Ice character following the Path of Elation, headlines Version 4.6's Character Event Warp and runs for the full version. The rate-up 4-stars are Qingque, Xueyi, and Misha. Her signature Light Cone 'Colors for Tomorrow' is featured on the Brilliant Fixation banner for the same duration.",
+      "gameplay": "Standard Character Event Warp: spend Star Rail Special Passes; 5-star guaranteed within 90 pulls with 50/50 featured rate-up.",
+      "requirements": [
+        "Trailblaze Level 5+ (Warp unlock)"
+      ],
+      "rewards": [],
+      "rewardsSummary": "Warp banner (no event rewards); featured 5-star Pearl + 4-star Qingque/Xueyi/Misha; signature Light Cone 'Colors for Tomorrow' on Brilliant Fixation",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/614847",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-warp-banner-mortenax-blade",
+      "title": "Mortenax Blade Rerun Character Event Warp",
+      "type": "Wish Banner",
+      "status": "upcoming",
+      "start": "2026-10-21",
+      "end": "2026-11-10",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Phase 2 rerun banner for 5-star Mortenax Blade, with 4-stars Qingque, Xueyi, and Misha.",
+      "description": "Mortenax Blade returns on a rerun Character Event Warp in Phase 2 of Version 4.6. The rate-up 4-stars are again Qingque, Xueyi, and Misha, and his Light Cone 'Reforged in Hellfire' reruns on the Bygone Reminiscence banner from the same date.",
+      "gameplay": "Standard Character Event Warp rerun: spend Star Rail Special Passes with the usual pity and 50/50 featured guarantee.",
+      "requirements": [
+        "Trailblaze Level 5+ (Warp unlock)"
+      ],
+      "rewards": [],
+      "rewardsSummary": "Warp banner (no event rewards); featured 5-star Mortenax Blade + 4-star Qingque/Xueyi/Misha; 'Reforged in Hellfire' Light Cone rerun on Bygone Reminiscence",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/614847",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-interastral-peace-gala-one-take",
+      "title": "Interastral Peace Gala: One Take",
+      "type": "Combat Event",
+      "status": "upcoming",
+      "start": "2026-10-21",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Star in Interastral Peace Entertainment's reality show by clearing combat scripts while satisfying the director's demands.",
+      "description": "Interastral Peace Entertainment's blockbuster reality show has begun filming and the Trailblazer is cast as its next star. Each script has a director with special requests that raise your performance rating when fulfilled, and 'highlight moments' call in co-stars with unique support abilities. Earning a Perfect Curtain Call on every script awards the Silver Screen Legend medal for the Trailblazer's room.",
+      "gameplay": "Assemble a team per script, complete the director's objectives during combat for a higher performance rating, and trigger co-star highlight moments to aim for Perfect Curtain Call clears.",
+      "requirements": [
+        "None listed (preview; requirements to be confirmed at launch)"
+      ],
+      "rewards": [
+        {
+          "item": "Stellar Jade",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "amount not yet published"
+        },
+        {
+          "item": "Tracks of Destiny",
+          "amount": null,
+          "category": "material",
+          "rarity": 5,
+          "note": "amount not yet published"
+        },
+        {
+          "item": "Relic Remains",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amount not yet published"
+        },
+        {
+          "item": "Traveler's Guide",
+          "amount": null,
+          "category": "xp",
+          "rarity": 3,
+          "note": "amount not yet published"
+        },
+        {
+          "item": "Refined Aether",
+          "amount": null,
+          "category": "material",
+          "rarity": 3,
+          "note": "amount not yet published"
+        },
+        {
+          "item": "Lost Crystal",
+          "amount": null,
+          "category": "material",
+          "rarity": 3,
+          "note": "amount not yet published"
+        },
+        {
+          "item": "Credit",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "amount not yet published"
+        },
+        {
+          "item": "Silver Screen Legend Medal",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 4,
+          "note": "for Perfect Curtain Call on all scripts; Medal of Honor wall decoration"
+        }
+      ],
+      "rewardsSummary": "Silver Screen Legend medal + Stellar Jade, Tracks of Destiny, Relic Remains, Traveler's Guide, Refined Aether, Lost Crystal, and Credit (exact amounts not yet published — preview only)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/624439",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-planar-fissure-4-6",
+      "title": "4.6 Planar Fissure",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-12",
+      "end": "2026-10-25",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Double Planar Ornament drops from Simulated Universe and Divergent Universe Worlds a set number of times per day.",
+      "description": "The recurring Planar Fissure bonus event returns in Version 4.6. During the event, challenge Worlds in the Simulated Universe and Divergent Universe to receive double Planar Ornament rewards for a limited number of claims each day.",
+      "gameplay": "Clear Simulated/Divergent Universe Worlds; the first set number of reward claims each day yield double Planar Ornaments.",
+      "requirements": [
+        "Simulated Universe unlocked"
+      ],
+      "rewards": [
+        {
+          "item": "Planar Ornaments (double drops)",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "2x Planar Ornament drops for a set number of daily claims; no direct jade reward"
+        }
+      ],
+      "rewardsSummary": "Double Planar Ornament drops (no direct jade)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/413440",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-garden-of-plenty-4-6",
+      "title": "4.6 Garden of Plenty",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-30",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "4.6",
+      "summary": "Double rewards from Crimson and Golden Calyx stages a set number of times per day.",
+      "description": "The recurring Garden of Plenty farming bonus returns at the tail of Version 4.6. Challenge Golden Calyx (credits/EXP materials) and Crimson Calyx (trace materials) stages to get double rewards for a limited number of claims per day.",
+      "gameplay": "Clear Golden or Crimson Calyx stages; the first set number of reward claims each day yield double drops.",
+      "requirements": [
+        "Calyx stages unlocked"
+      ],
+      "rewards": [
+        {
+          "item": "Calyx drops (double rewards)",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "2x Golden/Crimson Calyx rewards for a set number of daily claims; no direct jade reward"
+        }
+      ],
+      "rewardsSummary": "Double Calyx drops — credits, EXP, and trace materials (no direct jade)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/413423",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-redeem-codes",
+      "title": "Redeem Codes (Version 4.6)",
+      "type": "Redeem Codes",
+      "status": "live",
+      "start": "2026-09-28",
+      "end": "2026-11-10",
+      "datesPrecision": "approx",
+      "version": "4.6",
+      "summary": "The currently active redemption codes for Honkai: Star Rail and what each one gives.",
+      "description": "Checked 6 Oct 2026 against Pocket Tactics and Game8. The 4.6 livestream codes (KA5SV3FJM7WX, 7S4AD2X35NE3, MALSV2F247FP) expired on 21 Sep 2026 and are not listed above. Game8 lists two extra codes with different reward values than Pocket Tactics — noted per code in the list.",
+      "gameplay": "Enter codes at https://hsr.hoyoverse.com/gift or in-game; rewards arrive via in-game mail.",
+      "requirements": [
+        "HoYoverse account",
+        "website redemption required on iOS"
+      ],
+      "rewards": [
+        {
+          "item": "Stellar Jade",
+          "amount": 430,
+          "category": "currency",
+          "rarity": null,
+          "note": "sum across the 9 active codes (Pocket Tactics values)"
+        },
+        {
+          "item": "Fuel",
+          "amount": 4,
+          "category": "material",
+          "rarity": 3,
+          "note": "OMEGA, CREATIONNYMPH, FAREWELL, IFYOUAREREADINGTHIS"
+        },
+        {
+          "item": "Traveler's Guide",
+          "amount": 8,
+          "category": "xp",
+          "rarity": 3,
+          "note": "PEARLAPPRAISE, 4TKSX77Y58QK, STARRAILGIFT"
+        },
+        {
+          "item": "Credit",
+          "amount": 40000,
+          "category": "currency",
+          "rarity": null,
+          "note": "RT4BPNA8FBS3, 4TKSX77Y58QK, STARRAILGIFT"
+        },
+        {
+          "item": "Condensed Aether",
+          "amount": 5,
+          "category": "material",
+          "rarity": 3,
+          "note": "4TKSX77Y58QK"
+        },
+        {
+          "item": "Lost Gold Fragment",
+          "amount": 4,
+          "category": "material",
+          "rarity": 3,
+          "note": "4TKSX77Y58QK"
+        },
+        {
+          "item": "Cold Joke",
+          "amount": 2,
+          "category": "other",
+          "rarity": 2,
+          "note": "PEARLAPPRAISE"
+        },
+        {
+          "item": "Bottled Soda",
+          "amount": 5,
+          "category": "other",
+          "rarity": 2,
+          "note": "STARRAILGIFT"
+        },
+        {
+          "item": "Heroic Variable",
+          "amount": 1,
+          "category": "other",
+          "rarity": 3,
+          "note": "CREATIONNYMPH per Game8"
+        }
+      ],
+      "codes": [
+        { "code": "STARRAILGIFT", "note": "evergreen code — no expiry announced", "permanent": true },
+        { "code": "RT4BPNA8FBS3", "expiryNote": "expires with v4.7" },
+        { "code": "PEARLAPPRAISE", "expiryNote": "expires with v4.7" },
+        { "code": "OMEGA", "expiryNote": "expires with v4.7" },
+        { "code": "CREATIONNYMPH", "expiryNote": "expires with v4.7" },
+        { "code": "FAREWELL", "expiryNote": "expires with v4.7" },
+        { "code": "IFYOUAREREADINGTHIS", "expiryNote": "expires with v4.7" },
+        { "code": "4TKSX77Y58QK", "expiryNote": "expires with v4.7" },
+        { "code": "5S6ZHRWTDNJB", "expiryNote": "expires with v4.7" },
+        { "code": "WA4AV2F24PYX", "note": "50 Stellar Jade, 10,000 Credit (Game8 listing)" },
+        { "code": "WAVEFLAIRSTYLE", "note": "3 Traveler's Guide, 2 Speeding Jet Surfboard (Game8 listing)" }
+      ],
+      "rewardsSummary": "~430 Stellar Jade + 4 Fuel + 8 Traveler's Guide + 40,000 Credit + 5 Condensed Aether + 4 Lost Gold Fragment + consumables across 9 active codes (Game8 lists different STARRAILGIFT values and 2 extra codes)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Pocket Tactics",
+      "sourceUrl": "https://www.pockettactics.com/honkai-star-rail/codes",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-minuscule-great-adventure",
+      "title": "Minuscule Great Adventure",
+      "type": "Combat Event",
+      "status": "ended",
+      "start": "2026-09-12",
+      "end": "2026-09-28",
+      "datesPrecision": "exact",
+      "version": "4.5",
+      "summary": "Assignment-style combat event where you dispatch four teams across four themed stages to earn jades and event titles.",
+      "description": "A tiny great adventure packed with half the troubles of the cosmos: assemble hero squads and take on stage after stage of trials across Imagenesis Park, Neon Dreamland, Celestial Chess Array, and Everwinter Hearth. Instead of fighting directly, you assign lineups to routes, counter enemy lineups with matching buffs, and chase Adventure Stars on each map. Event-exclusive titles were awarded alongside the standard reward track.",
+      "gameplay": "Assign trial-or-own characters to four routes per stage and let auto-combat resolve; matching route buffs and earning at least 8 Adventure Stars per map maximizes rewards.",
+      "requirements": [
+        "Trailblaze Level 21+"
+      ],
+      "rewards": [
+        {
+          "item": "Stellar Jade",
+          "amount": 500,
+          "category": "currency",
+          "rarity": null,
+          "note": "4 stages x 125"
+        },
+        {
+          "item": "Relic Remains",
+          "amount": 200,
+          "category": "material",
+          "rarity": null,
+          "note": "4 stages x 50"
+        },
+        {
+          "item": "Traveler's Guide",
+          "amount": 12,
+          "category": "xp",
+          "rarity": 3,
+          "note": "4 stages x 3"
+        },
+        {
+          "item": "Refined Aether",
+          "amount": 12,
+          "category": "material",
+          "rarity": 3,
+          "note": "4 stages x 3"
+        },
+        {
+          "item": "Lost Gold Fragment",
+          "amount": 32,
+          "category": "material",
+          "rarity": 3,
+          "note": "4 stages x 8"
+        },
+        {
+          "item": "Credit",
+          "amount": 160000,
+          "category": "currency",
+          "rarity": null,
+          "note": "4 stages x 40,000"
+        },
+        {
+          "item": "Event-exclusive titles",
+          "amount": null,
+          "category": "cosmetic",
+          "rarity": 4,
+          "note": "count unverified"
+        }
+      ],
+      "rewardsSummary": "500 Stellar Jade + 200 Relic Remains + 12 Traveler's Guide + 12 Refined Aether + 32 Lost Gold Fragment + 160,000 Credit + event-exclusive titles",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/615729",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-overdrive-whirlwind-grand-prix",
+      "title": "Overdrive: Whirlwind Grand Prix",
+      "type": "Other",
+      "status": "ended",
+      "start": "2026-08-26",
+      "end": "2026-09-28",
+      "datesPrecision": "exact",
+      "version": "4.5",
+      "summary": "Astropolis racing-management event awarding up to 1,000 Stellar Jade and the free 4-star Light Cone 'Race to the Horizon'.",
+      "description": "The brand-new racing grand prix in Astropolis emulates the Phantasmoon Games, with the winning team ascending as the God of Traffic (Laws). As team principal for Penacony's Speed Co, you assign drivers (including Jiaoqiu and Topaz), plan strategies, R&D car parts, and call the races across two competitions: the Astropolis Cup and the Cosmic Cup, each with 7 main races and R&D nodes.",
+      "gameplay": "Manage the team between races (drivers, R&D parts, strategy) and then race to victory; winning 3 main races grants the free Light Cone and 14 race wins grant all its Superimposition materials.",
+      "requirements": [
+        "Complete 'The Challenge Ends, and Now...' Trailblaze Continuance (How to Lose Your Way to the Top: The Zero-Dollar Strategy)",
+        "Trailblaze Level 21+ to unlock early via Finality's Vision"
+      ],
+      "rewards": [
+        {
+          "item": "Stellar Jade",
+          "amount": 1000,
+          "category": "currency",
+          "rarity": null,
+          "note": "up to 1,000 total including per-race regular rewards; Game8 limited-time mission table alone lists 800"
+        },
+        {
+          "item": "Race to the Horizon",
+          "amount": 1,
+          "category": "gacha",
+          "rarity": 4,
+          "note": "free 4-star Hunt Light Cone, win 3 main races"
+        },
+        {
+          "item": "Celebration Champagne",
+          "amount": null,
+          "category": "material",
+          "rarity": 3,
+          "note": "enough copies to fully Superimpose Race to the Horizon (win 14 races)"
+        },
+        {
+          "item": "Self-Modeling Resin",
+          "amount": 1,
+          "category": "material",
+          "rarity": 5,
+          "note": "complete all limited-time missions"
+        },
+        {
+          "item": "Tracks of Destiny",
+          "amount": null,
+          "category": "material",
+          "rarity": 5,
+          "note": "1 from Technological Iteration + additional from King of the Main Race (Game8 row truncated)"
+        },
+        {
+          "item": "Traveler's Guide",
+          "amount": null,
+          "category": "xp",
+          "rarity": 3,
+          "note": "included across milestones; exact total unverified"
+        },
+        {
+          "item": "Credit",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "included across milestones; exact total unverified"
+        }
+      ],
+      "rewardsSummary": "Up to 1,000 Stellar Jade + free 4-star Light Cone 'Race to the Horizon' + Celebration Champagne superimposition materials + 1 Self-Modeling Resin + Tracks of Destiny + XP/materials/credits",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/615728",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "hsr-realm-of-the-strange",
+      "title": "Realm of the Strange",
+      "type": "Other",
+      "status": "ended",
+      "start": "2026-09-19",
+      "end": "2026-09-28",
+      "datesPrecision": "exact",
+      "version": "4.5",
+      "summary": "Recurring double-relic-drop event for Caverns of Corrosion during the closing days of Version 4.5.",
+      "description": "The recurring farming bonus event ran at the end of Version 4.5: claim double relic drops from Caverns of Corrosion a set number of times per day. It is a pure farming bonus with no story or jade rewards.",
+      "gameplay": "Clear Cavern of Corrosion stages; the first set number of reward claims each day yield double relics.",
+      "requirements": [
+        "Caverns of Corrosion unlocked"
+      ],
+      "rewards": [
+        {
+          "item": "Cavern of Corrosion relics (double drops)",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "2x relic drops for a set number of daily claims; no jade"
+        }
+      ],
+      "rewardsSummary": "Double Cavern of Corrosion relic drops (no jade)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Pocket Tactics",
+      "sourceUrl": "https://www.pockettactics.com/honkai-star-rail/events",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    }
+  ]
+}

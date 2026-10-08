@@ -1,0 +1,43 @@
+{
+  "game": {
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/07/44/4f074499-c049-e0ff-68b1-8029a874f20e/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+    "banner": "https://media-cdn-zspms.kurogame.net/pnswebsite/website2.0/images/1790179200000/3qhjmqmqgdq10sqh0h-1790217192414.png",
+    "publisher": "Kuro Games",
+    "developer": "Kuro Games",
+    "genre": "post-apocalyptic action RPG",
+    "platforms": ["PC", "iOS", "Android"],
+    "releaseDate": "2021-07-16",
+    "description": "Punishing: Gray Raven is a fast-paced post-apocalyptic action RPG set in a world scoured by the Punishing, a machine virus that has forced humanity into hiding among the ruins of a high-tech Earth. You lead the Gray Raven squad of cyborg Constructs through stylish real-time combat built around signal-orb combos, QTE character switches, and demanding boss challenges, while a long-form sci-fi story unfolds chapter by chapter. It stands out for its sleek anime-mecha art direction, deeply customizable character kits, and a steady flow of story updates, limited events, and crossover collaborations."
+  },
+  "currencies": [
+    {
+      "name": "Black Card",
+      "icon": "https://static.wikitide.net/pgrwiki/2/2e/Item-BlackCard.png",
+      "note": "Premium currency convertible 1:1 into R&D tickets for character, weapon, and CUB research pulls."
+    },
+    {
+      "name": "Event Construct R&D Ticket",
+      "icon": "https://static.wikitide.net/pgrwiki/7/76/Item-EventConstructRnDTicket.png",
+      "note": "Standard research ticket for event construct banners; the most common event mission reward."
+    },
+    {
+      "name": "Trade Voucher",
+      "icon": "https://static.wikitide.net/pgrwiki/3/30/Item-TradeVoucher.png",
+      "note": "Farmed shop currency exchanged for Inver-Shards and upgrade materials in the Voucher Exchange Shop."
+    }
+  ],
+  "banners": {
+    "pgr-anchored-in-faith-main-story": "https://static.wikitide.net/pgrwiki/2/21/Event-AnchoredinFaith-Banner.png",
+    "pgr-adelyde-anabasis-debut": "https://karendar.com/thumbs/adelyde.jpg",
+    "pgr-date-a-live-v-kurumi": "https://karendar.com/thumbs/kurumi-research.jpg",
+    "pgr-visitor-from-afar-signin": "https://karendar.com/thumbs/visitor-from-afar.jpg",
+    "pgr-circuit-calculus": "https://karendar.com/thumbs/circuit-calculus.jpg",
+    "pgr-overclock-simulation": "https://karendar.com/thumbs/overclock-simulation.jpg",
+    "pgr-wrathful-monsoon": "https://karendar.com/thumbs/wrathful-monsoon.jpg",
+    "pgr-rate-up-oblivion-aeternion-dirge": "https://karendar.com/thumbs/rate-up-oblivion.jpg",
+    "pgr-wreck-it-huhu": "https://karendar.com/thumbs/wreck-it-huhu.jpg",
+    "pgr-moonlit-osmanthus-signin": "https://karendar.com/thumbs/moonlit-osmanthus.jpg",
+    "pgr-rapid-pursuit": "https://karendar.com/thumbs/rapid-pursuit.jpg",
+    "pgr-ripples-of-the-past": "https://karendar.com/thumbs/ripples-of-the-past.jpg"
+  }
+}

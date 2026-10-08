@@ -1,0 +1,58 @@
+{
+  "game": {
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/65/dc/fd65dc18-c4b6-7b64-8266-a423f3f113e0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "banner": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/24/694e777822e0964cdaa7458804c82fef_8989305327318684464.png",
+    "publisher": "HoYoverse",
+    "developer": "miHoYo (COGNOSPHERE PTE. LTD.)",
+    "genre": "Turn-based space fantasy RPG",
+    "platforms": ["PC", "PS5", "iOS", "Android"],
+    "releaseDate": "2023-04-26",
+    "description": "Honkai: Star Rail is a turn-based RPG set across a galaxy of wildly different worlds, where you board the Astral Express as the Trailblazer and journey from planet to planet with a crew of memorable companions. Each stop brings its own story, factions, and mysteries, while battles pair classic turn-based tactics with elemental weaknesses, character synergies, and cinematic ultimate abilities. Deep relic and light cone build-crafting, roguelike Simulated Universe runs, and regular story-driven updates keep the adventure moving between the stars."
+  },
+  "currencies": [
+    {
+      "name": "Stellar Jade",
+      "icon": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d9/Item_Stellar_Jade.png",
+      "note": "Premium currency used to buy Star Rail Passes for Warp (gacha) pulls; the main event reward."
+    },
+    {
+      "name": "Credit",
+      "icon": "https://static.wikia.nocookie.net/houkai-star-rail/images/d/d9/Item_Credit.png",
+      "note": "Standard in-game currency spent on leveling characters, light cones, and relics."
+    },
+    {
+      "name": "Star Rail Special Pass",
+      "icon": "https://static.wikia.nocookie.net/houkai-star-rail/images/a/a7/Item_Star_Rail_Special_Pass.png",
+      "note": "Limited-banner Warp ticket, awarded by login events like Gift of Odyssey."
+    },
+    {
+      "name": "Relic Remains",
+      "icon": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/89/Item_Relic_Remains.png",
+      "note": "Salvage currency used to craft and customize relics."
+    },
+    {
+      "name": "Self-Modeling Resin",
+      "icon": "https://static.wikia.nocookie.net/houkai-star-rail/images/3/32/Item_Self-Modeling_Resin.png",
+      "note": "Rare reward item that lets you pick a relic's main stat when synthesizing."
+    },
+    {
+      "name": "Tracks of Destiny",
+      "icon": "https://static.wikia.nocookie.net/houkai-star-rail/images/2/21/Item_Tracks_of_Destiny.png",
+      "note": "Rare trace-advancement material commonly offered as an event milestone reward."
+    }
+  ],
+  "banners": {
+    "hsr-love-ghosts-robots": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/24/67dca5173834be5e99f5c34381c2735f_4798035881319090495.jpg",
+    "hsr-wishpower-up-down-with-voracity": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/20/0f736a2d8a9ecbb37db293e74b3ae77d_6480347201241478928.png",
+    "hsr-astral-imagea": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/20/767b6c92f45a9002206cbe21e1e045ac_2404444968574268765.png",
+    "hsr-gift-of-odyssey-4-6": "https://upload-os-bbs.hoyolab.com/upload/2026/09/20/8009863/de6767be520ad924ffa978cfd8e376fb_1270631319340885002.png",
+    "hsr-warp-banner-pearl": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/24/8dce87dcbdb877a404e9d1ac5a48f1ef_2326426280653150930.png",
+    "hsr-warp-banner-mortenax-blade": "https://upload-os-bbs.hoyolab.com/upload/2026/09/20/8009863/85a22f433bc0c2b4b775b7f7222ddf7f_507064606450417338.png",
+    "hsr-interastral-peace-gala-one-take": "https://upload-os-bbs.hoyolab.com/upload/2026/09/20/8009863/bd60f7cb7ae09c1c98f23e1ed76747e7_1378896019323041974.png",
+    "hsr-planar-fissure-4-6": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/04/445eff9915166d9bcdbd60b279933ff8_3035509819869790486.png",
+    "hsr-garden-of-plenty-4-6": "https://upload-os-bbs.hoyolab.com/upload/community/2026/08/11/997c5b2d0a629cabbdfc5b31a9f3b489_6992864850979861536.png",
+    "hsr-minuscule-great-adventure": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/09/c463ef04218e71927934c9777c818216_2824741277717041962.jpg",
+    "hsr-overdrive-whirlwind-grand-prix": "https://upload-os-bbs.hoyolab.com/upload/community/2026/08/24/8a1805a87b539beba4357623ecc82986_6558994644084010795.jpg",
+    "hsr-realm-of-the-strange": "https://upload-os-bbs.hoyolab.com/upload/community/2026/09/16/a49d2403b3070c20a0ef7272ae4fa5b5_6914760249060572323.png"
+  }
+}

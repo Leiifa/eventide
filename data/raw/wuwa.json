@@ -1,0 +1,708 @@
+{
+  "game": {
+    "id": "wuwa",
+    "name": "Wuthering Waves",
+    "shortName": "Wuthering Waves",
+    "currentVersion": "3.7",
+    "nextVersion": "3.8",
+    "nextVersionDate": "2026-11-12",
+    "officialUrl": "https://wutheringwaves.kurogames.com/en/",
+    "notes": "Version 3.7 'Prism's Illusion, Heart's Illumination' runs 2026-09-30 to 2026-11-12; 3.8 start on 2026-11-12 is an estimate, not officially announced."
+  },
+  "events": [
+    {
+      "id": "wuwa-cubie-wars",
+      "title": "Cubie Wars",
+      "type": "Other",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Version 3.7's headline Wooly Stage brawl event with unlockable Cubie Warriors and the patch's biggest Astrite payout.",
+      "description": "Cubie Wars is a leisure event set on the Wooly Stage, where Cubie Warriors fight using magical items. Clearing stages and defeating new foes unlocks more warriors and opens up harder fights. Adventure Goals pay Stage Badges that unlock milestone rewards, while Stage clears also pay Show Coins redeemable at the Backstage Store. It is the highest-paying event of Version 3.7 and runs for the entire patch.",
+      "gameplay": "Fight through stages with progressively unlocked Cubie Warriors, chasing Adventure Goals for Stage Badges and spending Show Coins in the Backstage Store. Completing the same-named 'Cubie Wars' quest first is recommended.",
+      "requirements": [
+        "Union Level 14",
+        "Quest 'Cubie Wars' recommended"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 1200,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across milestone track and Backstage Store"
+        },
+        {
+          "item": "Showtime! (Event Sigil)",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "event-exclusive sigil"
+        },
+        {
+          "item": "Wooly's Blessing (Event Avatar)",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "event-exclusive avatar"
+        },
+        {
+          "item": "Premium Tuner",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted on official notice"
+        },
+        {
+          "item": "Bloom of Hearkening",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "new 3.7 item, quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "1,200 Astrite + Showtime! sigil + Wooly's Blessing avatar + Premium Tuner + Bloom of Hearkening (material quantities unlisted)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/cubie-wars",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-dreams-in-the-capsule",
+      "title": "Dreams in the Capsule",
+      "type": "Exploration Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Exploration event for the new Simulacrum Nexus area of Mengzhou, rewarding Astrite and premium materials via CSC Cipherlocks.",
+      "description": "Dreams in the Capsule explores the Simulacrum Nexus in Mengzhou across four phases that unlock as you progress the main quest. Tasks mix puzzles, combat, and item collection throughout the region. Rewards are unlocked based on how many CSC Cipherlocks you collect from tasks. The event is effectively gated by story progress through Chapter IV Act IV.",
+      "gameplay": "Complete puzzle, combat, and collection tasks in each of the four phases; CSC Cipherlocks earned from tasks advance the reward track.",
+      "requirements": [
+        "Meet the Nexus Fox Shadow in Mengxuan Vale during Main Quest 'Simulacrum of the Heart'"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 500,
+          "category": "currency",
+          "rarity": null,
+          "note": "WuWaBuild quotes in-game text 'Astrite x500'; WutheringPity cites 200 from the content notice — discrepancy unverified"
+        },
+        {
+          "item": "Forgery Premium Supply - Lahai-Roi",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Resonance Potion",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Sealed Tube",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Bloom of Hearkening",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "500 Astrite (one source says 200) + Forgery Premium Supply - Lahai-Roi + Premium Resonance Potion + Premium Sealed Tube + Bloom of Hearkening",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/dreams-in-the-capsule",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-gifts-of-waking-moon",
+      "title": "Gifts of Waking Moon",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Seven-day login event handing out 5 Radiant Tides and 5 Lustrous Tides.",
+      "description": "Gifts of Waking Moon is Version 3.7's seven-day login event running from the patch launch until November 11. Log in on any seven days (they do not need to be consecutive) and claim each day's reward directly from the event page. It pays direct pull currency — Radiant Tides for limited banners and Lustrous Tides for the standard banner. Rewards are claimed on the event page, not mailed.",
+      "gameplay": "Open the event page on seven separate days during the event window and claim that day's login reward.",
+      "requirements": [
+        "Union Level 8"
+      ],
+      "rewards": [
+        {
+          "item": "Radiant Tide",
+          "amount": 5,
+          "category": "gacha",
+          "rarity": null,
+          "note": "across 7 login days"
+        },
+        {
+          "item": "Lustrous Tide",
+          "amount": 5,
+          "category": "gacha",
+          "rarity": null,
+          "note": "across 7 login days"
+        }
+      ],
+      "rewardsSummary": "5 Radiant Tide + 5 Lustrous Tide",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/gifts-of-waking-moon",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-back-to-solaris",
+      "title": "Back to Solaris",
+      "type": "Web Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Returning-player invitation web event paying inviter rewards up to 480 Astrite and 50 Astrite to each linked returnee.",
+      "description": "Back to Solaris is Version 3.7's returning-player web event. Share your invitation code with up to three returning players on your own server and complete tasks together to collect Fox Fortune Sticks, which buy the inviter's rewards. Each returning player who links to an inviter claims their own reward bundle. The event stays open until 23:59 on November 11, later than the in-game events.",
+      "gameplay": "Invite returning players with your code, complete joint tasks to earn Fox Fortune Sticks, and exchange sticks for rewards.",
+      "requirements": [
+        "Union Level 8",
+        "Invited players must be returning players on the same server"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 480,
+          "category": "currency",
+          "rarity": null,
+          "note": "inviter total via Fox Fortune Sticks"
+        },
+        {
+          "item": "Astrite",
+          "amount": 50,
+          "category": "currency",
+          "rarity": null,
+          "note": "per linked returning player"
+        },
+        {
+          "item": "Shell Credit",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Advanced Enclosure Tank III",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "returnee reward, quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "Up to 480 Astrite (inviter) + 50 Astrite per returnee + Shell Credit + Advanced Enclosure Tank III (returnee)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/back-to-solaris",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-37-phase-1-convenes",
+      "title": "Version 3.7 Phase 1 Convenes: As Full as Tonight, Forever (Hsin) / Horizon of Dawnbreak (Chisa) / Across Time's Waxes and Wanes (Iuno)",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-10-22",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Phase 1 featured banners: new 5-star Electro Rectifier Hsin plus Chisa and Iuno reruns, with their signature weapons.",
+      "description": "Phase 1 of Version 3.7 runs three Featured Resonator Convenes simultaneously: 'As Full as Tonight, Forever' debuts Hsin (5-star Electro Rectifier, 'The Moon Fox'), alongside reruns 'Horizon of Dawnbreak' (Chisa) and 'Across Time's Waxes and Wanes' (Iuno). Featured 4-stars are Buling, Taoqi, and Youhu. The paired Featured Weapon Convenes are Blooming Jadehaven (Hsin), Kumokiri (Chisa), and Moongazer's Sigil (Iuno), where a 5-star drop is guaranteed to be the featured weapon. Banners close at 09:59 on October 22 as Phase 2 opens one minute later.",
+      "gameplay": "Spend Radiant Tide (character) or Forging Tide (weapon) on pulls; 80-pull hard pity, 160 Astrite per pull on limited character banners.",
+      "requirements": [],
+      "rewards": [],
+      "rewardsSummary": "No event rewards — gacha banner (160 Astrite per pull, 80-pull hard pity)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WutheringPity",
+      "sourceUrl": "https://wutheringpity.com/wuthering-waves/37-events-guide/",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-37-phase-2-convenes",
+      "title": "Version 3.7 Phase 2 Convenes: Nine Deaths, One Unbent Heart (Suoming) / Tomorrow in the Frame (Lucilla) / Undefined Spectrum (Lynae)",
+      "type": "Wish Banner",
+      "status": "upcoming",
+      "start": "2026-10-22",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Phase 2 featured banners: new 5-star Electro Sword Suoming plus Lucilla and Lynae reruns, with their signature weapons.",
+      "description": "Phase 2 of Version 3.7 opens at 10:00 on October 22 with three Featured Resonator Convenes: 'Nine Deaths, One Unbent Heart' debuts Suoming (5-star Electro Sword), alongside 'Tomorrow in the Frame' (Lucilla's first rerun) and 'Undefined Spectrum' (Lynae's third rerun). Featured 4-stars are Lumi, Danjin, and Chixia. The paired Featured Weapon Convenes are Unspoken Rue (Suoming), Freeze Frame (Lucilla), and Spectrum Blaster (Lynae), with the featured weapon guaranteed on a 5-star drop. All six banners close at 11:59 on November 11.",
+      "gameplay": "Spend Radiant Tide (character) or Forging Tide (weapon) on pulls; 80-pull hard pity, 160 Astrite per pull on limited character banners.",
+      "requirements": [],
+      "rewards": [],
+      "rewardsSummary": "No event rewards — gacha banner (160 Astrite per pull, 80-pull hard pity)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WutheringPity",
+      "sourceUrl": "https://wutheringpity.com/wuthering-waves/37-events-guide/",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-artisans-search",
+      "title": "Artisan's Search",
+      "type": "Combat Event",
+      "status": "upcoming",
+      "start": "2026-10-08",
+      "end": "2026-10-26",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Combat event where Rovers battle enemies across multiple waves for Astrite and premium materials.",
+      "description": "Artisan's Search is Version 3.7's limited combat event, opening at 04:00 on October 8 and closing at 03:59 on October 26 — two weeks before the version ends. Rovers face enemies across multiple waves of escalating encounters. It pays Astrite plus a bundle of premium upgrade materials, including the Land of Xuanfang Enclosure Tank. It is the first event to close in 3.7 after Bountiful Crescendo.",
+      "gameplay": "Fight through multi-wave combat stages with your Resonator teams and clear reward milestones.",
+      "requirements": [
+        "Union Level 14"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 500,
+          "category": "currency",
+          "rarity": null,
+          "note": "per WuWaBuild listing; official notice lists Astrite without a number"
+        },
+        {
+          "item": "Forgery Premium Supply - Lahai-Roi",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Enclosure Tank - Land of Xuanfang",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Resonance Potion",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Tuner",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "500 Astrite + Forgery Premium Supply - Lahai-Roi + Premium Enclosure Tank - Land of Xuanfang + Premium Resonance Potion + Premium Tuner",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/artisans-search",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-echo-erase",
+      "title": "Echo Erase",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-22",
+      "end": "2026-11-09",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Leisure puzzle event mixing echoes on a board to clear matches and recharge Resonator skills.",
+      "description": "Echo Erase is a leisure puzzle event opening with Phase 2 on October 22. Players move echoes around a board to clear matching echoes, which recharges their Resonator's skills. Clearing stages and reward tracks pays Astrite and premium materials. It closes at 03:59 on November 9, two days before the version's main deadline.",
+      "gameplay": "Slide and match echoes on a puzzle board to clear them and charge skill effects, working through stage reward tracks.",
+      "requirements": [
+        "Union Level 14"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 400,
+          "category": "currency",
+          "rarity": null,
+          "note": "per WuWaBuild listing; official notice lists Astrite without a number"
+        },
+        {
+          "item": "Forgery Premium Supply - Lahai-Roi",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted; WuWaBuild lists 'Forgery Advanced Supply - Lahai-Roi' — naming discrepancy unverified"
+        },
+        {
+          "item": "Advanced Energy Core",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted; WuWaBuild lists 'Premium Energy Core' — discrepancy unverified"
+        },
+        {
+          "item": "Premium Resonance Potion",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Sealed Tube",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "400 Astrite + Forgery Premium Supply - Lahai-Roi + Advanced Energy Core + Premium Resonance Potion + Premium Sealed Tube",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/echo-erase",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-gifts-of-singing-drizzle",
+      "title": "Gifts of Singing Drizzle",
+      "type": "Login Event",
+      "status": "upcoming",
+      "start": "2026-10-22",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Phase 2 login event paying 10 Radiant Tides total plus Premium Tuners and Crystal Solvents.",
+      "description": "Gifts of Singing Drizzle is the Version 3.7 Phase 2 login event, opening at 10:00 on October 22 and closing at 03:59 on November 11. Logging in on its cumulative day tiers pays Radiant Tide at the 1-day and 3-day marks — 10 Radiant Tide in total. It also pays Premium Tuners and Crystal Solvents. It is direct pull currency aimed at the Phase 2 banners.",
+      "gameplay": "Log in on the event's cumulative day tiers and claim rewards from the event page.",
+      "requirements": [
+        "Union Level 8"
+      ],
+      "rewards": [
+        {
+          "item": "Radiant Tide",
+          "amount": 10,
+          "category": "gacha",
+          "rarity": null,
+          "note": "total across the 1-day and 3-day login tiers"
+        },
+        {
+          "item": "Premium Tuner",
+          "amount": 100,
+          "category": "material",
+          "rarity": null,
+          "note": "per WuWaBuild listing"
+        },
+        {
+          "item": "Crystal Solvent",
+          "amount": 5,
+          "category": "other",
+          "rarity": null,
+          "note": "per WuWaBuild listing"
+        }
+      ],
+      "rewardsSummary": "10 Radiant Tide + 100 Premium Tuner + 5 Crystal Solvent",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/gifts-of-singing-drizzle",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-beyond-the-waves-land-of-xuanfang",
+      "title": "Beyond the Waves: Land of Xuanfang",
+      "type": "Exploration Event",
+      "status": "upcoming",
+      "start": "2026-10-29",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Tile-reveal board event: log in daily and complete tasks to win rewards across the Land of Xuanfang.",
+      "description": "Beyond the Waves: Land of Xuanfang opens at 04:00 on October 29 and runs to the version's final deadline. Players log in daily and complete tasks to reveal tiles on a board, winning random rewards from the revealed spaces. It pays 400 Astrite, a Lustrous Tide bundle, and premium materials. It is one of the last events to open in Version 3.7.",
+      "gameplay": "Complete daily tasks to earn tile reveals on a reward board and claim whatever the revealed tiles contain.",
+      "requirements": [
+        "Union Level 14"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 400,
+          "category": "currency",
+          "rarity": null,
+          "note": "printed on the official content notice"
+        },
+        {
+          "item": "Lustrous Tide",
+          "amount": 5,
+          "category": "gacha",
+          "rarity": null,
+          "note": "per WuWaBuild listing"
+        },
+        {
+          "item": "Premium Enclosure Tank - Land of Xuanfang",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Tuner",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Sealed Tube",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "400 Astrite + 5 Lustrous Tide + Premium Enclosure Tank - Land of Xuanfang + Premium Tuner + Premium Sealed Tube",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/beyond-the-waves-land-of-xuanfang",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-redeem-codes",
+      "title": "Active Redeem Codes (October 2026)",
+      "type": "Redeem Codes",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-11-12",
+      "datesPrecision": "approx",
+      "version": "3.7",
+      "summary": "The currently active redemption codes for Wuthering Waves and what each one gives.",
+      "description": "Checked 7 Oct 2026. The three Version 3.7 livestream codes (FALLINGSANCTUM, FINDSENTINEL, WAKINGMOON) expired on 21 Sep 2026 and are not listed above. Limited codes typically die within 24-48 hours, so the limited one may already be dead.",
+      "gameplay": "Open Settings > Other Settings > Redemption Code in-game, enter the code exactly (case-sensitive), and claim the mailed rewards before the mail auto-deletes after ~2 weeks.",
+      "requirements": [
+        "Union Level 2"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 50,
+          "category": "currency",
+          "rarity": null,
+          "note": "code WUTHERINGGIFT (permanent, one redemption per account)"
+        },
+        {
+          "item": "Premium Resonance Potion",
+          "amount": 2,
+          "category": "xp",
+          "rarity": null,
+          "note": "code WUTHERINGGIFT"
+        },
+        {
+          "item": "Medium Revival Inhaler",
+          "amount": 2,
+          "category": "other",
+          "rarity": null,
+          "note": "code WUTHERINGGIFT"
+        },
+        {
+          "item": "Medium Energy Bag",
+          "amount": 2,
+          "category": "other",
+          "rarity": null,
+          "note": "code WUTHERINGGIFT"
+        },
+        {
+          "item": "Shell Credit",
+          "amount": 15000,
+          "category": "currency",
+          "rarity": null,
+          "note": "code WUTHERINGGIFT; some sources list 10,000 — discrepancy unverified"
+        },
+        {
+          "item": "Astrite",
+          "amount": 20,
+          "category": "currency",
+          "rarity": null,
+          "note": "code DVME2MOHOQJT (limited, reported 2026-10-05)"
+        },
+        {
+          "item": "Shell Credit",
+          "amount": 20000,
+          "category": "currency",
+          "rarity": null,
+          "note": "code DVME2MOHOQJT (limited)"
+        }
+      ],
+      "codes": [
+        { "code": "WUTHERINGGIFT", "note": "50 Astrite, 2 Premium Resonance Potion, 2 Medium Revival Inhaler, 2 Medium Energy Bag, 15,000 Shell Credit — one redemption per account", "permanent": true },
+        { "code": "DVME2MOHOQJT", "note": "20 Astrite, 20,000 Shell Credit — reported 5 Oct 2026", "expiryNote": "limited code — expiry unlisted" }
+      ],
+      "rewardsSummary": "WUTHERINGGIFT: 50 Astrite + 2 Premium Resonance Potion + 2 Medium Revival Inhaler + 2 Medium Energy Bag + 15,000 Shell Credit; DVME2MOHOQJT: 20 Astrite + 20,000 Shell Credit (may expire soon)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 / BeeBom",
+      "sourceUrl": "https://game8.co/games/Wuthering-Waves/archives/453149",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-wuthering-exploration-fogveil-pagoda",
+      "title": "Wuthering Exploration: Fogveil Pagoda",
+      "type": "Exploration Event",
+      "status": "ended",
+      "start": "2026-09-17",
+      "end": "2026-09-29",
+      "datesPrecision": "exact",
+      "version": "3.6",
+      "summary": "Version 3.6 exploration event at Fogveil Pagoda in Mengzhou, paying 800 Astrite plus premium materials.",
+      "description": "Wuthering Exploration returned in Version 3.6 at the Fogveil Pagoda location in Mengzhou. Players explored the area completing event objectives for a reward track of Astrite and premium upgrade materials. It ran from September 17 until the day before the Version 3.7 maintenance. It was one of the last Version 3.6 events to close.",
+      "gameplay": "Explore the Fogveil Pagoda area and complete exploration objectives to advance the event reward track.",
+      "requirements": [],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 800,
+          "category": "currency",
+          "rarity": null,
+          "note": "total event payout"
+        },
+        {
+          "item": "Premium Sealed Tube",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Tuner",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "800 Astrite + Premium Sealed Tube + Premium Tuner",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/wuthering-exploration-fogveil-pagoda",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-the-strings-remember",
+      "title": "The Strings Remember",
+      "type": "Story Event",
+      "status": "ended",
+      "start": "2026-09-03",
+      "end": "2026-09-21",
+      "datesPrecision": "exact",
+      "version": "3.6",
+      "summary": "Version 3.6 story event with a 400 Astrite reward track plus premium materials.",
+      "description": "The Strings Remember was Version 3.6's limited story event, running from September 3 to September 21. It followed a narrative storyline with event quests and tasks. Clearing the event content paid 400 Astrite along with premium upgrade materials. It ended nine days before the 3.6 phase concluded.",
+      "gameplay": "Play through the event's story quests and complete the accompanying tasks to claim the reward track.",
+      "requirements": [],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 400,
+          "category": "currency",
+          "rarity": null,
+          "note": "total event payout"
+        },
+        {
+          "item": "Premium Resonance Potion",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Premium Sealed Tube",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "400 Astrite + Premium Resonance Potion + Premium Sealed Tube",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/the-strings-remember",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-battle-rush",
+      "title": "Wuthering Waves Battle Rush",
+      "type": "Web Event",
+      "status": "ended",
+      "start": "2026-08-20",
+      "end": "2026-09-17",
+      "datesPrecision": "exact",
+      "version": "3.6",
+      "summary": "Version 3.6 combat-themed web event with an Astrite reward pool listed at 2,000.",
+      "description": "Wuthering Waves Battle Rush was a web event that ran for the first four weeks of Version 3.6, from the patch launch on August 20 to September 17. It featured combat-themed challenges tied to the version's content. Its listed Astrite payout was 2,000 — the largest single-event figure of the 3.6 window. It closed alongside the phase transition mid-September.",
+      "gameplay": "Complete web-based combat challenges and missions during the event window to earn Astrite rewards.",
+      "requirements": [],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 2000,
+          "category": "currency",
+          "rarity": null,
+          "note": "as listed by WuWaBuild; may represent the full milestone pool rather than a guaranteed per-player total — unverified"
+        }
+      ],
+      "rewardsSummary": "2,000 Astrite (as listed; per-player total unverified)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/wuthering-waves-battle-rush",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    }
+  ]
+}

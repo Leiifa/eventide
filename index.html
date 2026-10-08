@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Eventide — gacha event tracker</title>
+<meta name="description" content="One calendar for every gacha event: Genshin Impact, Honkai: Star Rail, Wuthering Waves, Arknights: Endfield, Punishing: Gray Raven. Dates, requirements, rewards, timeline and rumors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css?v=20261008e">
+</head>
+<body>
+
+<div class="bg-anim" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+  <span class="blob blob-d"></span>
+  <span class="bg-stars"></span>
+  <span class="bg-stars bg-stars-2"></span>
+  <span class="bg-aurora"></span>
+</div>
+
+<div class="sticky-chrome">
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#" aria-label="Eventide home">
+      <span class="brand-mark">E</span>
+      <span class="brand-text">
+        <span class="brand-name">Eventide</span>
+        <span class="brand-sub">gacha event tracker</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Views">
+      <button class="nav-btn" data-view="home" aria-current="page">Home</button>
+      <button class="nav-btn" data-view="games">Games</button>
+      <button class="nav-btn" data-view="events">Events</button>
+      <button class="nav-btn" data-view="timeline">Timeline</button>
+      <button class="nav-btn" data-view="radar">Radar</button>
+    </nav>
+
+    <div class="topbar-right">
+      <label class="server-wrap" title="Most events run on every server at the same dates — this only filters the rare region-specific ones.">
+        <span class="server-label">Server</span>
+        <select id="serverSelect" class="server-select">
+          <option value="all">All servers</option>
+          <option value="global">Global</option>
+          <option value="america">America</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="sea">SEA</option>
+          <option value="tw/hk/mo">TW/HK/MO</option>
+          <option value="jp/kr">JP/KR</option>
+          <option value="cn">CN</option>
+        </select>
+      </label>
+      <div class="today-pill"><span class="today-dot" aria-hidden="true"></span><span id="todayDate">—</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="filterbar">
+  <div class="filterbar-inner">
+    <button class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
+      <span class="filter-toggle-label">Filters</span>
+      <span class="filter-toggle-summary" id="filterSummary"></span>
+      <span class="filter-caret" aria-hidden="true">▾</span>
+    </button>
+    <div class="filter-panel" id="filterPanel">
+      <div class="chip-group" id="gameChips" role="group" aria-label="Filter by game"></div>
+      <div class="filter-tools">
+        <div class="seg" id="statusSeg" role="group" aria-label="Filter by status">
+          <button class="seg-btn" data-status="live">Live</button>
+          <button class="seg-btn" data-status="upcoming">Upcoming</button>
+          <button class="seg-btn" data-status="all" aria-pressed="true">All</button>
+          <button class="seg-btn" data-status="ended">Ended</button>
+        </div>
+        <select id="typeSelect" class="field-select" aria-label="Filter by event type">
+          <option value="all">All types</option>
+        </select>
+        <select id="sortSelect" class="field-select" aria-label="Sort">
+          <option value="start-asc">Sort: start date</option>
+          <option value="start-desc">Sort: latest first</option>
+          <option value="end-asc">Sort: ending soon</option>
+          <option value="game">Sort: game</option>
+        </select>
+        <div class="search-wrap">
+          <input id="searchInput" class="search" type="search" placeholder="Search events, rewards…" aria-label="Search events">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HOME ============ -->
+  <section id="view-home" class="view">
+    <div id="home"></div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section id="view-events" class="view">
+    <div class="strip" id="statusStrip"></div>
+    <div class="list-head" aria-hidden="true">
+      <span>Game</span><span>Event</span><span>Dates</span><span>Rewards</span><span>Status</span>
+    </div>
+    <div class="event-list" id="eventList"></div>
+    <div class="empty" id="eventsEmpty" hidden></div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section id="view-timeline" class="view" hidden>
+    <div class="timeline-legend" id="timelineLegend"></div>
+    <div id="timeline"></div>
+    <div class="empty" id="timelineEmpty" hidden></div>
+  </section>
+
+  <!-- ============ RADAR ============ -->
+  <section id="view-radar" class="view" hidden>
+    <div id="radar"></div>
+    <div class="empty" id="radarEmpty" hidden></div>
+  </section>
+
+  <!-- ============ GAMES ============ -->
+  <section id="view-games" class="view" hidden>
+    <div class="page-head">
+      <h1 class="page-title">Supported games</h1>
+      <p class="page-sub">Banner, icon, reward currencies and event art for every game we track. Open one for the full rundown.</p>
+    </div>
+    <div class="game-grid" id="gameGrid"></div>
+  </section>
+
+  <!-- ============ GAME DETAIL ============ -->
+  <section id="view-game" class="view" hidden>
+    <div id="gameDetail"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-line">
+      <strong id="dataStamp">Data as of —</strong> · Compiled from official announcements and community wikis — every event links its source.
+      Dates are day-level on purpose (no times). Everything is stored in <code>data/raw/*.json</code>; rebuild with
+      <code>python scripts/build_data.py</code>.
+    </p>
+    <p class="footer-line footer-muted">
+      Leaks and rumors are marked <span class="conf conf-rumor">rumor</span> and are never mixed into confirmed dates.
+    </p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>
+  <svg class="to-top-ring" viewBox="0 0 52 52" aria-hidden="true">
+    <path class="ring-track" d="M 9 2 H 50 V 43 A 7 7 0 0 1 43 50 H 2 V 9 A 7 7 0 0 1 9 2 Z"></path>
+    <path class="ring-fill" id="ringFill" d="M 9 2 H 50 V 43 A 7 7 0 0 1 43 50 H 2 V 9 A 7 7 0 0 1 9 2 Z"></path>
+  </svg>
+  <span class="to-top-arrow" aria-hidden="true">↑</span>
+</button>
+
+<div class="drawer-scrim" id="drawerScrim" hidden></div>
+<aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+  <button class="drawer-close" id="drawerClose" aria-label="Close details">×</button>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox-backdrop" data-lb-close></div>
+  <figure class="lightbox-figure">
+    <img class="lightbox-img" id="lightboxImg" alt="">
+    <figcaption class="lightbox-cap" id="lightboxCap"></figcaption>
+    <button class="lightbox-close" data-lb-close aria-label="Close full banner">×</button>
+  </figure>
+</div>
+
+<script src="data/events.js?v=20261008"></script>
+<script src="assets/app.js?v=20261008"></script>
+</body>
+</html>

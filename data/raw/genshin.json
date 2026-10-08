@@ -1,0 +1,996 @@
+{
+  "game": {
+    "id": "genshin",
+    "name": "Genshin Impact",
+    "shortName": "Genshin",
+    "currentVersion": "7.1",
+    "nextVersion": "7.2",
+    "nextVersionDate": "2026-11-04",
+    "officialUrl": "https://genshin.hoyoverse.com/en/",
+    "notes": "Version 7.1 'A Rekviem for the Underworld' live since 2026-09-23; 6th anniversary celebrations run through the version."
+  },
+  "events": [
+    {
+      "id": "genshin-silverwing-in-pursuit-of-the-moon",
+      "title": "Silverwing in Pursuit of the Moon",
+      "type": "Seasonal Event",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-10-12",
+      "version": "7.1",
+      "summary": "Version 7.1 flagship Moonchase Festival event in Liyue, awarding the event-exclusive 4-star sword Silver Light and 950 Primogems.",
+      "description": "The Moonchase Festival arrives at Yilong Wharf with a story involving Zhongli, Zibai and an old mystery told across the 'A Lanternlit Ode to the Silver Moon' event quest and 'Wondrous Anecdotes' side stories. Three thaumaturge-themed gameplay modes are available: 'The Great Chase and Dispelling', 'Banner Against the Dark' and 'Spiritshot Salvo'. Completing modes and quests earns 'Festive Cheer', which is traded for the event-exclusive 4-star sword Silver Light, its refinement material Tea-Scented Tassel, Primogems, a Crown of Insight and upgrade materials.",
+      "gameplay": "Guide a rattan figure through obstacle courses, clear combat score stages using Banners, and fire Spiritshots at enemy waves; accumulate Festive Cheer to unlock the reward track.",
+      "requirements": [
+        "Adventure Rank 20 or above",
+        "Complete Archon Quest Prologue: Act III \"Song of the Dragon and Freedom\"",
+        "Recommended: Story Quests \"Dulciaria Structura Chapter: Act I\" and \"Tapirus Somniator Chapter: Act I\" and event quest \"A Lanternlit Ode to the Silver Moon\""
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 950,
+          "category": "currency",
+          "rarity": null,
+          "note": "per official Version 7.1 event calendar badge"
+        },
+        {
+          "item": "Silver Light",
+          "amount": 1,
+          "category": "other",
+          "rarity": 4,
+          "note": "event-exclusive 4-star Sword, unlocked at 200 Festive Cheer"
+        },
+        {
+          "item": "Tea-Scented Tassel",
+          "amount": null,
+          "category": "material",
+          "rarity": 4,
+          "note": "event-exclusive weapon refinement material for Silver Light; exact count unverified"
+        },
+        {
+          "item": "Crown of Insight",
+          "amount": 1,
+          "category": "material",
+          "rarity": 5,
+          "note": null
+        },
+        {
+          "item": "Hero's Wit / Mora / Mystic Enhancement Ore / Sanctifying Unction / ascension & talent materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not published individually"
+        }
+      ],
+      "rewardsSummary": "950 Primogems + Silver Light (4-star Sword) + Tea-Scented Tassel refinement materials + 1 Crown of Insight + Hero's Wit, Mora, Mystic Enhancement Ore, Sanctifying Unction and ascension/talent materials",
+      "sourceName": "HoYoLAB (Genshin Impact Official)",
+      "sourceUrl": "https://www.hoyolab.com/article/46782339",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-rainbows-end-resplendent-starlight",
+      "title": "Rainbow's End: Resplendent Starlight",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-28",
+      "end": "2026-10-19",
+      "version": "7.1",
+      "summary": "6th anniversary gift event: 1,600 Primogems by in-game mail plus a 7-day login check-in with 10 Intertwined Fates.",
+      "description": "The anniversary celebration has three parts: a Crystal Top-Up Bonus Reset, the 'Missive of Grace: A Thank-You Gift' mail drop (2026/09/28 until the end of Version 7.1, each mail claimable for 30 days), and the 'Resplendent Starlight' daily login event (2026/10/01 04:00 - 2026/10/19 03:59). Mail arrives over four days with 400 Primogems each day plus a pet, Fragile Resin, a Sanctifying Elixir and a gadget; the login card pays 10 Intertwined Fates across seven logins.",
+      "gameplay": "Log in to claim mail and check in on seven separate days during the login window to collect each slot.",
+      "requirements": [
+        "Adventure Rank 2 or above (mail)",
+        "Adventure Rank 5 or above (daily login)"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 1600,
+          "category": "currency",
+          "rarity": null,
+          "note": "mail: 400 x 4 days"
+        },
+        {
+          "item": "Intertwined Fate",
+          "amount": 10,
+          "category": "gacha",
+          "rarity": 5,
+          "note": "login: 1+2+2+2+5 across days 1,3,5,6,7"
+        },
+        {
+          "item": "Mora",
+          "amount": 80000,
+          "category": "currency",
+          "rarity": null,
+          "note": "login day 2"
+        },
+        {
+          "item": "Hero's Wit",
+          "amount": 8,
+          "category": "xp",
+          "rarity": 4,
+          "note": "login day 6"
+        },
+        {
+          "item": "Dust of Enlightenment",
+          "amount": 1,
+          "category": "material",
+          "rarity": 5,
+          "note": "login day 4"
+        },
+        {
+          "item": "Fragile Resin",
+          "amount": 2,
+          "category": "material",
+          "rarity": 4,
+          "note": "mail, September 29"
+        },
+        {
+          "item": "Sanctifying Elixir",
+          "amount": 1,
+          "category": "material",
+          "rarity": 5,
+          "note": "mail, September 30"
+        },
+        {
+          "item": "Conductor of the \"Ya-ho\"",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 4,
+          "note": "pet, mail September 28"
+        },
+        {
+          "item": "Mini Trolley Problem",
+          "amount": 1,
+          "category": "other",
+          "rarity": 4,
+          "note": "gadget, mail October 1"
+        }
+      ],
+      "rewardsSummary": "1,600 Primogems + 10 Intertwined Fates + 80,000 Mora + 8 Hero's Wit + 1 Dust of Enlightenment + 2 Fragile Resin + 1 Sanctifying Elixir + Conductor of the \"Ya-ho\" pet + Mini Trolley Problem gadget (20 pulls total)",
+      "sourceName": "HoYoLAB (Genshin Impact Official)",
+      "sourceUrl": "https://www.hoyolab.com/article/46771533",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-across-the-frozen-wilds",
+      "title": "Across the Frozen Wilds, Honing One's Edge",
+      "type": "Other",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-11-03",
+      "version": "7.1",
+      "summary": "Anniversary giveaway: invite one free standard-banner 5-star character of your choice plus their ascension materials.",
+      "description": "A recurring anniversary event that lets every Traveler invite a 5-star character from the standard wish 'Wanderlust Invocation' via the event interface, one invite per account. Inviting a character also grants Ascension Level-Up Materials for that character (enough to raise them to Lv. 60). The pool covers Jean, Diluc, Qiqi, Mona, Keqing, Tighnari, Dehya and Yumemizuki Mizuki.",
+      "gameplay": "Open the event interface and select one character to invite permanently to your roster.",
+      "requirements": [
+        "Unlocked the Wish feature"
+      ],
+      "rewards": [
+        {
+          "item": "Standard 5-Star Character (Wanderlust Invocation)",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "choice of Jean, Diluc, Qiqi, Mona, Keqing, Tighnari, Dehya or Yumemizuki Mizuki"
+        },
+        {
+          "item": "Ascension Level-Up Materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "materials to raise the invited character to Lv. 60"
+        }
+      ],
+      "rewardsSummary": "1 free standard 5-star character of your choice + Lv. 60 ascension and level-up materials",
+      "sourceName": "HoYoLAB (Genshin Impact Official)",
+      "sourceUrl": "https://www.hoyolab.com/article/46771528",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-tabletop-troupe",
+      "title": "Tabletop Troupe: A Gathering on Adventure's Eve",
+      "type": "Other",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-11-03",
+      "version": "7.1",
+      "summary": "Anniversary event giving one free limited-event 5-star character from a set pool, unlocked after the 7.1 Archon Quest.",
+      "description": "A tabletop-roleplaying-themed anniversary event in which the Traveler gathers the Tabletop Troupe. It awards a free event-exclusive 5-star character from a fixed pool - Tartaglia, Nilou, Baizhu, Chiori, Clorinde or Varesa - together with the materials needed to raise them to Lv. 60. The invite only unlocks after completing the Version 7.1 Archon Quest, so it pairs with the 'A Rekviem for the Underworld' story event.",
+      "gameplay": "Progress the event's tabletop adventure, then claim one permanent 5-star character invite from the event interface.",
+      "requirements": [
+        "Complete the Version 7.1 Archon Quest \"A Rekviem for the Underworld\" (Chapter VII: Act IV)"
+      ],
+      "rewards": [
+        {
+          "item": "Limited Event 5-Star Character",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "choice of Tartaglia, Nilou, Baizhu, Chiori, Clorinde or Varesa"
+        },
+        {
+          "item": "Ascension Level-Up Materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "materials to raise the invited character to Lv. 60"
+        }
+      ],
+      "rewardsSummary": "1 free limited-event 5-star character (Tartaglia, Nilou, Baizhu, Chiori, Clorinde or Varesa) + Lv. 60 ascension and level-up materials",
+      "sourceName": "HoYoLAB (Genshin Impact Official)",
+      "sourceUrl": "https://www.hoyolab.com/article/46771529",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-rekviem-for-the-underworld-archon-quest",
+      "title": "Complete Archon Quest \"A Rekviem for the Underworld\" Within the Specified Duration",
+      "type": "Story Event",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-11-03",
+      "version": "7.1",
+      "summary": "Time-limited completion bonuses for finishing Archon Quest Chapter VII Acts III and IV during Version 7.1.",
+      "description": "Archon Quest Chapter VII: Act III \"White Night, Like a Dream Upon Waking\" and Act IV \"A Rekviem for the Underworld\" became permanently available with the Version 7.1 update. Completing them within the specified duration grants additional Primogems, Character Ascension Materials, Character Level-Up Materials and Snezhnaya regional specialties. Finishing Act IV in time also unlocks a time-limited Epilogue quest for the series.",
+      "gameplay": "Follow the Snezhnaya Archon Quest storyline and complete Acts III and IV before the deadline to receive the bonus rewards in mail.",
+      "requirements": [
+        "Adventure Rank 18 or above",
+        "Complete Archon Quest Chapter VII: Act II \"Wraith's Nocturne\""
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 620,
+          "category": "currency",
+          "rarity": null,
+          "note": "Archon Quest Acts III+IV total including the time-limited completion bonus, per the Version 7.1 Special Program; exact split not published"
+        },
+        {
+          "item": "Character Ascension Materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not published"
+        },
+        {
+          "item": "Character Level-Up Materials",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "amounts not published"
+        },
+        {
+          "item": "Snezhnaya Regional Specialties",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not published"
+        }
+      ],
+      "rewardsSummary": "620 Primogems (quest + completion bonus per the 7.1 Special Program) + character ascension materials + character level-up materials + Snezhnaya regional specialties",
+      "sourceName": "HoYoLAB (Genshin Impact Official)",
+      "sourceUrl": "https://www.hoyolab.com/article/46771527",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-anniversary-memories-album",
+      "title": "Anniversary Memories Album",
+      "type": "Web Event",
+      "status": "live",
+      "start": "2026-09-28",
+      "end": "2026-10-18",
+      "version": "7.1",
+      "summary": "6th anniversary web event looking back at your Teyvat journey, giving up to 180 Primogems.",
+      "description": "A browser-based 6th anniversary event in which Paimon looks back on your journey through Teyvat. It features three main activities that flip through a memories album of your account history, with rewards claimed from a chest icon on the event screen. It also includes a theme song sung by Childe's English voice actor.",
+      "gameplay": "Open the web event page, browse the three album activities and claim the reward chest.",
+      "requirements": [
+        "Adventure Rank 10 or above"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 180,
+          "category": "currency",
+          "rarity": null,
+          "note": "total per the official event notice; the official 7.1 calendar badge shows 150, discrepancy unverified"
+        }
+      ],
+      "rewardsSummary": "180 Primogems",
+      "sourceName": "GenshinBuilds (citing the official web event notice)",
+      "sourceUrl": "https://genshin-builds.com/en/blog/genshin-impact-6th-anniversary-web-event-song",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-starlit-gala-miliastra-wonderland",
+      "title": "Starlit Gala (Miliastra Wonderland)",
+      "type": "Web Event",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-11-03",
+      "version": "7.1",
+      "summary": "Anniversary celebration around the Miliastra Wonderland UGC mode, with Primogems, Geodes of Replication and cosmetics across two reward phases.",
+      "description": "The Starlit Gala is the reward track of the Miliastra Wonderland anniversary celebration. Special event gifts unlock from September 23, including the free Headwear 'Unusual Hilichurl Mask' and the 'Phantom Night Candlelight' Event Ode. From October 1 the two reward tracks open: the in-game 'Starlit Gala: Wonderland Selects' event (Phase 1 10/01-10/22, Phase 2 10/22-11/03) pays Primogems, a Prismatic Crystal, a Geode of Replication, the Cryo Slime Hat and four expressions; the web page track pays Primogems, another Geode of Replication and more cosmetics. Version 7.1's Event Ode 'Moonlight After the Rain' separately carries the Legendary 5-star cosmetic set 'Osmanthus in the Moonlight'.",
+      "gameplay": "Play Miliastra Wonderland (UGC) activities and the Starlit Gala web page minigames to progress both reward tracks.",
+      "requirements": [
+        "Unknown (not yet published)"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 20,
+          "category": "currency",
+          "rarity": null,
+          "note": "official 7.1 calendar badge covering both phases; per-phase vs total unclear"
+        },
+        {
+          "item": "Geode of Replication",
+          "amount": 2,
+          "category": "material",
+          "rarity": 4,
+          "note": "one per reward track (in-game event + web page)"
+        },
+        {
+          "item": "Prismatic Crystal",
+          "amount": 1,
+          "category": "material",
+          "rarity": 4,
+          "note": "in-game 'Starlit Gala: Wonderland Selects' track"
+        },
+        {
+          "item": "Cosmetics (Unusual Hilichurl Mask headwear, Cryo Slime Hat, Osmanthus Retreat Moon Lamp, expressions Big Thumbs-Up!/Delicate Heart/V for Victory/Crafting with Care/Hands Up in the Air/In Perfect Sync/Giggle)",
+          "amount": null,
+          "category": "cosmetic",
+          "rarity": 4,
+          "note": "counts not individually published"
+        }
+      ],
+      "rewardsSummary": "20 Primogems (calendar badge, per-phase vs total unclear) + 2 Geodes of Replication + 1 Prismatic Crystal + cosmetic set (Unusual Hilichurl Mask, Cryo Slime Hat, Osmanthus Retreat Moon Lamp and 7 expressions)",
+      "sourceName": "timesaver.gg (transcribed from official Starlit Gala Special Event Preview, HoYoLAB post 46677987)",
+      "sourceUrl": "https://timesaver.gg/blog/genshin-7-1-events-calendar",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-stygian-onslaught-oct-2026",
+      "title": "Stygian Onslaught",
+      "type": "Combat Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-11-03",
+      "version": "7.1",
+      "summary": "Ley-line-disturbance boss challenge with three consecutive boss fights and a 450 Primogem reward track.",
+      "description": "The September/October 2026 cycle of Disturbance-affected Ley Line challenges. Travelers fight three consecutive bosses - Battle-Hardened Domovoy Sculptor: Gale Hewing, Secret Source Automaton: Overseer Device - Obliterator Panoply and Guardian Blade of Drifting Snow: Endless Reverberation - across six difficulty levels. Clearing Normal, Advancing and Hard difficulty covers the full 450-Primogem reward track; the upper difficulties add Dust of Enlightenment and Radiant Phantasm challenge rewards. The Disturbance Outbreak artifact-farming window runs only through October 10.",
+      "gameplay": "Build teams and clear three consecutive boss encounters at rising difficulty; during Disturbance Outbreak, Hard+ clears let AR 45 players spend Resin on a selected Domain of Blessing while building Dire Prestige.",
+      "requirements": [
+        "Adventure Rank 45+ for the Disturbance Outbreak artifact farming (Hard or above)"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 450,
+          "category": "currency",
+          "rarity": null,
+          "note": "full reward track for Normal/Advancing/Hard clears"
+        },
+        {
+          "item": "Dust of Enlightenment",
+          "amount": null,
+          "category": "material",
+          "rarity": 5,
+          "note": "upper difficulty reward, amount not published"
+        },
+        {
+          "item": "Radiant Phantasm challenge rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "amounts not published"
+        }
+      ],
+      "rewardsSummary": "450 Primogems + Dust of Enlightenment + Radiant Phantasm challenge rewards (upper difficulties)",
+      "sourceName": "The Click",
+      "sourceUrl": "https://www.theclick.gg/genshin-impact-7-1-events/",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-when-warm-winds-cavort",
+      "title": "Event Wish \"When Warm Winds Cavort\"",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-10-13",
+      "version": "7.1",
+      "summary": "Version 7.1 Phase I Character Event Wish debuting Vesna (Anemo Sword, 5-star).",
+      "description": "Character Event Wish featuring the debut of 5-star 'Snowy Banquet's Sharp Blade' Vesna, an Anemo Sword user and commander of the Druzhna who enables Stellar Swirl reactions. The boosted 4-star characters are Diona (Cryo), Faruzan (Anemo) and Chongyun (Cryo). The parallel Epitome Invocation weapon banner features the 5-star weapons Beyond the Chrysalis (Sword) and Hymn of the Maelstrom (Catalyst).",
+      "gameplay": "Spend Intertwined Fates on the limited character wish; Test Run trial stages with the featured characters are open during the banner.",
+      "requirements": [
+        "Adventure Rank 5 or above (Wish feature unlocked)"
+      ],
+      "rewards": [
+        {
+          "item": "Test Run trial completion rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "small material rewards for clearing the trial stages; amounts not published"
+        }
+      ],
+      "rewardsSummary": "Gacha banner - no direct event rewards beyond Test Run trial materials (amounts not published)",
+      "sourceName": "HoYoLAB (Genshin Impact Official)",
+      "sourceUrl": "https://www.hoyolab.com/article/46771531",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-surging-ballad",
+      "title": "Event Wish \"Surging Ballad\"",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-10-13",
+      "version": "7.1",
+      "summary": "Version 7.1 Phase I Character Event Wish-2 debuting Vodyanitsa (Hydro Catalyst, 5-star).",
+      "description": "Character Event Wish-2 featuring the debut of 5-star 'Lingering Siren-Song' Vodyanitsa, a Hydro Catalyst user and prima donna of the Korolevskiy Troupe who provides healing and support for Freeze and Stellar Swirl teams. The boosted 4-star characters are Diona (Cryo), Faruzan (Anemo) and Chongyun (Cryo); pity is shared with 'When Warm Winds Cavort'.",
+      "gameplay": "Spend Intertwined Fates on the limited character wish; Test Run trial stages with the featured characters are open during the banner.",
+      "requirements": [
+        "Adventure Rank 5 or above (Wish feature unlocked)"
+      ],
+      "rewards": [
+        {
+          "item": "Test Run trial completion rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "small material rewards for clearing the trial stages; amounts not published"
+        }
+      ],
+      "rewardsSummary": "Gacha banner - no direct event rewards beyond Test Run trial materials (amounts not published)",
+      "sourceName": "HoYoLAB (Genshin Impact Official)",
+      "sourceUrl": "https://www.hoyolab.com/article/46771531",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-redeem-codes-oct-2026",
+      "title": "Active Redeem Codes (October 2026)",
+      "type": "Redeem Codes",
+      "status": "live",
+      "start": "2026-09-23",
+      "end": "2026-10-22",
+      "datesPrecision": "approx",
+      "version": "7.1",
+      "summary": "The currently active redemption codes for Genshin Impact and what each one gives.",
+      "description": "Active codes tracked by community sources, checked 7 Oct 2026. The Version 7.1 livestream codes (Rekviem, Vesna0923, PrimaDonna — 100 Primogems each) expired on 15 Sep 2026 and are not listed above.",
+      "gameplay": "Redeem on genshin.hoyoverse.com/en/gift or in-game with Adventure Rank 10+, then collect the items from in-game mail.",
+      "requirements": [
+        "Adventure Rank 10 or above"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 60,
+          "category": "currency",
+          "rarity": null,
+          "note": "code NEEIJB764CA3"
+        },
+        {
+          "item": "Adventurer's Experience",
+          "amount": 5,
+          "category": "xp",
+          "rarity": 3,
+          "note": "code NEEIJB764CA3"
+        },
+        {
+          "item": "Primogem",
+          "amount": 40,
+          "category": "currency",
+          "rarity": null,
+          "note": "code VesnaOnPatrol, valid until 2026-10-22 23:59 UTC+8"
+        },
+        {
+          "item": "Hero's Wit",
+          "amount": 3,
+          "category": "xp",
+          "rarity": 4,
+          "note": "code VesnaOnPatrol; GENSHINGIFT also gives Hero's Wit x3"
+        },
+        {
+          "item": "Mora",
+          "amount": 20000,
+          "category": "currency",
+          "rarity": null,
+          "note": "code VesnaOnPatrol"
+        },
+        {
+          "item": "Hero's Wit (OPERACOLLAB x2, EPIC2026 x5)",
+          "amount": null,
+          "category": "xp",
+          "rarity": 4,
+          "note": "small collab/store codes"
+        },
+        {
+          "item": "Adventurer's Experience (PLDXIB886Y1S x10 + Fine Enhancement Ore x5; Y6JYMKV6JKSL / Y1INABQB6DEX / 2BJ64QRZ7RT8 x5 each)",
+          "amount": null,
+          "category": "xp",
+          "rarity": 3,
+          "note": "small promo codes"
+        }
+      ],
+      "codes": [
+        { "code": "GENSHINGIFT", "note": "Hero's Wit ×3", "permanent": true },
+        { "code": "VesnaOnPatrol", "note": "40 Primogems, 3 Hero's Wit, 20,000 Mora", "expires": "2026-10-22" },
+        { "code": "NEEIJB764CA3", "note": "60 Primogems, 5 Adventurer's Experience" },
+        { "code": "OPERACOLLAB", "note": "Hero's Wit ×2" },
+        { "code": "EPIC2026", "note": "Hero's Wit ×5" },
+        { "code": "PLDXIB886Y1S", "note": "Adventurer's Experience ×10, Fine Enhancement Ore ×5" },
+        { "code": "Y6JYMKV6JKSL", "note": "Adventurer's Experience ×5" },
+        { "code": "Y1INABQB6DEX", "note": "Adventurer's Experience ×5" },
+        { "code": "2BJ64QRZ7RT8", "note": "Adventurer's Experience ×5" }
+      ],
+      "rewardsSummary": "60 Primogems (NEEIJB764CA3) + 40 Primogems, 3 Hero's Wit, 20,000 Mora (VesnaOnPatrol, expires Oct 22) + assorted Hero's Wit / Adventurer's Experience / Mora from promo codes",
+      "sourceName": "Game8 / GenshinBuilds code trackers",
+      "sourceUrl": "https://game8.co/games/Genshin-Impact/archives/622079",
+      "confidence": "confirmed",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-predictive-victory-dynamics",
+      "title": "Predictive Victory Dynamics",
+      "type": "Combat Event",
+      "status": "upcoming",
+      "start": "2026-10-12",
+      "end": "2026-10-20",
+      "version": "7.1",
+      "summary": "Combat prediction event in Natlan betting on simulated fights, with a 420 Primogem reward track.",
+      "description": "Back in the home of Natlan's Children of Echoes, elite warrior Liliuo and Fatui operative Wislawa are using a combat simulator to model the odds of victory. Travelers place bets on which side will win each of 16 simulated fights, earning points and rewards based on the outcomes. The official event calendar also shows an Announcement Period running to 2026-10-23 after the event ends.",
+      "gameplay": "Study the two combatant line-ups, place your bet on the predicted winner of each simulated battle, and collect points for correct calls.",
+      "requirements": [
+        "Unknown (not yet published)"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 420,
+          "category": "currency",
+          "rarity": null,
+          "note": "per official 7.1 event calendar badge"
+        },
+        {
+          "item": "Sanctifying Unction",
+          "amount": null,
+          "category": "material",
+          "rarity": 4,
+          "note": "amount not published"
+        },
+        {
+          "item": "Adventurer's Experience",
+          "amount": null,
+          "category": "xp",
+          "rarity": 3,
+          "note": "amount not published"
+        },
+        {
+          "item": "Mora",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "amount not published"
+        },
+        {
+          "item": "Weapon Ascension Material",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amount not published"
+        }
+      ],
+      "rewardsSummary": "420 Primogems + Sanctifying Unction + Adventurer's Experience + Mora + weapon ascension materials",
+      "sourceName": "timesaver.gg (transcribed from official Version 7.1 Event Calendar, HoYoLAB post 46673425)",
+      "sourceUrl": "https://timesaver.gg/blog/genshin-7-1-events-calendar",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-carefree-snowball-fight",
+      "title": "Carefree Snowball Fight",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-21",
+      "end": "2026-11-02",
+      "version": "7.1",
+      "summary": "Four-player co-op snowball fight in the Snezhnaya snowfields with a 420 Primogem reward track.",
+      "description": "In the snowfields southwest of Morespok, a group of children led by the Frost Operative is having a snowball fight - and the Traveler joins in. Players team up in co-op, chucking snowballs at Oddowls to rack up the highest score possible; the higher the total score each round, the better the rewards, including Primogems, Mora and level-up materials.",
+      "gameplay": "Play 4-player co-op snowball rounds, hitting Oddowls and opponents to build the team's total score per round.",
+      "requirements": [
+        "Unknown (not yet published)"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 420,
+          "category": "currency",
+          "rarity": null,
+          "note": "per official 7.1 event calendar badge"
+        },
+        {
+          "item": "Character Talent Level-Up Material",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amount not published"
+        },
+        {
+          "item": "Sanctifying Unction",
+          "amount": null,
+          "category": "material",
+          "rarity": 4,
+          "note": "amount not published"
+        },
+        {
+          "item": "Hero's Wit",
+          "amount": null,
+          "category": "xp",
+          "rarity": 4,
+          "note": "amount not published"
+        },
+        {
+          "item": "Mora",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "amount not published"
+        },
+        {
+          "item": "Weapon Ascension Material",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amount not published"
+        }
+      ],
+      "rewardsSummary": "420 Primogems + character talent materials + Sanctifying Unction + Hero's Wit + Mora + weapon ascension materials",
+      "sourceName": "Pocket Tactics / timesaver.gg (official 7.1 Event Calendar)",
+      "sourceUrl": "https://www.pockettactics.com/genshin-impact/events",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-overflowing-favor",
+      "title": "Overflowing Favor",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-26",
+      "end": "2026-11-02",
+      "version": "7.1",
+      "summary": "Double artifact drop event - claim double domain artifact drops a set number of times per day.",
+      "description": "A short farming event with no Primogem reward: for one week, spending Original Resin in artifact domains yields double artifact drops, claimable a set number of times per day (three double-drop claims per day per current guides). It is the fastest way to farm artifacts during Version 7.1.",
+      "gameplay": "Spend Original Resin in artifact domains to receive double drops, up to three claims per day.",
+      "requirements": [
+        "Unknown (not yet published)"
+      ],
+      "rewards": [
+        {
+          "item": "Artifacts (double domain drops)",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "3 double-drop claims per day; no Primogems per the official event calendar"
+        }
+      ],
+      "rewardsSummary": "Double artifact drops from domains 3x per day (no Primogems)",
+      "sourceName": "Pocket Tactics",
+      "sourceUrl": "https://www.pockettactics.com/genshin-impact/events",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-void-stars-advent",
+      "title": "Event Wish \"Void Star's Advent\"",
+      "type": "Wish Banner",
+      "status": "upcoming",
+      "start": "2026-10-13",
+      "end": "2026-11-03",
+      "datesPrecision": "approx",
+      "version": "7.1",
+      "summary": "Version 7.1 Phase II Character Event Wish - Skirk rerun.",
+      "description": "The Phase II character event wish is a rerun for the 5-star Cryo Sword user Skirk, announced on the Version 7.1 Special Program alongside Escoffier's 'La Chanson Cerise'. The official Phase II wish notice had not been posted as of 2026-10-07, so banner dates vary slightly between trackers (Game8: Oct 13 - Nov 3; GameWith: Oct 13 - Nov 4) and the boosted 4-star line-up is not yet published.",
+      "gameplay": "Spend Intertwined Fates on the limited character wish during Phase II of Version 7.1.",
+      "requirements": [
+        "Adventure Rank 5 or above (Wish feature unlocked)"
+      ],
+      "rewards": [
+        {
+          "item": "Test Run trial completion rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "small material rewards for clearing trial stages; amounts not published"
+        }
+      ],
+      "rewardsSummary": "Gacha banner - no direct event rewards beyond Test Run trial materials (amounts not published)",
+      "sourceName": "Game8 (citing the Version 7.1 Special Program)",
+      "sourceUrl": "https://game8.co/games/Genshin-Impact/archives/305012",
+      "confidence": "confirmed",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-la-chanson-cerise",
+      "title": "Event Wish \"La Chanson Cerise\"",
+      "type": "Wish Banner",
+      "status": "upcoming",
+      "start": "2026-10-13",
+      "end": "2026-11-03",
+      "datesPrecision": "approx",
+      "version": "7.1",
+      "summary": "Version 7.1 Phase II Character Event Wish-2 - Escoffier rerun.",
+      "description": "The Phase II character event wish-2 is a rerun for the 5-star Cryo Polearm user Escoffier, announced on the Version 7.1 Special Program alongside Skirk's 'Void Star's Advent'. The official Phase II wish notice had not been posted as of 2026-10-07, so banner dates vary slightly between trackers (Game8: Oct 13 - Nov 3; GameWith: Oct 13 - Nov 4) and the boosted 4-star line-up is not yet published.",
+      "gameplay": "Spend Intertwined Fates on the limited character wish during Phase II of Version 7.1; pity is shared with 'Void Star's Advent'.",
+      "requirements": [
+        "Adventure Rank 5 or above (Wish feature unlocked)"
+      ],
+      "rewards": [
+        {
+          "item": "Test Run trial completion rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "small material rewards for clearing trial stages; amounts not published"
+        }
+      ],
+      "rewardsSummary": "Gacha banner - no direct event rewards beyond Test Run trial materials (amounts not published)",
+      "sourceName": "Game8 (citing the Version 7.1 Special Program)",
+      "sourceUrl": "https://game8.co/games/Genshin-Impact/archives/305012",
+      "confidence": "confirmed",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-great-expeditionist-challenge",
+      "title": "Great Expeditionist Challenge",
+      "type": "Seasonal Event",
+      "status": "ended",
+      "start": "2026-08-28",
+      "end": "2026-09-14",
+      "version": "7.0",
+      "summary": "Version 7.0 flagship event - exploration and challenge competition awarding a free Diona and 920 Primogems.",
+      "description": "The Version 7.0 flagship event in Snezhnaya: 'Compete to Invite Diona!' Travelers took on expedition-style exploration and combat challenges across the new region, earning event currency and rewards. Completing the event challenges let players permanently invite the 4-star Cryo character Diona and earn a Crown of Insight alongside Primogems and materials.",
+      "gameplay": "Complete rotating exploration and combat challenge stages to accumulate event progress and claim the invite and reward track.",
+      "requirements": [
+        "Unknown (not verified)"
+      ],
+      "rewards": [
+        {
+          "item": "Diona",
+          "amount": 1,
+          "category": "other",
+          "rarity": 4,
+          "note": "free \"Kätzlein Cocktail\" Diona (Cryo) invite"
+        },
+        {
+          "item": "Primogem",
+          "amount": 920,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across the event per third-party reward tables"
+        },
+        {
+          "item": "Crown of Insight",
+          "amount": 1,
+          "category": "material",
+          "rarity": 5,
+          "note": null
+        }
+      ],
+      "rewardsSummary": "920 Primogems + free Diona (4-star Cryo) + 1 Crown of Insight + upgrade materials",
+      "sourceName": "HoYoverse official event overview",
+      "sourceUrl": "https://genshin.hoyoverse.com/en/news/detail/165902",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-trial-of-the-bastion",
+      "title": "Trial of the Bastion",
+      "type": "Combat Event",
+      "status": "ended",
+      "start": "2026-09-07",
+      "end": "2026-09-17",
+      "version": "7.0",
+      "summary": "Firearms-based base defense event with 420 Primogems, ended 2026-09-17.",
+      "description": "A Version 7.0 combat event that put firearms in the Traveler's hands as the primary mechanic: defend a bastion against waves of opponents using guns and turrets. A new trial unlocked each day for the first five days, each with its own challenge rating target (for example clearing all three waves of Stage III with a 4,500 rating for the full 80 Primogems).",
+      "gameplay": "Clear daily-unlocking defense trials using the firearm mechanic and hit the challenge rating thresholds for full rewards.",
+      "requirements": [
+        "Adventure Rank 20 or above",
+        "Complete Archon Quest Prologue: Act III \"Song of the Dragon and Freedom\"",
+        "Complete the \"Gunfire in the Silent Lands\" quest from Chapter VII: Act I"
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 420,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across stages (80 per stage max)"
+        },
+        {
+          "item": "Upgrade Materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not verified"
+        }
+      ],
+      "rewardsSummary": "420 Primogems + upgrade materials",
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Genshin-Impact/archives/613889",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-overflowing-abundance-sept-2026",
+      "title": "Overflowing Abundance (Ley Line Overflow)",
+      "type": "Other",
+      "status": "ended",
+      "start": "2026-09-14",
+      "end": "2026-09-21",
+      "version": "7.0",
+      "summary": "Double-reward farming event for Domains of Mastery and Domains of Forgery, ended 2026-09-21.",
+      "description": "A recurring Ley Line Overflow style farming event: successfully challenging Domains of Mastery or Domains of Forgery and consuming Original Resin doubled the rewards, up to three times per day. It was the best-value Resin week of Version 7.0 for talent books and weapon ascension materials ahead of the 7.1 character releases.",
+      "gameplay": "Spend Original Resin on Domains of Mastery (AR 25+) or Domains of Forgery (AR 15+) to receive double drops, three claims per day.",
+      "requirements": [
+        "Adventure Rank 25+ (Domains of Mastery)",
+        "Adventure Rank 15+ (Domains of Forgery)"
+      ],
+      "rewards": [
+        {
+          "item": "Talent Level-Up Materials (double drops)",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "3 double-reward claims per day"
+        },
+        {
+          "item": "Weapon Ascension Materials (double drops)",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "3 double-reward claims per day"
+        }
+      ],
+      "rewardsSummary": "Double talent-book and weapon-ascension drops from domains, up to 3x per day (no Primogems)",
+      "sourceName": "timesaver.gg (citing the in-game announcement feed, announcement 20888)",
+      "sourceUrl": "https://timesaver.gg/blog/genshin-7-1-events-calendar",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    },
+    {
+      "id": "genshin-vesnas-patrol-mission",
+      "title": "Vesna's Patrol Mission",
+      "type": "Community Event",
+      "status": "ended",
+      "start": "2026-09-24",
+      "end": "2026-10-04",
+      "version": "7.1",
+      "summary": "A social community event for Vesna's debut in Version 7.1, with a reward code that outlives the event.",
+      "description": "Tied to Vesna's debut and run alongside the flagship Moonchase event. The event itself closed on 4 Oct 2026, but its reward code — listed below — stays redeemable afterwards, which is rare. Source: The Click.",
+      "gameplay": "Follow the social-media/community participation tasks during the event window to unlock the reward code.",
+      "requirements": [
+        "Adventure Rank 10 or above (for code redemption)"
+      ],
+      "codes": [
+        { "code": "VesnaOnPatrol", "note": "40 Primogems, 3 Hero's Wit, 20,000 Mora", "expires": "2026-10-22" }
+      ],
+      "rewards": [
+        {
+          "item": "Primogem",
+          "amount": 40,
+          "category": "currency",
+          "rarity": null,
+          "note": "per official 7.1 event calendar badge"
+        },
+        {
+          "item": "Hero's Wit",
+          "amount": 3,
+          "category": "xp",
+          "rarity": 4,
+          "note": "via the reward code"
+        },
+        {
+          "item": "Mora",
+          "amount": 20000,
+          "category": "currency",
+          "rarity": null,
+          "note": "via the reward code"
+        }
+      ],
+      "rewardsSummary": "40 Primogems + 3 Hero's Wit + 20,000 Mora, delivered via the event's reward code",
+      "sourceName": "The Click",
+      "sourceUrl": "https://www.theclick.gg/vesnas-patrol-mission/",
+      "confidence": "confirmed",
+      "datesPrecision": "exact",
+      "servers": [
+        "global"
+      ],
+      "rumorNotes": null
+    }
+  ]
+}

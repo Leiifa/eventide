@@ -1,0 +1,666 @@
+{
+  "game": {
+    "id": "pgr",
+    "name": "Punishing: Gray Raven",
+    "shortName": "PGR",
+    "currentVersion": "4.8 - Anchored in Faith",
+    "nextVersion": "Unannounced (post-Anchored in Faith)",
+    "nextVersionDate": null,
+    "officialUrl": "https://pgr.kurogame.com/",
+    "notes": "Global server dates used (UTC); global has largely caught up to CN via combined patches, and the next global version has not been officially announced yet."
+  },
+  "events": [
+    {
+      "id": "pgr-anchored-in-faith-main-story",
+      "title": "Main Story: Anchored in Faith",
+      "type": "Story Event",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-11-04",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "New main story chapter for the Anchored in Faith version, available after the 09/24 update.",
+      "description": "The Anchored in Faith main story chapter follows the Gray Raven squad through the version's central plot about family, identity, and faith. It launches alongside the new S-Rank frame Adelyde: Anabasis and the new Overlinker class. The chapter remains playable until the version ends on November 4.",
+      "gameplay": "Standard main story stages; clear Main Story 1-12 to unlock. Story progression rewards are granted per stage.",
+      "requirements": [
+        "Clear Main Story 1-12"
+      ],
+      "rewards": [
+        {
+          "item": "Black Card",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "first-clear story rewards; exact amount not verified"
+        }
+      ],
+      "rewardsSummary": "unknown (first-clear rewards not verified)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/story-main-anchored",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-adelyde-anabasis-debut",
+      "title": "Anchored in Faith - Adelyde: Anabasis (Crucible Event Construct)",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-11-04",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Debut banner for S-Rank Omniframe Adelyde: Anabasis with 100% rate-up and pull-phase rewards.",
+      "description": "Adelyde: Anabasis, a Dark Overlinker wielding a Cross Cannon, debuts in the Crucible Event Construct and Fate Crucible Event Construct research pools with a 100% chance of Adelyde upon an S-Rank drop. Every 20 pulls grants a phase reward (up to 45 tiers). A free copy of Adelyde: Anabasis is obtainable for a limited time through Journal of Promise, and Inver-Shard - Anabasis x50, the 6-star weapon Unforsaken Beacon, and the S-Rank CUB Kelpie are free via the Service Shop. After the banner ends she enters the Arrival Construct rotation.",
+      "gameplay": "Pull on the Crucible Event Construct research using Event Construct R&D Tickets; pity gauge carries over between Crucible banners. Phase rewards are claimed per 20 pulls and reset at banner end.",
+      "requirements": [
+        "Unlocks with the 09/24 version update"
+      ],
+      "rewards": [
+        {
+          "item": "Adelyde: Anabasis",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "free copy via Journal of Promise: A Kindler's Watch (limited time)"
+        },
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 1500,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "phase reward at 20, 60 and 80 pulls (4,500 total across those tiers)"
+        },
+        {
+          "item": "Unforsaken Beacon",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "6-star Cross Cannon, phase reward at 40 pulls; also free via Service Shop"
+        },
+        {
+          "item": "Kelpie",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "exclusive S-Rank CUB, phase reward at 100 pulls; also free via Service Shop"
+        },
+        {
+          "item": "Inver-Shard - Anabasis",
+          "amount": 50,
+          "category": "material",
+          "rarity": 4,
+          "note": "free via Service Shop"
+        }
+      ],
+      "rewardsSummary": "Free Adelyde: Anabasis copy, 6-star weapon Unforsaken Beacon, S-Rank CUB Kelpie, 50 Inver-Shards, and up to 4,500+ Event Construct R&D Tickets from pull phase rewards (weapon at 40 pulls, CUB at 100 pulls)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-adelyde",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-date-a-live-v-kurumi",
+      "title": "PGR x Date A Live V - Kurumi Tokisaki",
+      "type": "Collab",
+      "status": "live",
+      "start": "2026-09-29",
+      "end": "2026-11-03",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Date A Live V collaboration adding limited S-Rank Otherworld Character Kurumi Tokisaki with dedicated collab banners.",
+      "description": "The Date A Live V collaboration brings the limited S-Rank Otherworld Character Kurumi Tokisaki via the Kurumi Tokisaki Target and Fate Kurumi Tokisaki Target research pools, with a 100% chance of Kurumi on an S-Rank drop and bonus duplicate copies the first two times she is obtained in each pool. Her exclusive 6-star weapon Hour & Minute and the S-Rank Armament Zafkiel have their own collab pools. The collab story Dream of Stagnant Cycle and the Kurumi trial stage Against the Flow of Time run alongside, plus paid coatings Ember Ceremony (Jetavie: Daybreak) and Scorching Torrent.",
+      "gameplay": "Pull with Date A Live Character R&D Tickets (175 per pull, Black Cards convert 1:1) on the collab pools; unused collab tickets convert to standard tickets when the event ends. Story stages require clearing Main Story 1-12.",
+      "requirements": [
+        "Clear Main Story 1-12 (collab story)",
+        "Clear Normal Story 1-8 (trial stage)"
+      ],
+      "rewards": [
+        {
+          "item": "Kurumi Tokisaki",
+          "amount": null,
+          "category": "other",
+          "rarity": 5,
+          "note": "limited collab S-Rank; bonus copy granted the first two times she is obtained in each research pool"
+        },
+        {
+          "item": "Hour & Minute",
+          "amount": null,
+          "category": "other",
+          "rarity": 5,
+          "note": "Kurumi exclusive 6-star weapon, separate collab pool"
+        },
+        {
+          "item": "Zafkiel",
+          "amount": null,
+          "category": "other",
+          "rarity": 5,
+          "note": "collab S-Rank Armament (CUB) pool"
+        }
+      ],
+      "rewardsSummary": "Limited Kurumi Tokisaki at 100% on S-Rank drop (bonus copies for first two pulls per pool); pull cost 175 Date A Live Character R&D Tickets each; free collab pulls come from Visitor from Afar",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-date-a-live-collab",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-visitor-from-afar-signin",
+      "title": "Visitor from Afar - Sign-in for 42 Pulls",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-11-03",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Collab sign-in event handing out 42 free R&D attempts plus Event Construct R&D Tickets.",
+      "description": "A limited-time sign-in event tied to the Date A Live V collaboration. Signing in during the event grants free research attempts for the collab pools along with a Commandant Portrait and standard R&D tickets. Free R&D attempts expire when the event ends, so they must be used before November 3.",
+      "gameplay": "Log in during the event period and claim sign-in rewards; free collab R&D attempts are used directly on the Kurumi/weapon collab pools.",
+      "requirements": [
+        "Sign in during the event period"
+      ],
+      "rewards": [
+        {
+          "item": "Otherworld Character Target R&D Attempt",
+          "amount": 24,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "free collab character pulls; expire at event end"
+        },
+        {
+          "item": "Collab Weapon Target R&D Attempt",
+          "amount": 14,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "free collab weapon pulls; expire at event end"
+        },
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 1000,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "standard event tickets"
+        },
+        {
+          "item": "Commandant Portrait - Ember Ceremony",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 3,
+          "note": "profile portrait"
+        }
+      ],
+      "rewardsSummary": "42 free pulls (24 character + 14 weapon) plus Event Construct R&D Ticket x1,000 and the Ember Ceremony portrait",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-visitor-from-afar",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-circuit-calculus",
+      "title": "Circuit Calculus",
+      "type": "Other",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-11-04",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Adelyde-themed deck-building minigame with Event Construct R&D Tickets and Trade Vouchers as rewards.",
+      "description": "Join Adelyde in a card-game simulation: select characters and CUBs, combine skills and equipment, and win auto-battles. The event has 9 stages that open over time (stage 9 is an Endless Stage), a supply shop for buying/refreshing cards, random post-battle events, and a Persistence mechanic that lets you retry after losses.",
+      "gameplay": "Build a deck of battle and support cards, place cards in the battle zone to deploy units, and clear stages within turn/rating targets to earn event currency and mission rewards.",
+      "requirements": [
+        "Commandant Lv.40 or above"
+      ],
+      "rewards": [
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 1500,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "total across all stages/missions"
+        },
+        {
+          "item": "Trade Voucher",
+          "amount": 1500,
+          "category": "currency",
+          "rarity": 2,
+          "note": "total across all stages/missions"
+        },
+        {
+          "item": "Stamp - Lost for Words",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 3,
+          "note": "chat stamp"
+        },
+        {
+          "item": "Basic upgrade materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not specified"
+        }
+      ],
+      "rewardsSummary": "Event Construct R&D Ticket x1,500, Trade Voucher x1,500, Stamp - Lost for Words, and basic upgrade materials",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-circuit-calculus",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-overclock-simulation",
+      "title": "Overclock Simulation",
+      "type": "Combat Event",
+      "status": "live",
+      "start": "2026-09-29",
+      "end": "2026-11-04",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Four-chapter combat challenge event with an all-server Peak Calculation ranking for a limited animated chat frame.",
+      "description": "A combat event with 4 chapters that unlock over time and as previous chapters are cleared. The Peak Calculation mode lets you deploy your own characters and compete against players across all servers for a limited-time animated chat frame. Collection missions grant the event rewards.",
+      "gameplay": "Clear combat stages with your own constructs and complete collection missions; rank in Peak Calculation for the exclusive chat frame.",
+      "requirements": [
+        "Commandant Lv.40 or above"
+      ],
+      "rewards": [
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 1000,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "total across event missions"
+        },
+        {
+          "item": "Trade Voucher",
+          "amount": 500,
+          "category": "currency",
+          "rarity": 2,
+          "note": "total across event missions"
+        },
+        {
+          "item": "Collectible - Undying Ember",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 3,
+          "note": "collectible item"
+        },
+        {
+          "item": "Limited animated chat frame",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 4,
+          "note": "Peak Calculation ranking reward"
+        }
+      ],
+      "rewardsSummary": "Event Construct R&D Ticket x1,000, Trade Voucher x500, Collectible [Undying Ember], plus a limited animated chat frame from Peak Calculation",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-overclock-simulation",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-wrathful-monsoon",
+      "title": "Wrathful Monsoon",
+      "type": "Combat Event",
+      "status": "live",
+      "start": "2026-09-25",
+      "end": "2026-10-19",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "High-difficulty boss challenge against Rusalka: Cruising Vanguard across 5 stages with star objectives.",
+      "description": "Challenge Boss [Rusalka: Cruising Vanguard] across 5 high-difficulty stages; defeated characters respawn during the challenge. Each stage has a 3-star objective, and accumulating 15 stars claims all Collectible rewards (duplicate Collectibles upgrade their quality).",
+      "gameplay": "Fight the Rusalka boss stages and hit the 3-star objectives to accumulate 15 stars for full collectible rewards.",
+      "requirements": [
+        "Commandant Lv.40 or above"
+      ],
+      "rewards": [
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 250,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "total from event missions"
+        },
+        {
+          "item": "Trade Voucher",
+          "amount": 200,
+          "category": "currency",
+          "rarity": 2,
+          "note": "total from event missions"
+        },
+        {
+          "item": "Collectible - Rusalka: Cruising Vanguard Data Sample",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 3,
+          "note": "15 stars for all collectibles; duplicates upgrade quality"
+        }
+      ],
+      "rewardsSummary": "Event Construct R&D Ticket x250, Trade Voucher x200, and Collectible [Rusalka: Cruising Vanguard Data Sample]",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-wrathful-monsoon",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-rate-up-oblivion-aeternion-dirge",
+      "title": "70% Rate-Up: Luna: Oblivion, Kamui: Aeternion, Nirvatia: Dirge",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-10-01",
+      "end": "2026-10-15",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Rotating 70% rate-up Arrival Construct banner for three S-Rank Omniframes.",
+      "description": "The official Global 70% rate-up window for S-Rank Omniframes Luna: Oblivion, Kamui: Aeternion, and Nirvatia: Dirge. It is a rotation banner with no participation rewards - players spend Event Construct R&D Tickets/Black Cards on research.",
+      "gameplay": "Pull on the Arrival-style research pool; when an S-Rank drops there is a 70% chance it is one of the three featured frames.",
+      "requirements": [],
+      "rewards": [],
+      "rewardsSummary": "no participation rewards - gacha banner only",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/banner-rate-up-oblivion-aeternion-dirge",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-redeem-codes",
+      "title": "Active Redeem Codes (October 2026)",
+      "type": "Redeem Codes",
+      "status": "live",
+      "start": "2026-10-04",
+      "end": "2026-11-04",
+      "datesPrecision": "approx",
+      "version": "4.8",
+      "summary": "The currently active gift codes for Punishing: Gray Raven and what each one gives.",
+      "description": "Community-tracked codes, checked 4 Oct 2026 via Pocket Gamer. Exact reward contents are not confirmed by current sources — older listings are inconsistent — and code expiry dates are not published.",
+      "gameplay": "Open the player profile screen, enter the code in the gift-code box after clearing the prologue, and claim rewards from the in-game mailbox.",
+      "requirements": [
+        "Clear the prologue / Main Story 1-1 to unlock code redemption"
+      ],
+      "rewards": [
+        {
+          "item": "PGR2026",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "active code (Global & Taiwan) - reward contents unverified"
+        },
+        {
+          "item": "NEWROSETTA0203",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "active code (Global & Taiwan) - reward contents unverified"
+        },
+        {
+          "item": "HAPPY6THBIRTHDAY",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "listed as Taiwan-server code - reward contents unverified"
+        },
+        {
+          "item": "pbsz5dd0g",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "listed as Taiwan-server code - reward contents unverified"
+        }
+      ],
+      "codes": [
+        { "code": "PGR2026", "note": "Global · rewards unconfirmed" },
+        { "code": "NEWROSETTA0203", "note": "Global · rewards unconfirmed" },
+        { "code": "HAPPY6THBIRTHDAY", "note": "TW server · rewards unconfirmed" },
+        { "code": "pbsz5dd0g", "note": "TW server · rewards unconfirmed" }
+      ],
+      "rewardsSummary": "unknown (code reward contents unverified as of Oct 2026)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Pocket Gamer",
+      "sourceUrl": "https://www.pocketgamer.com/punishing-gray-raven/codes/",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-wreck-it-huhu",
+      "title": "Wreck-It Huhu",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-08",
+      "end": "2026-11-04",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Puzzle-minigame event starting October 8 with Event Construct R&D Tickets and a Huhu stamp.",
+      "description": "An officially announced Anchored in Faith event going live on October 8. It features a new enhancement system where you clear special cubes to gain enhancement charges and use items to clear the board faster. The event has 3 chapters of 4 stages each, all with turn limits; early clears by hitting specified turn limits or target ratings earn higher ratings.",
+      "gameplay": "Move one cube per turn on a puzzle board, meet clear conditions to score points, and earn higher ratings for event mission rewards.",
+      "requirements": [
+        "Commandant Lv.40 or above"
+      ],
+      "rewards": [
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 500,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "total from event missions"
+        },
+        {
+          "item": "Trade Voucher",
+          "amount": 400,
+          "category": "currency",
+          "rarity": 2,
+          "note": "total from event missions"
+        },
+        {
+          "item": "Stamp - Huhu Strikes!",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 3,
+          "note": "chat stamp"
+        }
+      ],
+      "rewardsSummary": "Event Construct R&D Ticket x500, Trade Voucher x400, Stamp - Huhu Strikes!, and basic training materials",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-wreck-it-huhu",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-leia-debut-rumor",
+      "title": "Leia - Upcoming Character Debut (unannounced)",
+      "type": "Wish Banner",
+      "status": "upcoming",
+      "start": "2026-11",
+      "end": "2026-11",
+      "datesPrecision": "approx",
+      "version": "unannounced",
+      "summary": "New character Leia teased in a recent official livestream; banner dates and kit not yet announced.",
+      "description": "Community trackers list Leia as the next upcoming character with dates and details to be confirmed. Leia is part of Egret in the story and has made brief narrative appearances; she appeared among upcoming characters teased in an official livestream alongside the Date A Live collab teaser. No official banner window, rank, or kit details have been published, and the version following Anchored in Faith (expected around early/mid November 2026) has not been named.",
+      "gameplay": "Expected to debut on a standard character research banner once officially announced.",
+      "requirements": [],
+      "rewards": [],
+      "rewardsSummary": "unknown (no officially announced rewards)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-leia",
+      "confidence": "rumor",
+      "rumorNotes": "Leia is listed as an upcoming banner with dates TBC by community trackers and was teased among upcoming characters in an official livestream (community discussion on r/PunishingGrayRaven). Timing (November 2026) is an estimate based on Anchored in Faith ending Nov 4; nothing officially confirmed beyond the teaser."
+    },
+    {
+      "id": "pgr-moonlit-osmanthus-signin",
+      "title": "Moonlit Osmanthus Sign-In",
+      "type": "Login Event",
+      "status": "ended",
+      "start": "2026-09-25",
+      "end": "2026-10-04",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Autumn-themed 3-day sign-in that ended October 4 with R&D tickets and a Moongazing stamp.",
+      "description": "A short seasonal sign-in event released in the first week of the Anchored in Faith version, themed around autumn and moonlit osmanthus. Signing in for 3 days during the window granted the full reward set. The official PGR Global social channels also posted an Autumn Stroll illustration during the period.",
+      "gameplay": "Log in and claim a reward tier per sign-in day for a total of 3 days.",
+      "requirements": [
+        "Sign in during the event period"
+      ],
+      "rewards": [
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 250,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "3-day sign-in total"
+        },
+        {
+          "item": "Serum Bundle β (M)",
+          "amount": 2,
+          "category": "other",
+          "rarity": 2,
+          "note": "stamina bundles"
+        },
+        {
+          "item": "Stamp - Moongazing",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 3,
+          "note": "chat stamp"
+        }
+      ],
+      "rewardsSummary": "Event Construct R&D Ticket x250, Serum Bundle β (M) x2, and Stamp - Moongazing",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-moonlit-osmanthus-signin",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-rapid-pursuit",
+      "title": "Rapid Pursuit",
+      "type": "Combat Event",
+      "status": "ended",
+      "start": "2026-09-03",
+      "end": "2026-09-23",
+      "datesPrecision": "exact",
+      "version": "4.7 (Steering By Light)",
+      "summary": "Bounty-hunt combat challenge with limited characters that ended with the Steering By Light version on Sep 23.",
+      "description": "A combat challenge event running through the tail of the Steering By Light version. It features 4 bounty target stages each with 3 difficulties (Hard and Nightmare available by default, Inferno unlocks after clearing the preceding difficulty). Certain difficulty levels restrict which characters can be deployed, and each bounty target offers multiple missions with rewards.",
+      "gameplay": "Hunt bounty targets with limited character lineups across escalating difficulties and complete per-target missions.",
+      "requirements": [
+        "Commandant Lv.42 or above"
+      ],
+      "rewards": [
+        {
+          "item": "Event Construct R&D Ticket",
+          "amount": 500,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "total across event missions"
+        },
+        {
+          "item": "Trade Voucher",
+          "amount": 500,
+          "category": "currency",
+          "rarity": 2,
+          "note": "total across event missions"
+        },
+        {
+          "item": "Collectible - A Blurry Bounty Notice?",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": 3,
+          "note": "collectible item"
+        },
+        {
+          "item": "Basic training materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not specified"
+        }
+      ],
+      "rewardsSummary": "Event Construct R&D Ticket x500, Trade Voucher x500, Collectible [A Blurry Bounty Notice?], and basic training materials",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-rapid-pursuit",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "pgr-ripples-of-the-past",
+      "title": "Ripples of the Past",
+      "type": "Other",
+      "status": "ended",
+      "start": "2026-09-14",
+      "end": "2026-09-23",
+      "datesPrecision": "exact",
+      "version": "4.7 (Steering By Light)",
+      "summary": "Portrait-swapping puzzle minigame that ended Sep 23 with Black Cards and Trade Vouchers.",
+      "description": "A leisure event from the final weeks of Steering By Light. Players earned F.O.S. Badges from event missions and spent them to swap portrait positions on a grid. Aligning 3 identical portraits vertically or horizontally triggered a 3-Ping, and reaching the required number of 3-Pings claimed the rewards.",
+      "gameplay": "Complete daily event missions for F.O.S. Badges, swap adjacent portraits to make 3-in-a-row matches, and hit the 3-Ping targets per stage.",
+      "requirements": [
+        "Commandant Lv.40"
+      ],
+      "rewards": [
+        {
+          "item": "Black Card",
+          "amount": 100,
+          "category": "currency",
+          "rarity": 4,
+          "note": "event completion total"
+        },
+        {
+          "item": "Trade Voucher",
+          "amount": 100,
+          "category": "currency",
+          "rarity": 2,
+          "note": "event completion total"
+        },
+        {
+          "item": "Basic training materials",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "amounts not specified"
+        }
+      ],
+      "rewardsSummary": "Black Card x100, Trade Voucher x100, and basic training materials",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-ripples-of-the-past",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    }
+  ]
+}

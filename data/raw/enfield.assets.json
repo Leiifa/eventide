@@ -1,0 +1,53 @@
+{
+  "game": {
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/78/36/ec7836d7-d434-6bdd-415e-5bac80a387a6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "banner": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4732690/8706edd47de4d7fa8d99e7265e3905448b718397/page_bg_raw.jpg",
+    "publisher": "GRYPHLINE",
+    "developer": "Hypergryph",
+    "genre": "3D real-time strategy RPG with open-world exploration and factory building",
+    "platforms": ["PC", "PS5", "iOS", "Android"],
+    "releaseDate": "2026-01-22",
+    "description": "Arknights: Endfield is a 3D real-time strategy RPG set on Talos-II, where Endfield Industries fights to reclaim a hostile frontier world. As the Endministrator you lead squads of operators through real-time tactical combat and open exploration, while developing automated factory complexes with the AIC system to power the recovery effort. It pairs character-driven gacha collection and action combat with deep factory building and automation in the Arknights universe."
+  },
+  "currencies": [
+    {
+      "name": "Oroberyl",
+      "icon": "https://static.wikia.nocookie.net/endfield/images/0/0c/Item_Oroberyl.png/revision/latest",
+      "note": "Premium currency spent on headhunting pulls and shop purchases; the main event reward payout."
+    },
+    {
+      "name": "T-Creds",
+      "icon": "https://static.wikia.nocookie.net/endfield/images/a/a3/Item_T-Creds.png/revision/latest",
+      "note": "Standard currency used for operator and weapon progression, shop trades, and most in-game costs."
+    },
+    {
+      "name": "Mark of Perseverance",
+      "icon": "https://static.wikia.nocookie.net/endfield/images/2/2d/Item_Mark_of_Perseverance.png/revision/latest",
+      "note": "Event certificate earned from event missions and challenges, spent in certificate exchange shops."
+    },
+    {
+      "name": "Wuling Stock Bills",
+      "icon": "https://static.wikia.nocookie.net/endfield/images/5/52/Item_Wuling_Stock_Bill.png/revision/latest",
+      "note": "Production currency earned by submitting support goods in the AIC Support: Chubby Lung Attacks event."
+    },
+    {
+      "name": "Fruits of Altruism Certs",
+      "icon": "https://endfield.wiki.gg/images/Fruits_of_Altruism_Certs.png",
+      "note": "Event exchange currency from the Chubby Lung Attacks Goods Exchange, redeemable for Oroberyl and materials."
+    }
+  ],
+  "banners": {
+    "enfield-purry-big-feline-rawr": "https://endfield.wiki.gg/images/Purry_Big_Feline%21_RAWR%21_event.png",
+    "enfield-a-winter-dream-fogged-deep-in-the-woods": "https://endfield.wiki.gg/images/A_Winter_Dream_Fogged_Deep_in_the_Woods_narrative_event.png",
+    "enfield-trial-of-the-bow": "https://endfield.wiki.gg/images/Trial_of_the_Bow_event.png",
+    "enfield-echoing-bell-of-an-old-city": "https://endfield.wiki.gg/images/Echoing_Bell_of_an_Old_City_event.png",
+    "enfield-ridgeline-flows-of-autumn": "https://endfield.wiki.gg/images/Ridgeline_Flows_of_Autumn_signin_event.png",
+    "enfield-runners-steeplechase": "https://endfield.wiki.gg/images/Runners%27_Steeplechase_event.png",
+    "enfield-resplendent-spectrum-yvonne": "https://endfield.wiki.gg/images/Resplendent_Spectrum_banner.png",
+    "enfield-snow-over-deep-woods": "https://endfield.wiki.gg/images/Snow_Over_Deep_Woods_event.png",
+    "enfield-aic-support-chubby-lung-attacks": "https://endfield.wiki.gg/images/AIC_Support_Chubby_Lung_Attacks_event.png",
+    "enfield-sanity-supply": "https://endfield.wiki.gg/images/Sanity_Supply_event.png",
+    "enfield-sanctuary-of-ink-headhunting": "https://img.game8.co/4641271/3f1302b58dca7f66259d5f15296b8a26.png/show",
+    "enfield-bond-sealed-in-flames": "https://web-static.hg-cdn.com/endfield/webview/_version_briefing/v1d6/assets/imgs/visual.cea556.png"
+  }
+}

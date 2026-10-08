@@ -1,0 +1,53 @@
+{
+  "game": {
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/07/06/3f/07063f40-1a99-bb82-4a2c-cafa1e145d1d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "banner": "https://shared.steamstatic.com/store_item_assets/steam/apps/3513350/library_hero.jpg",
+    "publisher": "Kuro Games",
+    "developer": "Kuro Games",
+    "genre": "Open-world action RPG",
+    "platforms": ["PC", "PS5", "Xbox Series", "iOS", "Android"],
+    "releaseDate": "2024-05-23",
+    "description": "Wuthering Waves is a story-rich open-world action RPG set on Solaris-3, a planet reshaped by the apocalyptic Lament. You awaken as the Rover with your memories gone and join a cast of Resonators to fight back alien Tacet Discords, explore ruined landscapes, and uncover the truth of your past. It stands out for fast, technical combat built around dodges and parries, free-form traversal across a dense open world, and a collectible roster of Resonators drawn through the Convene system."
+  },
+  "currencies": [
+    {
+      "name": "Astrite",
+      "icon": "https://static.wikia.nocookie.net/wutheringwaves/images/1/16/Item_Astrite.png",
+      "note": "Premium currency spent on Convene pulls and Waveplate refills; the headline payout of most event reward tracks."
+    },
+    {
+      "name": "Shell Credit",
+      "icon": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d1/Item_Shell_Credit.png",
+      "note": "Universal currency used for character and weapon upgrades, synthesis, and shop purchases."
+    },
+    {
+      "name": "Radiant Tide",
+      "icon": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f0/Item_Radiant_Tide.png",
+      "note": "Convene ticket for limited Featured Resonator banners; commonly paid out by login events."
+    },
+    {
+      "name": "Lustrous Tide",
+      "icon": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8e/Item_Lustrous_Tide.png",
+      "note": "Convene ticket for the permanent Convene; earned from events and milestone rewards."
+    },
+    {
+      "name": "Forging Tide",
+      "icon": "https://static.wikia.nocookie.net/wutheringwaves/images/3/31/Item_Forging_Tide.png",
+      "note": "Convene ticket for Featured Weapon banners; exchanged from Astrite or given in weapon events."
+    }
+  ],
+  "banners": {
+    "wuwa-cubie-wars": "https://pbs.twimg.com/media/HTXufDkbgAAmdyH.jpg",
+    "wuwa-dreams-in-the-capsule": "https://staticg.sportskeeda.com/editor/2026/09/bf9d4-17899181315397-1920.jpg",
+    "wuwa-gifts-of-waking-moon": "https://staticg.sportskeeda.com/editor/2026/09/ea019-17899194469253-1920.jpg",
+    "wuwa-back-to-solaris": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a8/Back_to_Solaris.jpg",
+    "wuwa-37-phase-1-convenes": "https://static.wikia.nocookie.net/wutheringwaves/images/f/fb/As_Full_as_Tonight%2C_Forever_2026-09-30.jpg",
+    "wuwa-artisans-search": "https://pbs.twimg.com/media/HT33fEFaAAE12KR.jpg",
+    "wuwa-echo-erase": "https://staticg.sportskeeda.com/editor/2026/09/fec2f-17899186364690-1920.jpg",
+    "wuwa-gifts-of-singing-drizzle": "https://staticg.sportskeeda.com/editor/2026/09/7f609-17899195573109-1920.jpg",
+    "wuwa-beyond-the-waves-land-of-xuanfang": "https://staticg.sportskeeda.com/editor/2026/09/4fe8f-17899189255232-1920.jpg",
+    "wuwa-wuthering-exploration-fogveil-pagoda": "https://pbs.twimg.com/media/HSQ8DQyaUAAOVhu.jpg",
+    "wuwa-the-strings-remember": "https://pbs.twimg.com/media/HRH-NgWaYAAEi80.jpg",
+    "wuwa-battle-rush": "https://hw-media-cdn-mingchao.kurogame.com/object/1787068800000/lbvzjjb3kpx9etzyv8-1787133770321.jpg"
+  }
+}

@@ -1,0 +1,763 @@
+{
+  "game": {
+    "id": "enfield",
+    "name": "Arknights: Endfield",
+    "shortName": "Endfield",
+    "currentVersion": "1.5",
+    "nextVersion": "1.6",
+    "nextVersionDate": "2026-10-15",
+    "officialUrl": "https://endfield.gryphline.com/",
+    "notes": "Version 1.5 'Dreamscape of Wind and Snow' (Sep 2) runs until the 1.6 'Sanctuary of Ink' update on Oct 15, 2026, which launches simultaneously on Steam."
+  },
+  "events": [
+    {
+      "id": "enfield-purry-big-feline-rawr",
+      "title": "Purry Big Feline! RAWR!",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-10-15",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "Log in during the window to claim the free 5-star operator Purrchena and her 5-star sword Dessert Moment, with extra copies from event missions.",
+      "description": "Purry Big Feline! RAWR! is the Version 1.5 giveaway celebrating Purrchena, the candy-loving Physical Defender. Logging in during the event claims one copy each of the 5-star operator Purrchena and the 5-star sword Dessert Moment (Sword); participating in various game modes and event missions grants Purrchena's Tokens and additional Dessert Moment copies for Potential and refinement. Game8 reports neither reward is added to headhunting or the Arsenal Exchange immediately after the event ends.",
+      "gameplay": "Log in during the window for the base operator and weapon, then complete event missions and play other game modes for the extra copies.",
+      "requirements": [
+        "Log in during the event window"
+      ],
+      "rewards": [
+        {
+          "item": "Purrchena",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "free 5-star Physical Defender operator"
+        },
+        {
+          "item": "Purrchena's Token",
+          "amount": 5,
+          "category": "other",
+          "rarity": null,
+          "note": "potential tokens for Purrchena"
+        },
+        {
+          "item": "Dessert Moment (Sword)",
+          "amount": 6,
+          "category": "other",
+          "rarity": 5,
+          "note": "6 total copies per official notes (base copy plus mission copies)"
+        }
+      ],
+      "rewardsSummary": "Free 5-star Purrchena + 5 Purrchena's Tokens, and 6x Dessert Moment (Sword)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-a-winter-dream-fogged-deep-in-the-woods",
+      "title": "A Winter Dream Fogged Deep in the Woods",
+      "type": "Story Event",
+      "status": "live",
+      "start": "2026-09-02",
+      "end": "2026-10-14",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "Typhoeus's Version 1.5 narrative event: complete her side mission in the Snowy Forest for Oroberyl and cognitive carriers.",
+      "description": "The narrative event tied to 6-star operator Typhoeus, playable as the side mission of the same name in the newly opened Wuling - Snowy Forest region. Typhoeus resolves to visit shattered memories one by one, recording them in her notebook as past snow and fog give way to dark woods and an endless dream. Official notes list Oroberyl x600 and an Elementary Cognitive Carrier among the completion rewards, with more unlisted items. After the event page is removed the side mission remains playable from the Mission menu.",
+      "gameplay": "Play through the narrative side mission stages and claim completion rewards from the event page.",
+      "requirements": [
+        "Access to the Wuling - Snowy Forest area"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 600,
+          "category": "currency",
+          "rarity": null,
+          "note": "premium currency, total for completing the side mission"
+        },
+        {
+          "item": "Elementary Cognitive Carrier",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted in official notes"
+        }
+      ],
+      "rewardsSummary": "600 Oroberyl + Elementary Cognitive Carrier (plus other unlisted items)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-trial-of-the-bow",
+      "title": "Trial of the Bow",
+      "type": "Combat Event",
+      "status": "live",
+      "start": "2026-09-09",
+      "end": "2026-10-14",
+      "datesPrecision": "approx",
+      "version": "1.5",
+      "summary": "Training-mode challenge event built around Typhoeus at her Archery Range, paying Oroberyl and progression crates.",
+      "description": "Complete Simulations at Typhoeus's Archery Range and event Trial Missions during the event to earn rewards including Oroberyl x1200, an Advanced Cognitive Carrier, a Mark of Perseverance and an Advanced Progression Selection Crate I. The mode is built around Typhoeus with Basic and Advanced Training stages using swappable Set Chips; per-stage clears also pay T-Creds, Arms INSP Kits and Marks of Perseverance. After the event ends Trial Missions close, but the Archery Range stays playable and Simulation first-clear rewards remain claimable.",
+      "gameplay": "Clear Basic and Advanced Training Simulations with a preset Typhoeus team and finish the Trial Mission objectives.",
+      "requirements": [
+        "Unlocks with the Trial of the Bow event on 2026-09-09"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 1200,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across Trial Missions"
+        },
+        {
+          "item": "Advanced Cognitive Carrier",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Mark of Perseverance",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "event certificate; also drops per stage"
+        },
+        {
+          "item": "Advanced Progression Selection Crate I",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "progression selection crate"
+        },
+        {
+          "item": "T-Creds",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "per-stage payout (Game8 lists ~10,000 per stage)"
+        }
+      ],
+      "rewardsSummary": "1,200 Oroberyl + Advanced Cognitive Carrier + Mark of Perseverance + Advanced Progression Selection Crate I (plus per-stage T-Creds and Arms INSP Kits)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-echoing-bell-of-an-old-city",
+      "title": "Echoing Bell of an Old City",
+      "type": "Exploration Event",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-10-15",
+      "datesPrecision": "approx",
+      "version": "1.5",
+      "summary": "Guide-style exploration event in Suiming: complete missions across the area for Oroberyl and Marks of Perseverance.",
+      "description": "A Version 1.5 exploration event opening the Suiming area of the Wuling region. Per Hypergryph's copy: 'As the bell tolls and its echo fades, a city lost to silent calamity will reveal a sliver of its memories to you.' Complete specified missions across Suiming to claim Oroberyl x1200 and Marks of Perseverance. The end date was not published when the event was announced and Game8 lists it as closing with the version on Oct 15.",
+      "gameplay": "Explore Suiming and complete the specified exploration missions listed in the event panel.",
+      "requirements": [
+        "Access to the Wuling - Suiming area"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 1200,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across event missions"
+        },
+        {
+          "item": "Mark of Perseverance",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "event certificate, quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "1,200 Oroberyl + Marks of Perseverance (quantity unlisted)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-ridgeline-flows-of-autumn",
+      "title": "Ridgeline Flows of Autumn",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-10-01",
+      "end": "2026-10-15",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "7-day October sign-in campaign handing out Oroberyl and a commemorative portrait alongside the autumn web events.",
+      "description": "The Version 1.5 limited-time sign-in running Oct 1-15 alongside the Runners' Steeplechase and OrbiPom! MERGE! web events. Sign in for 7 days in total to earn rewards including Oroberyl x1500, the Portrait: Go Forth and Run, and the commemorative 'Rolling Chubby Lung' Energy Drink. The campaign closes with the version before the 1.6 maintenance.",
+      "gameplay": "Log in and claim the sign-in rewards on 7 separate days during the window.",
+      "requirements": [
+        "Log in during the event window"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 1500,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across 7 sign-in days"
+        },
+        {
+          "item": "Portrait: Go Forth and Run",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "commemorative profile portrait"
+        },
+        {
+          "item": "\"Rolling Chubby Lung\" Energy Drink",
+          "amount": null,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "commemorative item, quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "1,500 Oroberyl + Portrait: Go Forth and Run + 'Rolling Chubby Lung' Energy Drink",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-runners-steeplechase",
+      "title": "Runners' Steeplechase",
+      "type": "Web Event",
+      "status": "live",
+      "start": "2026-10-01",
+      "end": "2026-10-15",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "Web racing minigame: collect Chubby Lung Balloons on the course and hit Runner's Milestones for Oroberyl and cosmetics.",
+      "description": "A Version 1.5 web event where you race along a course using bounce devices and vortexes while dodging obstacles like banana peels, gathering Chubby Lung Balloons along the way. Reach the finish line with a 3-star clear and accumulate balloons to hit Runner's Milestones for rewards such as Oroberyl x1200, the Portrait Frame: Champion Runner and another 'Rolling Chubby Lung' Energy Drink. Per-stage clears also pay Oroberyl, T-Creds, an Advanced Cognitive Carrier, a Protohedron and Arms INSP Kits, with quantities not published.",
+      "gameplay": "Race the course within the time limit, collect balloons, and clear milestones at the event screen.",
+      "requirements": [
+        "Open the web event from the event page"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 1200,
+          "category": "currency",
+          "rarity": null,
+          "note": "across Runner's Milestones"
+        },
+        {
+          "item": "Portrait Frame: Champion Runner",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "commemorative profile frame"
+        },
+        {
+          "item": "\"Rolling Chubby Lung\" Energy Drink",
+          "amount": null,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "commemorative item, quantity unlisted"
+        },
+        {
+          "item": "T-Creds",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "per-stage clears, quantity unlisted"
+        },
+        {
+          "item": "Advanced Cognitive Carrier",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "per-stage clears, quantity unlisted"
+        },
+        {
+          "item": "Protohedron",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "per-stage clears, quantity unlisted"
+        },
+        {
+          "item": "Arms INSP Kit",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "per-stage clears, quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "1,200 Oroberyl + Portrait Frame: Champion Runner + 'Rolling Chubby Lung' Energy Drink, plus unlisted per-stage materials",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-resplendent-spectrum-yvonne",
+      "title": "[Resplendent Spectrum] RE-Factor Headhunting #1 (Yvonne)",
+      "type": "Wish Banner",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-10-14",
+      "datesPrecision": "approx",
+      "version": "1.5",
+      "summary": "Version 1.5's new RE-Factor headhunting banner with rate-up 6-star Yvonne, plus the matching [Tag Artist Issue] RE-Factor weapon issue.",
+      "description": "The first banner under the new RE-Factor Headhunting rules, featuring rate-up 6-star operator Yvonne alongside Ember, Lifeng, Ardelia, Last Rite and Pogranichnik. The matching [Tag Artist Issue] RE-Factor Issue #1 runs at the same time with rate-up 6-star weapon Artzy Tyrannical (Handcannon). Official notes give the window as Sept 24 12:00 until the next version maintenance (mid-October); Endfield Build separately lists the banner as running to Oct 21.",
+      "gameplay": "Spend Chartered Headhunting Permits on the limited banner; RE-Factor banners use different rules from standard Chartered Headhunting.",
+      "requirements": [
+        "Headhunting unlocked"
+      ],
+      "rewards": [
+        {
+          "item": "Yvonne",
+          "amount": null,
+          "category": "gacha",
+          "rarity": null,
+          "note": "6-star rate-up operator (RE-Factor Headhunting)"
+        }
+      ],
+      "rewardsSummary": "Gacha banner with no direct event rewards; rate-up 6-star Yvonne",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-snow-over-deep-woods",
+      "title": "Snow Over Deep Woods",
+      "type": "Exploration Event",
+      "status": "ended",
+      "start": "2026-09-02",
+      "end": "2026-09-30",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "Snowy Forest guide event that paid 1,200 Oroberyl and Marks of Perseverance for area missions.",
+      "description": "The Version 1.5 Guide Event running through the Snowy Forest area of Wuling, tied to the 'A Winter Dream Fogged Deep in the Woods' story chapter. Complete specified missions in the Snowy Forest to claim Oroberyl x1200 and Marks of Perseverance. The event ran from the version update until Sept 30, 2026 and has now ended.",
+      "gameplay": "Complete the listed exploration missions in the Snowy Forest area during the window.",
+      "requirements": [
+        "Access to the Wuling - Snowy Forest area"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 1200,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across event missions"
+        },
+        {
+          "item": "Mark of Perseverance",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "event certificate, quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "1,200 Oroberyl + Marks of Perseverance (quantity unlisted)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-aic-support-chubby-lung-attacks",
+      "title": "AIC Support: Chubby Lung Attacks",
+      "type": "Building Event",
+      "status": "ended",
+      "start": "2026-09-16",
+      "end": "2026-09-30",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "AIC Factory production event at the Wuling outpost: submit support goods for exchange currency and shop rewards including 1,600 Oroberyl.",
+      "description": "A Version 1.5 AIC Production Event at the Wuling outpost: complete missions to unlock support goods formulas and the Goods Exchange, then produce and submit support goods for bonus Fruits of Altruism Certs (with Wuling Stock Bills also earned). The exchange shop offered Oroberyl x1600, the Portrait: Chubby Lung Attacks, Marks of Perseverance, an Advanced Progression Selection Crate I and an Advanced Cognitive Carrier. Production ended Sept 30 but the Goods Exchange stayed open until Oct 7, 2026.",
+      "gameplay": "Run AIC Factory production lines to craft event goods, submit them at the outpost, and spend the earned certs in the limited shop.",
+      "requirements": [
+        "AIC Factory production unlocked"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 1600,
+          "category": "currency",
+          "rarity": null,
+          "note": "exchange shop total"
+        },
+        {
+          "item": "Portrait: Chubby Lung Attacks",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "event portrait"
+        },
+        {
+          "item": "Mark of Perseverance",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "event certificate, quantity unlisted"
+        },
+        {
+          "item": "Advanced Progression Selection Crate I",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "exchange shop, quantity unlisted"
+        },
+        {
+          "item": "Advanced Cognitive Carrier",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "exchange shop, quantity unlisted"
+        },
+        {
+          "item": "Fruits of Altruism Cert",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "event exchange currency earned by submitting goods"
+        }
+      ],
+      "rewardsSummary": "1,600 Oroberyl + Portrait: Chubby Lung Attacks + Mark of Perseverance + progression crates (exact counts unlisted)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-fletched-irontip",
+      "title": "Fletched Irontip Sign-In",
+      "type": "Login Event",
+      "status": "ended",
+      "start": "2026-09-02",
+      "end": "2026-09-30",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "7-day login campaign for Typhoeus's 'Winter Hunt' banner, giving 5 banner-limited headhunting permits and materials.",
+      "description": "The Version 1.5 sign-in campaign accompanying Typhoeus's [Winter Hunt] Chartered Headhunting banner. Logging in across the 7-day track paid 5 Fletched Irontip HH Permits (banner-limited headhunting permits), 10,000 T-Creds, 15 Advanced Combat Records and 15 Arms INSP Kits in total. Separately, up to 5 Fletched Irontip HH Permits could be exchanged at a discount in the AIC Quota Exchange during the banner.",
+      "gameplay": "Log in on separate days to tick off the 7-day reward track.",
+      "requirements": [
+        "Log in during the event window"
+      ],
+      "rewards": [
+        {
+          "item": "Fletched Irontip HH Permit",
+          "amount": 5,
+          "category": "gacha",
+          "rarity": null,
+          "note": "banner-limited headhunting permits for the Winter Hunt banner"
+        },
+        {
+          "item": "T-Creds",
+          "amount": 10000,
+          "category": "currency",
+          "rarity": null,
+          "note": "total across the 7-day track"
+        },
+        {
+          "item": "Advanced Combat Record",
+          "amount": 15,
+          "category": "xp",
+          "rarity": null,
+          "note": "operator EXP records, total across the track"
+        },
+        {
+          "item": "Arms INSP Kit",
+          "amount": 15,
+          "category": "material",
+          "rarity": null,
+          "note": "weapon progression material, total across the track"
+        }
+      ],
+      "rewardsSummary": "5x Fletched Irontip HH Permit + 10,000 T-Creds + 15 Advanced Combat Records + 15 Arms INSP Kits",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Endfield Build event tracker (summing Game8's day-by-day list)",
+      "sourceUrl": "https://www.enfieldbuild.com/events/fletched-irontip-signin",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-sanity-supply",
+      "title": "Sanity Supply",
+      "type": "Login Event",
+      "status": "upcoming",
+      "start": "2026-10-08",
+      "end": "2026-10-15",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "One-week daily mail giveaway of Sanity recovery items starting Oct 8.",
+      "description": "The second Sanity Supply window of Version 1.5: during the event, complete specified missions every day to claim Sanity Supply rewards of Sanity Usage Permits and Emergency Sanity Boosters. Asia server window is Oct 8 04:00 to Oct 15 04:00 server time; the Americas/Europe server window ends Oct 14 17:00 server time. A first run of the same event already ran Sept 17-24.",
+      "gameplay": "Log in and complete the daily mission to collect the Sanity items from your in-game mail.",
+      "requirements": [
+        "Log in during the event window"
+      ],
+      "rewards": [
+        {
+          "item": "Sanity Usage Permit",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "daily reward, quantity per day unlisted"
+        },
+        {
+          "item": "Emergency Sanity Booster",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "daily reward, quantity per day unlisted"
+        }
+      ],
+      "rewardsSummary": "unknown - daily Sanity Usage Permits and Emergency Sanity Boosters; per-day amounts unlisted",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Arknights: Endfield site (Dreamscape of Wind and Snow Version Update Notes)",
+      "sourceUrl": "https://endfield.gryphline.com/en-us/news/5208",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-sanctuary-of-ink-headhunting",
+      "title": "Version 1.6 Sanctuary of Ink Headhunting (Si - Rejuvenation)",
+      "type": "Wish Banner",
+      "status": "upcoming",
+      "start": "2026-10-15",
+      "end": "2026-11-05",
+      "datesPrecision": "exact",
+      "version": "1.6",
+      "summary": "1.6 Phase 1 banner 'Rejuvenation' with rate-up 6-star Si (Oct 15 - Nov 5), followed by Argent Flow's Phase 2 banner and a Tangtang rerun.",
+      "description": "The Version 1.6 'Sanctuary of Ink' update arrives Oct 15, 2026 alongside the game's Steam launch. Phase 1 headhunting banner 'Rejuvenation' features rate-up 6-star Cryo Supporter Si and runs Oct 15 to Nov 5, 2026. Phase 2 starts Nov 5 with 6-star Electric Guard Argent Flow (rendered 'Mingha'/'Ye Minghui' in some translations) on the banner 'The Hearth Fire Beckons the Starry Flow' (end date TBD), and Tangtang's headhunting banner reruns Oct 29 to Nov 19. The version's login events give 5 limited Headhunting Permits per banner phase, and visiting the official New Version Guide webpage mails 1,000 Oroberyl, 10,000 T-Creds, 8 Elementary Cognitive Carriers and 4 Arms INSP Sets.",
+      "gameplay": "Spend Chartered Headhunting Permits on the limited banners; claim the accompanying per-phase login permits once 1.6 opens.",
+      "requirements": [
+        "Version 1.6 installed (releases 2026-10-15)"
+      ],
+      "rewards": [
+        {
+          "item": "Limited Headhunting Permit",
+          "amount": 5,
+          "category": "gacha",
+          "rarity": null,
+          "note": "from the 1.6 login event, 5 per banner phase"
+        },
+        {
+          "item": "Si",
+          "amount": null,
+          "category": "gacha",
+          "rarity": null,
+          "note": "6-star rate-up operator, banner 'Rejuvenation' Oct 15 - Nov 5"
+        },
+        {
+          "item": "Oroberyl",
+          "amount": 1000,
+          "category": "currency",
+          "rarity": null,
+          "note": "from visiting the official New Version Guide webpage (endfield.gryphline.com/version_briefing/latest)"
+        }
+      ],
+      "rewardsSummary": "5x limited Headhunting Permit per banner phase via login, plus 1,000 Oroberyl web-page giveaway (banner itself gives no event rewards)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 (1.6 update overview) / Inven Global (1.6 special broadcast)",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/618761",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-bond-sealed-in-flames",
+      "title": "Bond Sealed in Flames",
+      "type": "Building Event",
+      "status": "upcoming",
+      "start": "2026-10-15",
+      "end": "2026-11",
+      "datesPrecision": "approx",
+      "version": "1.6",
+      "summary": "1.6 limited-time inn management simulation event in Si's Painting, rewarding inn star-rating payouts.",
+      "description": "After unlocking the new 'Painting of Si' (Si's Painting) region in the Version 1.6 update, the limited-time inn management event Bond Sealed in Flames opens. Starting from tilling fields and raising Originium Slugs, players manage and operate a countryside inn: set menus, prepare ingredients, welcome guests and serve orders as requested. Successfully fulfilling customer orders raises the inn's star rating and yields greater rewards, which can be reinvested into equipment and facilities to run the inn more efficiently. Other Version 1.6 events announced at the Oct 6 special broadcast include the combat event 'Diverse Martial Arts', the photo event 'Carly's Tale of Flowers and Herbs', Mingha's story event 'Into the Wild' in the second half, and the commemorative event 'Colors Blooming from Ink' with a Talosight Exchange.",
+      "gameplay": "Run the inn simulation - farm ingredients, set the menu and serve customer orders - to raise the star rating and claim better payouts.",
+      "requirements": [
+        "Version 1.6 installed",
+        "Painting of Si region unlocked"
+      ],
+      "rewards": [
+        {
+          "item": "Inn star-rating rewards (unspecified)",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "exact reward list not yet published; rewards scale with the inn's star rating"
+        }
+      ],
+      "rewardsSummary": "unknown - inn star-rating reward list not yet published",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Inven Global (Version 1.6 special broadcast summary)",
+      "sourceUrl": "https://www.invenglobal.com/articles/26865/rhodes-island-teased-in-arknights-endfield-version-16-special-broadcast",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-redeem-codes",
+      "title": "Active Redeem Codes (1.6 Livestream & Permanent Codes)",
+      "type": "Redeem Codes",
+      "status": "live",
+      "start": "2026-10-06",
+      "end": "2026-11",
+      "datesPrecision": "approx",
+      "version": "1.5",
+      "summary": "The currently active redemption codes for Arknights: Endfield and what each one gives.",
+      "description": "Mailed rewards must be claimed within 14 days. The 1.6 livestream code was announced at the 6 Oct 2026 livestream celebrating the 15 Oct Steam launch. Source note: one tracker (gachafeed.moe) lists 0 active codes and gamingonphone values the livestream code differently — the Game8 livestream breakdown is used here.",
+      "gameplay": "Open Settings > Platform & Account > Exchange Code, enter the code exactly, and collect the rewards from your in-game mailbox.",
+      "requirements": [
+        "Complete the Process: Cold Start prologue and unlock the Settings menu"
+      ],
+      "rewards": [
+        {
+          "item": "T-Creds",
+          "amount": 8000,
+          "category": "currency",
+          "rarity": null,
+          "note": "code ENDFIELDSTEAM (1.6 livestream / Steam launch)"
+        },
+        {
+          "item": "Elementary Cognitive Carrier",
+          "amount": 2,
+          "category": "material",
+          "rarity": null,
+          "note": "code ENDFIELDSTEAM"
+        },
+        {
+          "item": "Arms INSP Set",
+          "amount": 2,
+          "category": "material",
+          "rarity": null,
+          "note": "code ENDFIELDSTEAM"
+        },
+        {
+          "item": "Portrait Frame: Heat-Driven Cog",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "code ENDFIELDSTEAM"
+        },
+        {
+          "item": "Oroberyl",
+          "amount": 150,
+          "category": "currency",
+          "rarity": null,
+          "note": "code ENDFIELDGIFT (permanent)"
+        },
+        {
+          "item": "T-Creds",
+          "amount": 10000,
+          "category": "currency",
+          "rarity": null,
+          "note": "code ENDFIELDGIFT (permanent)"
+        },
+        {
+          "item": "Intermediate Combat Record",
+          "amount": 20,
+          "category": "xp",
+          "rarity": null,
+          "note": "code ENDFIELDGIFT (permanent)"
+        },
+        {
+          "item": "Arms INSP Kit",
+          "amount": 20,
+          "category": "material",
+          "rarity": null,
+          "note": "code ENDFIELDGIFT (permanent)"
+        },
+        {
+          "item": "T-Creds",
+          "amount": 13000,
+          "category": "currency",
+          "rarity": null,
+          "note": "code ENDFIELD4PC (permanent, PC only)"
+        },
+        {
+          "item": "Advanced Combat Record",
+          "amount": 2,
+          "category": "xp",
+          "rarity": null,
+          "note": "code ENDFIELD4PC"
+        },
+        {
+          "item": "Arms INSP Kit",
+          "amount": 2,
+          "category": "material",
+          "rarity": null,
+          "note": "code ENDFIELD4PC"
+        },
+        {
+          "item": "T-Creds",
+          "amount": 5000,
+          "category": "currency",
+          "rarity": null,
+          "note": "code ZAU2SYXHWX5L4ZH"
+        },
+        {
+          "item": "Arms INSP Kit",
+          "amount": 10,
+          "category": "material",
+          "rarity": null,
+          "note": "code ZAU2SYXHWX5L4ZH"
+        }
+      ],
+      "codes": [
+        { "code": "ENDFIELDGIFT", "note": "150 Oroberyl, 10,000 T-Creds, 20 Intermediate Combat Records, 20 Arms INSP Kits", "permanent": true },
+        { "code": "ENDFIELD4PC", "note": "13,000 T-Creds, 2 Advanced Combat Records, 2 Arms INSP Kits — PC only", "permanent": true },
+        { "code": "ENDFIELDSTEAM", "note": "8,000 T-Creds, 2 Elementary Cognitive Carriers, 2 Arms INSP Sets, Portrait Frame: Heat-Driven Cog", "expiryNote": "expiry TBA" },
+        { "code": "ZAU2SYXHWX5L4ZH", "note": "5,000 T-Creds, 10 Arms INSP Kits" }
+      ],
+      "rewardsSummary": "150 Oroberyl + 36,000 T-Creds total across the listed codes, plus cognitive carriers, combat records, Arms INSP items and the Heat-Driven Cog portrait frame",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 (1.6 Livestream Redeem Codes) / GamesRadar code list",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/629847",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    }
+  ]
+}
