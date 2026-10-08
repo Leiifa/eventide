@@ -607,9 +607,9 @@
       "title": "Bond Sealed in Flames",
       "type": "Building Event",
       "status": "upcoming",
-      "start": "2026-10-15",
-      "end": "2026-11",
-      "datesPrecision": "approx",
+      "start": null,
+      "end": null,
+      "datesPrecision": "unannounced",
       "version": "1.6",
       "summary": "1.6 limited-time inn management simulation event in Si's Painting, rewarding inn star-rating payouts.",
       "description": "After unlocking the new 'Painting of Si' (Si's Painting) region in the Version 1.6 update, the limited-time inn management event Bond Sealed in Flames opens. Starting from tilling fields and raising Originium Slugs, players manage and operate a countryside inn: set menus, prepare ingredients, welcome guests and serve orders as requested. Successfully fulfilling customer orders raises the inn's star rating and yields greater rewards, which can be reinvested into equipment and facilities to run the inn more efficiently. Other Version 1.6 events announced at the Oct 6 special broadcast include the combat event 'Diverse Martial Arts', the photo event 'Carly's Tale of Flowers and Herbs', Mingha's story event 'Into the Wild' in the second half, and the commemorative event 'Colors Blooming from Ink' with a Talosight Exchange.",
@@ -641,9 +641,9 @@
       "title": "Active Redeem Codes (1.6 Livestream & Permanent Codes)",
       "type": "Redeem Codes",
       "status": "live",
-      "start": "2026-10-06",
-      "end": "2026-11",
-      "datesPrecision": "approx",
+      "start": null,
+      "end": null,
+      "datesPrecision": "permanent",
       "version": "1.5",
       "summary": "The currently active redemption codes for Arknights: Endfield and what each one gives.",
       "description": "Mailed rewards must be claimed within 14 days. The 1.6 livestream code was announced at the 6 Oct 2026 livestream celebrating the 15 Oct Steam launch. Source note: one tracker (gachafeed.moe) lists 0 active codes and gamingonphone values the livestream code differently — the Game8 livestream breakdown is used here.",
@@ -747,8 +747,8 @@
       "codes": [
         { "code": "ENDFIELDGIFT", "note": "150 Oroberyl, 10,000 T-Creds, 20 Intermediate Combat Records, 20 Arms INSP Kits", "permanent": true },
         { "code": "ENDFIELD4PC", "note": "13,000 T-Creds, 2 Advanced Combat Records, 2 Arms INSP Kits — PC only", "permanent": true },
-        { "code": "ENDFIELDSTEAM", "note": "8,000 T-Creds, 2 Elementary Cognitive Carriers, 2 Arms INSP Sets, Portrait Frame: Heat-Driven Cog", "expiryNote": "expiry TBA" },
-        { "code": "ZAU2SYXHWX5L4ZH", "note": "5,000 T-Creds, 10 Arms INSP Kits" }
+        { "code": "ENDFIELDSTEAM", "note": "8,000 T-Creds, 2 Elementary Cognitive Carriers, 2 Arms INSP Sets, Portrait Frame: Heat-Driven Cog", "patchLimited": true },
+        { "code": "ZAU2SYXHWX5L4ZH", "note": "5,000 T-Creds, 10 Arms INSP Kits", "patchLimited": true }
       ],
       "rewardsSummary": "150 Oroberyl + 36,000 T-Creds total across the listed codes, plus cognitive carriers, combat records, Arms INSP items and the Heat-Driven Cog portrait frame. AKENDFIELDSUB (100 Oroberyl) ended with its YouTube subscription campaign on 9 Sep 2026 and is no longer listed.",
       "servers": [

@@ -40,8 +40,11 @@ python scripts/build_data.py
       "type": "Combat Event",              // any label; feeds the type filter
       "status": "live",                     // live | upcoming | ended (recomputed from dates)
       "start": "2026-10-02",                // YYYY-MM-DD, or YYYY-MM when only the month is known
-      "end": "2026-10-21",
+      "end": "2026-10-21",                  // null when no date span applies (see datesPrecision)
       "datesPrecision": "exact",            // exact | approx (approx keeps the stated status)
+                                            // | permanent  (redeem-code storage: never a date span)
+                                            // | unannounced (dev hasn't stated dates yet — show
+                                            //   "not announced yet", never guess a range)
       "version": "6.1",
       "summary": "One sentence.",
       "description": "What the event is about.",
@@ -63,19 +66,23 @@ python scripts/build_data.py
 
 ### Redeem codes
 
-A code event's entry carries a `codes` array; the drawer groups them into
-"Permanent — no expiry" and "Time-limited":
+A code event is **permanent code storage**, not a time-limited event: the entry itself carries no
+date span (`start`/`end` null, `datesPrecision: "permanent"`). Only an individual code can expire,
+and only when the dev states an expiry — never guess one. The drawer groups codes by treatment:
 
 ```jsonc
       "codes": [
         { "code": "GENSHINGIFT", "note": "Hero's Wit ×3", "permanent": true },
-        { "code": "VesnaOnPatrol", "note": "40 Primogems, …", "expires": "2026-10-22" }
+        { "code": "VesnaOnPatrol", "note": "40 Primogems, …", "expires": "2026-10-22" },
+        { "code": "ENDFIELDSTEAM", "note": "8,000 T-Creds, …", "patchLimited": true }
       ]
 ```
 
-- `permanent: true` puts the code in the permanent group.
-- `expires` is a date (`YYYY-MM-DD`). When expiry isn't a fixed date, use `expiryNote` free text
-  instead (e.g. "expires with v4.7").
+- `permanent: true` — evergreen code with no expiry.
+- `expires` — `YYYY-MM-DD`, used **only** when the dev states the expiry.
+- `patchLimited: true` — everything else: tied to a patch window with no dev-stated expiry.
+- `expiryNote` — optional free text shown with the badge for extra nuance (e.g. "expires with v4.7").
+  Never use it for "TBA"/"unknown" — classify the code as `permanent` or `patchLimited` instead.
 
 ## Assets companion (`<game>.assets.json`)
 
@@ -111,6 +118,9 @@ Games tab and game detail pages:
 ## Rules the renderer relies on
 
 - `amount` may be `null` when unknown — never invent numbers.
+- Never invent date ranges either: an event with no dev-stated dates gets `start`/`end` null and
+  `datesPrecision: "unannounced"` (renders as "not announced yet"), and rumor entries keep
+  `datesPrecision: "approx"` with their estimated ranges.
 - `confidence` != `confirmed` puts the event on the Radar under "Rumors & leaks" and paints it as a
   hatched bar on the timeline, so guesses never look like schedule.
 - `servers: ["global"]` matches every server selection.

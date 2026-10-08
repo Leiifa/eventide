@@ -389,9 +389,9 @@
       "title": "Active Redeem Codes (October 2026)",
       "type": "Redeem Codes",
       "status": "live",
-      "start": "2026-10-04",
-      "end": "2026-11-04",
-      "datesPrecision": "approx",
+      "start": null,
+      "end": null,
+      "datesPrecision": "permanent",
       "version": "4.8",
       "summary": "The currently active gift codes for Punishing: Gray Raven and what each one gives.",
       "description": "Community-tracked codes, checked 4 Oct 2026 via Pocket Gamer. Exact reward contents are not confirmed by current sources — older listings are inconsistent — and code expiry dates are not published.",
@@ -430,10 +430,10 @@
         }
       ],
       "codes": [
-        { "code": "PGR2026", "note": "Global · rewards unconfirmed" },
-        { "code": "NEWROSETTA0203", "note": "Global · rewards unconfirmed" },
-        { "code": "HAPPY6THBIRTHDAY", "note": "TW server · rewards unconfirmed" },
-        { "code": "pbsz5dd0g", "note": "TW server · rewards unconfirmed" }
+        { "code": "PGR2026", "note": "Global · rewards unconfirmed", "patchLimited": true },
+        { "code": "NEWROSETTA0203", "note": "Global · rewards unconfirmed", "patchLimited": true },
+        { "code": "HAPPY6THBIRTHDAY", "note": "TW server · rewards unconfirmed", "patchLimited": true },
+        { "code": "pbsz5dd0g", "note": "TW server · rewards unconfirmed", "patchLimited": true }
       ],
       "rewardsSummary": "unknown (code reward contents unverified as of Oct 2026)",
       "servers": [

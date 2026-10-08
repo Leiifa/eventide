@@ -10,6 +10,8 @@ Each raw file has the shape:
                     rewards[{item, amount, category, rarity, note}],
                     rewardsSummary, servers[], sourceName, sourceUrl,
                     confidence, rumorNotes } ]
+      // start/end may be null when datesPrecision is "permanent" (redeem-code
+      // storage) or "unannounced" (dev hasn't stated dates) — never guess ranges
     }
 
 Run from anywhere:  python scripts/build_data.py
@@ -52,7 +54,10 @@ DEFAULT_GAMES = {
     },
 }
 
-REQUIRED_EVENT_FIELDS = ["id", "title", "start", "end", "status"]
+REQUIRED_EVENT_FIELDS = ["id", "title", "status"]
+# start/end may be null: "permanent" listings (redeem-code storage) and
+# "unannounced" events carry no date span at all. Never guess ranges.
+DATELESS_PRECISIONS = (None, "permanent", "unannounced")
 
 
 def main():
@@ -108,6 +113,11 @@ def main():
             missing = [f for f in REQUIRED_EVENT_FIELDS if not ev.get(f)]
             if missing:
                 warnings.append(f"{name}: event '{ev.get('title', '?')}' missing {missing}")
+            s, e, prec = ev.get("start"), ev.get("end"), ev.get("datesPrecision")
+            if (s or e) and prec not in ("exact", "approx"):
+                warnings.append(f"{name}: event '{ev.get('title', '?')}' has dates but datesPrecision={prec!r} (want exact|approx)")
+            if not (s or e) and prec not in DATELESS_PRECISIONS:
+                warnings.append(f"{name}: event '{ev.get('title', '?')}' has no dates but datesPrecision={prec!r} (want permanent|unannounced)")
             ev.setdefault("requirements", [])
             ev.setdefault("rewards", [])
             ev.setdefault("servers", ["global"])
