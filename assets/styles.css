@@ -1701,8 +1701,9 @@ body.nav-compact .server-select { padding-top: 4px; padding-bottom: 4px; }
   padding: 3px 8px;
 }
 .code-note {
-  flex: 1;
+  flex: 1 1 150px;
   min-width: 0;
+  overflow-wrap: anywhere;
   font-size: 11.5px;
   color: var(--ink-2);
 }
@@ -1711,6 +1712,7 @@ body.nav-compact .server-select { padding-top: 4px; padding-bottom: 4px; }
   font-size: 10.5px;
   color: var(--ink-3);
   white-space: nowrap;
+  margin-left: auto;
 }
 .code-chip.is-perm .code-expiry { color: var(--live); }
 
