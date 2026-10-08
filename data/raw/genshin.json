@@ -508,7 +508,7 @@
       "datesPrecision": "approx",
       "version": "7.1",
       "summary": "The currently active redemption codes for Genshin Impact and what each one gives.",
-      "description": "Active codes tracked by community sources, checked 7 Oct 2026. The Version 7.1 livestream codes (Rekviem, Vesna0923, PrimaDonna — 100 Primogems each) expired on 15 Sep 2026 and are not listed above.",
+      "description": "Active codes tracked by community sources, checked 8 Oct 2026. The Version 7.1 livestream codes (Rekviem, Vesna0923, PrimaDonna — 100 Primogems each) expired on 15 Sep 2026 and are not listed above. Codes sharing their first four characters form one redemption type (PLDX, GS71) — redeeming one member locks the rest per account.",
       "gameplay": "Redeem on genshin.hoyoverse.com/en/gift or in-game with Adventure Rank 10+, then collect the items from in-game mail.",
       "requirements": [
         "Adventure Rank 10 or above"
@@ -550,34 +550,65 @@
           "note": "code VesnaOnPatrol"
         },
         {
-          "item": "Hero's Wit (OPERACOLLAB x2, EPIC2026 x5)",
+          "item": "Primogem (Y6JYMKV6JKSL / Y1INABQB6DEX / 2BJ64QRZ7RT8, 60 each)",
+          "amount": 180,
+          "category": "currency",
+          "rarity": null,
+          "note": "version codes — 60 Primogems + 5 Adventurer's Experience each per timesaver.gg (3-4 independent sources); genshin-builds lists XP only"
+        },
+        {
+          "item": "Primogem (EPIC2026 40 + OPERACOLLAB 30)",
+          "amount": 70,
+          "category": "currency",
+          "rarity": null,
+          "note": "collab/store codes"
+        },
+        {
+          "item": "Mora (EPIC2026 / OPERACOLLAB 20,000 each; PLDXIB886Y1S / DATG5HG1PL89 10,000 each; GS71XYNSYJ 30,000)",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "spread across collab and promo code families"
+        },
+        {
+          "item": "Hero's Wit (OPERACOLLAB 2, GS71XYNSYJ 3, EPIC2026 3-5)",
           "amount": null,
           "category": "xp",
           "rarity": 4,
-          "note": "small collab/store codes"
+          "note": "EPIC2026 count disputed: 3 per Eurogamer/Notebookcheck, 5 per Pocket Tactics/KodeGG"
         },
         {
-          "item": "Adventurer's Experience (PLDXIB886Y1S x10 + Fine Enhancement Ore x5; Y6JYMKV6JKSL / Y1INABQB6DEX / 2BJ64QRZ7RT8 x5 each)",
+          "item": "Adventurer's Experience (PLDXIB886Y1S / DATG5HG1PL89 10 each)",
           "amount": null,
           "category": "xp",
           "rarity": 3,
-          "note": "small promo codes"
+          "note": "promo code families"
+        },
+        {
+          "item": "Teachings of Charity / Fortitude / Glory (PNKZ3WLNN8G6, 5 each)",
+          "amount": null,
+          "category": "material",
+          "rarity": 3,
+          "note": "talent books"
         }
       ],
       "codes": [
-        { "code": "GENSHINGIFT", "note": "Hero's Wit ×3", "permanent": true },
+        { "code": "GENSHINGIFT", "note": "Hero's Wit ×3 — works periodically; the Genshin Wiki records it hitting max usage (May 2026) while IGN still lists it active", "permanent": true },
         { "code": "VesnaOnPatrol", "note": "40 Primogems, 3 Hero's Wit, 20,000 Mora", "expires": "2026-10-22" },
-        { "code": "NEEIJB764CA3", "note": "60 Primogems, 5 Adventurer's Experience" },
-        { "code": "OPERACOLLAB", "note": "Hero's Wit ×2" },
-        { "code": "EPIC2026", "note": "Hero's Wit ×5" },
-        { "code": "PLDXIB886Y1S", "note": "Adventurer's Experience ×10, Fine Enhancement Ore ×5" },
-        { "code": "Y6JYMKV6JKSL", "note": "Adventurer's Experience ×5" },
-        { "code": "Y1INABQB6DEX", "note": "Adventurer's Experience ×5" },
-        { "code": "2BJ64QRZ7RT8", "note": "Adventurer's Experience ×5" }
+        { "code": "NEEIJB764CA3", "note": "60 Primogems, 5 Adventurer's Experience — added 5 Oct 2026" },
+        { "code": "Y6JYMKV6JKSL", "note": "60 Primogems, 5 Adventurer's Experience" },
+        { "code": "2BJ64QRZ7RT8", "note": "60 Primogems, 5 Adventurer's Experience" },
+        { "code": "Y1INABQB6DEX", "note": "60 Primogems, 5 Adventurer's Experience" },
+        { "code": "OPERACOLLAB", "note": "30 Primogems, 20,000 Mora, 2 Hero's Wit — OperaGX sponsorship code" },
+        { "code": "EPIC2026", "note": "40 Primogems, 20,000 Mora, Hero's Wit ×3–5 (count disputed: 3 per Eurogamer/Notebookcheck, 5 per Pocket Tactics/KodeGG)" },
+        { "code": "PNKZ3WLNN8G6", "note": "5 Teachings of Charity, 5 Teachings of Fortitude, 5 Teachings of Glory" },
+        { "code": "DATG5HG1PL89", "note": "10,000 Mora, 10 Adventurer's Experience, 5 Fine Enhancement Ore, 5 Jueyun Chili Chicken, 5 Stir-Fried Fish Noodles" },
+        { "code": "PLDXIB886Y1S", "note": "10,000 Mora, 10 Adventurer's Experience, 5 Fine Enhancement Ore, 5 Jueyun Chili Chicken, 5 Stir-Fried Fish Noodles — PLDX family: redeeming any PLDX member locks the rest" },
+        { "code": "GS71XYNSYJ", "note": "30,000 Mora, 3 Hero's Wit, 5 Mystic Enhancement Ore — GS71 family: redeeming any GS71 member locks the rest" }
       ],
-      "rewardsSummary": "60 Primogems (NEEIJB764CA3) + 40 Primogems, 3 Hero's Wit, 20,000 Mora (VesnaOnPatrol, expires Oct 22) + assorted Hero's Wit / Adventurer's Experience / Mora from promo codes",
-      "sourceName": "Game8 / GenshinBuilds code trackers",
-      "sourceUrl": "https://game8.co/games/Genshin-Impact/archives/622079",
+      "rewardsSummary": "350 Primogems total: 60 each (NEEIJB764CA3, Y6JYMKV6JKSL, 2BJ64QRZ7RT8, Y1INABQB6DEX) + 40 each (VesnaOnPatrol — expires Oct 22, EPIC2026) + 30 (OPERACOLLAB); plus Mora, Hero's Wit, Adventurer's Experience, talent books and food across the promo codes — the PLDX and GS71 families each pay only once per account. GENSHINGIFT is periodic and not counted.",
+      "sourceName": "timesaver.gg / Pocket Tactics / Game8",
+      "sourceUrl": "https://timesaver.gg/blog/genshin-impact-codes-october-2026",
       "confidence": "confirmed",
       "servers": [
         "global"
