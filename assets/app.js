@@ -48,7 +48,7 @@
 
   function fmtDate(iso) {
     const p = parseISO(iso);
-    if (!p) return 'TBA';
+    if (!p) return 'not announced';
     return p.d === null
       ? `${MONTHS[p.mo - 1]} ${p.y}`
       : `${p.d} ${MONTHS[p.mo - 1]} ${p.y}`;
@@ -57,7 +57,7 @@
   function fmtRange(startIso, endIso) {
     const s = parseISO(startIso);
     const e = parseISO(endIso);
-    if (!s && !e) return 'Dates TBA';
+    if (!s && !e) return 'No dates yet';
     if (!e) return `from ${fmtDate(startIso)}`;
     if (!s) return `until ${fmtDate(endIso)}`;
     if (s.y === e.y && s.mo === e.mo) {
@@ -83,7 +83,22 @@
     return 'live';
   }
 
+  // Redeem-code lists are permanent code storage, not time-limited events.
+  function isRedeemCodes(ev) {
+    return ev.type === 'Redeem Codes';
+  }
+
+  // Text shown in the date slot. Redeem-code lists get no date span, and an
+  // upcoming event with no dates means "not announced yet", not a guessed range.
+  function dateText(ev) {
+    if (ev.datesPrecision === 'permanent' || isRedeemCodes(ev)) return 'Permanent code list';
+    if (ev.datesPrecision === 'unannounced') return 'Not announced yet';
+    return fmtRange(ev.start, ev.end);
+  }
+
   function countdownText(ev) {
+    if (ev.datesPrecision === 'permanent' || isRedeemCodes(ev)) return { text: 'No end date', cls: '' };
+    if (ev.datesPrecision === 'unannounced') return { text: 'Not announced yet', cls: '' };
     const st = statusOf(ev);
     const s = evStart(ev);
     const e = evEnd(ev);
@@ -101,7 +116,7 @@
       const d = dayDiff(today, e);
       return { text: d === 0 ? 'Ended today' : `Ended ${d} day${d === 1 ? '' : 's'} ago`, cls: '' };
     }
-    return { text: 'Dates TBA', cls: '' };
+    return { text: st === 'upcoming' ? 'Not announced yet' : 'No dates yet', cls: '' };
   }
 
   /* ---------------- state ---------------- */
@@ -216,7 +231,7 @@
     if (!rewards.length) {
       return ev.rewardsSummary
         ? `<span class="rw-chip">${esc(ev.rewardsSummary)}</span>`
-        : `<span class="rw-more">rewards TBA</span>`;
+        : `<span class="rw-more">rewards not published</span>`;
     }
     const shown = rewards.slice(0, max).map(r => {
       const premium = r.category === 'currency' || r.category === 'gacha';
@@ -342,7 +357,7 @@
           </span>
         </span>
         <span class="row-dates">
-          <span class="row-date-main">${esc(fmtRange(ev.start, ev.end))}</span>
+          <span class="row-date-main">${esc(dateText(ev))}</span>
           <span class="row-count ${cd.cls}">${esc(cd.text)}</span>
         </span>
         <span class="row-rewards">${rewardChips(ev)}</span>
@@ -381,7 +396,7 @@
     const undatedPanel = undated.length ? `
       <section class="home-panel" style="margin-top:16px">
         <div class="home-panel-head">
-          <h2 class="home-h2">Dates TBA</h2>
+          <h2 class="home-h2">No dates yet</h2>
           <span class="home-hint">${undated.length} event${undated.length === 1 ? '' : 's'} without dates yet</span>
         </div>
         ${undated.map((ev, i) => homeRow(ev, i)).join('')}
@@ -461,7 +476,7 @@
             </button>
             <div class="tl-track" style="width:${trackW}px">
               <button class="${cls}" style="left:${left}px;width:${w}px;--i:${Math.min(i, 20)};${color}"
-                      data-event="${esc(ev.id)}" title="${esc(ev.title)} — ${esc(fmtRange(ev.start, ev.end))}">${label}</button>
+                      data-event="${esc(ev.id)}" title="${esc(ev.title)} — ${esc(dateText(ev))}">${label}</button>
             </div>
           </div>`;
       }).join('');
@@ -530,7 +545,7 @@
           <span class="radar-sub">unconfirmed — dates and rewards may change · ${rumors.length}</span>
         </div>
         <div class="radar-grid">
-          ${rumors.length ? rumors.map(radarCard).join('') : '<div class="empty" style="grid-column:1/-1">Nothing floating around right now.</div>'}
+          ${rumors.length ? rumors.map(radarCard).join('') : '<div class="empty" style="grid-column:1/-1">No rumors right now.</div>'}
         </div>
       </section>`;
   }
@@ -548,7 +563,7 @@
         ${ev.rumorNotes ? `<span class="rumor-note">${esc(ev.rumorNotes)}</span>` : ''}
         <span class="row-rewards">${rewardChips(ev, 4)}</span>
         <span class="rcard-foot">
-          <span class="rcard-date">${esc(fmtRange(ev.start, ev.end))}</span>
+          <span class="rcard-date">${esc(dateText(ev))}</span>
           ${statusPill(ev)}
         </span>
       </button>`;
@@ -573,7 +588,7 @@
 
   function topRewardLabel(ev) {
     const r = (ev.rewards || [])[0];
-    if (!r) return ev.rewardsSummary ? ev.rewardsSummary.slice(0, 42) : 'rewards TBA';
+    if (!r) return ev.rewardsSummary ? ev.rewardsSummary.slice(0, 42) : 'rewards not published';
     return r.item + (typeof r.amount === 'number' ? ' ×' + r.amount.toLocaleString('en-US') : '');
   }
 
@@ -587,7 +602,7 @@
             ${statusPill(ev)}
           </span>
           <span class="home-row-sub">
-            <span class="home-row-meta"><span class="meta-game">${esc(gameName(ev.game))}</span><span class="meta-sep">·</span><span class="meta-dates">${esc(fmtRange(ev.start, ev.end))}</span></span>
+            <span class="home-row-meta"><span class="meta-game">${esc(gameName(ev.game))}</span><span class="meta-sep">·</span><span class="meta-dates">${esc(dateText(ev))}</span></span>
             ${rewardChipHtml(ev)}
           </span>
         </span>
@@ -608,7 +623,7 @@
             ${statusPill(ev)}
           </span>
           <span class="home-row-sub">
-            <span class="home-row-meta"><span class="meta-game">${esc(gameName(ev.game))}</span><span class="meta-sep">·</span><span class="meta-dates">${esc(fmtRange(ev.start, ev.end))}</span></span>
+            <span class="home-row-meta"><span class="meta-game">${esc(gameName(ev.game))}</span><span class="meta-sep">·</span><span class="meta-dates">${esc(dateText(ev))}</span></span>
           </span>
         </span>
       </button>`;
@@ -639,9 +654,9 @@
       <div class="home-hero">
         <div class="home-hero-text">
           <div class="home-kicker">${GAMES.length} games · ${EVENTS.length} events tracked${stamp ? ' · updated ' + esc(fmtDate(stamp)) : ''}</div>
-          <h1 class="home-title">Every event, every game.<br>One calendar.</h1>
-          <p class="home-sub">Stop juggling wikis and launchers. Eventide puts every game you play on
-            one board — rewards up front, dates down to the day, and rumors labeled as rumors. New games are on the way.</p>
+          <h1 class="home-title">Gacha events, one calendar.</h1>
+          <p class="home-sub">Rewards, dates and rumors for every game you play,
+            all on one calendar. Rumors are labeled as rumors.</p>
           <div class="home-cta">
             <button class="btn btn-primary" data-goto="games">Browse games</button>
             <button class="btn" data-goto="events">See what's live</button>
@@ -678,8 +693,8 @@
 
       <section class="home-panel payout-panel">
         <div class="home-panel-head">
-          <h2 class="home-h2">Biggest pull-currency payouts</h2>
-          <span class="home-hint">rare currency only · biggest first · live + upcoming</span>
+          <h2 class="home-h2">Most rewarding event</h2>
+          <span class="home-hint">Highest first · live and upcoming</span>
         </div>
         ${payouts.length ? payouts.map((x, i) => payoutRow(x.ev, x.total, i)).join('') : '<div class="empty">No currency rewards published right now.</div>'}
       </section>
@@ -690,15 +705,15 @@
             <h2 class="home-h2">Starting soon</h2>
             <button class="btn btn-tiny" data-goto="events">all events</button>
           </div>
-          ${startingSoon.length ? startingSoon.map(homeRow).join('') : '<div class="empty">Nothing lands in the next two weeks.</div>'}
+          ${startingSoon.length ? startingSoon.map(homeRow).join('') : '<div class="empty">No events start in the next 14 days.</div>'}
         </section>
 
         <section class="home-panel">
           <div class="home-panel-head">
             <h2 class="home-h2">Ending soon</h2>
-            <span class="home-hint">don't leave rewards on the table</span>
+            <span class="home-hint">closing soon</span>
           </div>
-          ${endingSoon.length ? endingSoon.map(homeRow).join('') : '<div class="empty">Nothing expires this week.</div>'}
+          ${endingSoon.length ? endingSoon.map(homeRow).join('') : '<div class="empty">No events end in the next 7 days.</div>'}
         </section>
       </div>
 
@@ -837,7 +852,7 @@
         <span class="ev-card-banner">${banner}</span>
         <span class="ev-card-body">
           <span class="ev-card-title">${esc(ev.title)}</span>
-          <span class="ev-card-dates">${esc(fmtRange(ev.start, ev.end))}</span>
+          <span class="ev-card-dates">${esc(dateText(ev))}</span>
           <span class="row-rewards">${rewardChips(ev, 2)}</span>
           <span class="ev-card-foot">${statusPill(ev)}<span class="row-count ${cd.cls}">${esc(cd.text)}</span></span>
         </span>
@@ -951,7 +966,7 @@
     const chip = (c) => {
       const badge = c.permanent ? 'permanent'
         : c.expires ? 'expires ' + fmtDate(c.expires)
-        : (c.expiryNote || 'expiry not published');
+        : (c.expiryNote || 'limited');
       return `
         <div class="code-chip${c.permanent ? ' is-perm' : ''}">
           <code class="code-str">${esc(c.code)}</code>
@@ -964,12 +979,12 @@
         <div class="drawer-h">Redeem codes</div>
         ${perm.length ? `
           <div class="code-group">
-            <div class="code-group-head">Permanent — no expiry</div>
+            <div class="code-group-head">Permanent</div>
             <div class="code-list">${perm.map(chip).join('')}</div>
           </div>` : ''}
         ${limited.length ? `
           <div class="code-group">
-            <div class="code-group-head">Time-limited</div>
+            <div class="code-group-head">Limited</div>
             <div class="code-list">${limited.map(chip).join('')}</div>
           </div>` : ''}
       </div>`;
@@ -1080,6 +1095,7 @@
     if (state.view === 'game') renderGameDetail(state.gameId);
     store.set('view', state.view);
     store.set('gameId', state.gameId);
+    updateDocTitle();
     currentView = state.view;
     updateToTop();
     updateHeader();
@@ -1360,6 +1376,13 @@
   /* ---------------- compact header on scroll ---------------- */
 
   let headerCompact = false;
+
+  const VIEW_TITLES = { home: 'Home', games: 'Games', events: 'Events', timeline: 'Timeline', radar: 'Radar' };
+  function updateDocTitle() {
+    let label = VIEW_TITLES[state.view];
+    if (state.view === 'game' && GAME_BY_ID[state.gameId]) label = GAME_BY_ID[state.gameId].name;
+    document.title = label && label !== 'Home' ? `${label} · Eventide` : 'Eventide — gacha event tracker';
+  }
 
   function updateHeader() {
     const y = window.scrollY || document.documentElement.scrollTop || 0;
