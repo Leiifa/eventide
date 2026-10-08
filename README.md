@@ -1,124 +1,34 @@
-# Eventide — gacha event tracker
+# Eventide
 
-One place for every event across the games you play: **Genshin Impact**, **Honkai: Star Rail**,
-**Wuthering Waves**, **Arknights: Endfield**, **Punishing: Gray Raven**.
+**Every event, every game, one calendar.**
 
-- **Home** — the landing page: live board (live/upcoming/rumor counts, next up), starting-soon and
-  ending-soon lists, biggest pull-currency payouts, game tiles, rumor teaser. Real data, no filler.
-- **Events** — dense, filterable list: what the event is, requirements, dates, and rewards (the important part).
-- **Timeline** — one seamless horizontal calendar instead of stacked month cards: every event is a bar
-  on a continuous month axis (sticky event labels + sticky month header), opening scrolled to today
-  with past months to the left — just scroll sideways — plus a Today button. Undated events sit in a
-  Dates TBA panel below.
-- **Radar** — what's announced next, plus rumors/leaks kept clearly separated from confirmed dates.
-- **Games** — cards for every supported game (banner, icon, live/upcoming counts) opening a
-  Play Store-style detail page: key art, icon, publisher/genre/platforms, about text, current patch and
-  next update, reward-currency icons, and live/upcoming/ended event cards with official event banners.
-  No ratings or reviews.
-- **Server selector** — top right. Most events run on every server with the same dates; the filter only
-  narrows region-specific entries. Your choice is remembered.
-- **Back-to-top button** (bottom right) appears after 320px of scrolling; its outline ring — drawn in
-  the signature two-corner shape — fills to show scroll progress. 52px tap target for mobile.
+Eventide is a free tracker for gacha game events. Instead of juggling wikis and launchers, you get
+one board with rewards up front, dates down to the day, and rumors clearly labeled as rumors.
 
-Dates are day-level only (no times), shown as `12 Oct 2026`.
+## Games
 
-## Run it
+Genshin Impact · Honkai: Star Rail · Wuthering Waves · Arknights: Endfield · Punishing: Gray Raven
 
-No build step, no server needed — double-click `index.html`.
-Or serve it if you prefer: `python -m http.server 8000` then open http://localhost:8000
+## Features
 
-## Where the data lives
+- **Home** — what's live, what starts soon, what ends soon, and the biggest pull-currency payouts.
+- **Events** — a filterable list: search by name or reward, filter by game, status and type.
+- **Timeline** — a horizontal calendar of every event. Drag to pan, jump back to today anytime.
+- **Radar** — upcoming events kept separate from rumors and leaks, so guesses never look like schedule.
+- **Games** — a page per game with its current patch, next update, reward currencies and event art.
+- **Redeem codes** — active codes for each game, with permanent and expiring codes grouped apart.
+- **Server filter** — narrow region-specific events when you need to.
+
+Every event links to its source, and dates are day-level on purpose (no times).
+
+## Run it locally
+
+No build step and no dependencies. Open `index.html` in a browser, or serve the folder:
 
 ```
-data/raw/*.json          ← source of truth, one file per game (edit these)
-data/raw/<game>.assets.json ← optional companion: icons, banners, store metadata (see below)
-data/events.js           ← generated; loaded by index.html
-scripts/build_data.py
-scripts/check_assets.py  ← verifies every image URL in the assets files still loads
+python -m http.server 8000
 ```
 
-After editing anything in `data/raw/`, regenerate:
+## Maintaining
 
-```
-python scripts/build_data.py
-```
-
-### Per-game file shape
-
-```jsonc
-{
-  "game": {
-    "id": "genshin",
-    "name": "Genshin Impact",
-    "shortName": "Genshin",
-    "currentVersion": "6.1",
-    "nextVersion": "6.2",
-    "nextVersionDate": "2026-10-22",
-    "officialUrl": "https://genshin.hoyoverse.com/en/",
-    "notes": "…"
-  },
-  "events": [
-    {
-      "id": "genshin-example-event",
-      "title": "Example Event",
-      "type": "Combat Event",              // any label; feeds the type filter
-      "status": "live",                     // live | upcoming | ended (recomputed from dates)
-      "start": "2026-10-02",                // YYYY-MM-DD, or YYYY-MM when only the month is known
-      "end": "2026-10-21",
-      "datesPrecision": "exact",            // exact | approx (approx keeps the stated status)
-      "version": "6.1",
-      "summary": "One sentence.",
-      "description": "What the event is about.",
-      "gameplay": "How you play it.",
-      "requirements": ["Adventure Rank 30+"],
-      "rewards": [
-        { "item": "Primogem", "amount": 1000, "category": "currency", "rarity": 5, "note": "total" }
-      ],
-      "rewardsSummary": "1,000 Primogems + …",
-      "servers": ["global"],
-      "sourceName": "HoYoLAB",
-      "sourceUrl": "https://…",
-      "confidence": "confirmed",            // confirmed | leaked | rumor
-      "rumorNotes": null
-    }
-  ]
-}
-```
-
-### Assets companion (`<game>.assets.json`)
-
-Optional, merged automatically by `build_data.py`. Holds the images and store-page info for the
-Games tab and game detail pages:
-
-```jsonc
-{
-  "game": {
-    "icon": "https://…/icon.png",          // square app icon / logo
-    "banner": "https://…/key-art.jpg",     // wide key art
-    "publisher": "HoYoverse",
-    "developer": "…",
-    "genre": "Open-world action RPG",
-    "platforms": ["PC", "PS5", "iOS", "Android"],
-    "releaseDate": "2020-09-28",
-    "description": "2–4 sentences, store-page style."
-  },
-  "currencies": [
-    { "name": "Primogem", "icon": "https://…/Primogem.png", "note": "premium pull currency" }
-  ],
-  "banners": {
-    "genshin-some-event-id": "https://…/event-banner.jpg"
-  }
-}
-```
-
-- `banners` keys are **exact event ids** from the game's `<game>.json`. Events without official
-  banner art (rumors, unannounced) are simply left out — the UI renders a styled fallback.
-- Image URLs must be direct links to images (not HTML pages). Anything that fails to load falls back
-  to a gradient/letter placeholder in the UI, so a dead hotlink degrades instead of breaking.
-
-Rules the renderer relies on:
-
-- `amount` may be `null` when unknown — never invent numbers.
-- `confidence` != `confirmed` puts the event on the Radar under "Rumors & leaks" and paints it as a
-  hatched bar on the timeline, so guesses never look like schedule.
-- `servers: ["global"]` matches every server selection.
+Event data lives in `data/raw/`. See the [data guide](docs/DATA.md) for the file format and update workflow.
