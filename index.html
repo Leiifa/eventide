@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=20261008j">
+<link rel="stylesheet" href="assets/styles.css?v=20261008k">
 </head>
 <body>
 
@@ -159,14 +159,14 @@
         <img class="foot-link-cup" src="https://storage.ko-fi.com/cdn/cup-border.png" alt="" referrerpolicy="no-referrer">
         <span>Support me on Ko-fi</span>
       </a>
-      <a class="foot-link" href="https://github.com/Leiifa/eventide/issues/new?template=bug_report.md" target="_blank" rel="noopener noreferrer">
+      <button class="foot-link" type="button" data-feedback="report">
         <svg class="foot-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         <span>Report a problem</span>
-      </a>
-      <a class="foot-link" href="https://github.com/Leiifa/eventide/issues/new?template=feature_request.md" target="_blank" rel="noopener noreferrer">
+      </button>
+      <button class="foot-link" type="button" data-feedback="feature">
         <svg class="foot-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         <span>Request a feature</span>
-      </a>
+      </button>
     </div>
     <p class="footer-disclaimer">
       Eventide is an unofficial fan project. Not affiliated with, endorsed by or sponsored by HoYoverse, Kuro Games,
@@ -198,7 +198,29 @@
   </figure>
 </div>
 
+<div class="drawer-scrim" id="fbScrim" hidden></div>
+<aside class="drawer fb-modal" id="fbModal" hidden role="dialog" aria-modal="true" aria-labelledby="fbTitle">
+  <button class="drawer-close" id="fbClose" aria-label="Close feedback form">×</button>
+  <div class="drawer-body">
+    <div class="drawer-game" id="fbKind">Feedback</div>
+    <h2 class="drawer-title" id="fbTitle">Report a problem</h2>
+    <form id="fbForm" novalidate>
+      <div id="fbFields"></div>
+      <div class="fb-row">
+        <label class="fb-label" for="fbEmail">Your email <span class="fb-opt">(optional — only if you want a reply)</span></label>
+        <input class="fb-input" id="fbEmail" type="email" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="fb-actions">
+        <button class="btn btn-primary" type="submit" id="fbSubmit">Send report</button>
+        <button class="btn" type="button" id="fbCopy">Copy details</button>
+        <button class="btn" type="button" id="fbCancel">Cancel</button>
+      </div>
+      <p class="fb-note" id="fbNote"></p>
+    </form>
+  </div>
+</aside>
+
 <script src="data/events.js?v=20261008b"></script>
-<script src="assets/app.js?v=20261008"></script>
+<script src="assets/app.js?v=20261008b"></script>
 </body>
 </html>

@@ -1395,3 +1395,159 @@
 
   render();
 })();
+
+/* ---------------- feedback popup (report / request) ---------------- */
+(() => {
+  // When set to a relay endpoint URL, submits POST there and the user never
+  // sees GitHub. Empty = open a small prefilled GitHub popup window instead
+  // (the site stays open; one confirm there).
+  const FEEDBACK_RELAY = '';
+
+  const FB_FORMS = {
+    report: {
+      title: 'Report a problem',
+      kind: 'Feedback · problem',
+      submit: 'Send report',
+      template: 'bug_report.md',
+      fields: [
+        { id: 'what', label: "What's wrong?", tag: 'area', required: true, hint: "If it's about event data, name the game and the event." },
+        { id: 'where', label: 'Where?', tag: 'input', hint: 'Page or tab (Home, Events, Timeline, Radar, Games, event drawer…) and the event or game if relevant.' },
+        { id: 'instead', label: 'What should it say instead?', tag: 'area', hint: 'If a date, reward or code is wrong — the correct info, plus a source link if you have one.' }
+      ]
+    },
+    feature: {
+      title: 'Request a feature',
+      kind: 'Feedback · idea',
+      submit: 'Send request',
+      template: 'feature_request.md',
+      fields: [
+        { id: 'what', label: 'What would you like?', tag: 'area', required: true },
+        { id: 'why', label: 'Why would it help?', tag: 'area', hint: 'Your use case — which games you track and how you use the site.' },
+        { id: 'look', label: 'How could it look? (optional)', tag: 'area', hint: "A sketch, a mockup, or something similar you've seen elsewhere." }
+      ]
+    }
+  };
+
+  let mode = 'report';
+  const scrim = document.getElementById('fbScrim');
+  const modal = document.getElementById('fbModal');
+  const titleEl = document.getElementById('fbTitle');
+  const kindEl = document.getElementById('fbKind');
+  const fieldsEl = document.getElementById('fbFields');
+  const emailEl = document.getElementById('fbEmail');
+  const submitEl = document.getElementById('fbSubmit');
+  const noteEl = document.getElementById('fbNote');
+
+  function renderFields() {
+    fieldsEl.innerHTML = FB_FORMS[mode].fields.map(f => `
+      <div class="fb-row">
+        <label class="fb-label" for="fb-${f.id}">${f.label}${f.required ? '' : ' <span class="fb-opt">(optional)</span>'}</label>
+        ${f.tag === 'area'
+          ? `<textarea class="fb-input" id="fb-${f.id}" data-fb="${f.id}"></textarea>`
+          : `<input class="fb-input" id="fb-${f.id}" data-fb="${f.id}" type="text">`}
+        ${f.hint ? `<p class="fb-note">${f.hint}</p>` : ''}
+      </div>`).join('');
+  }
+
+  function openFeedback(next) {
+    mode = FB_FORMS[next] ? next : 'report';
+    const cfg = FB_FORMS[mode];
+    titleEl.textContent = cfg.title;
+    kindEl.textContent = cfg.kind;
+    submitEl.textContent = cfg.submit;
+    submitEl.disabled = false;
+    noteEl.textContent = '';
+    renderFields();
+    scrim.hidden = false;
+    modal.hidden = false;
+    const first = fieldsEl.querySelector('.fb-input');
+    if (first) first.focus();
+  }
+
+  function closeFeedback() {
+    scrim.hidden = true;
+    modal.hidden = true;
+  }
+
+  function collect() {
+    const values = {};
+    fieldsEl.querySelectorAll('[data-fb]').forEach(el => { values[el.dataset.fb] = el.value.trim(); });
+    values.email = emailEl.value.trim();
+    return values;
+  }
+
+  function bodyText(values) {
+    const cfg = FB_FORMS[mode];
+    const lines = cfg.fields.map(f => `**${f.label}**\n\n${values[f.id] || '—'}`);
+    lines.push(`**Contact**\n\n${values.email || 'not given'}`);
+    lines.push(`\n---\n*Sent from the Eventide feedback form · ${location.href}*`);
+    return lines.join('\n\n');
+  }
+
+  function openGh(title, body, cfg) {
+    const url = 'https://github.com/Leiifa/eventide/issues/new?template=' + cfg.template
+      + '&title=' + encodeURIComponent(title)
+      + '&body=' + encodeURIComponent(body);
+    window.open(url, 'eventide-feedback', 'popup=yes,width=720,height=780');
+    noteEl.textContent = 'A small window opened with your '
+      + (mode === 'report' ? 'report' : 'request')
+      + ' ready — press "Submit new issue" there to send it. This site stays open.';
+  }
+
+  function onSubmit(e) {
+    e.preventDefault();
+    const values = collect();
+    const cfg = FB_FORMS[mode];
+    const missing = cfg.fields.find(f => f.required && !values[f.id]);
+    if (missing) {
+      noteEl.textContent = `"${missing.label}" is required.`;
+      const el = document.getElementById('fb-' + missing.id);
+      if (el) el.focus();
+      return;
+    }
+    const title = (values.what.split('\n')[0] || cfg.title).slice(0, 80);
+    const body = bodyText(values);
+    if (FEEDBACK_RELAY) {
+      noteEl.textContent = 'Sending…';
+      fetch(FEEDBACK_RELAY, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mode, title, body, email: values.email })
+      }).then(r => {
+        if (!r.ok) throw new Error('http ' + r.status);
+        submitEl.disabled = true;
+        noteEl.textContent = 'Sent — thanks! It is filed for review.';
+      }).catch(() => {
+        noteEl.textContent = 'Send failed — opening the manual form instead…';
+        openGh(title, body, cfg);
+      });
+    } else {
+      openGh(title, body, cfg);
+    }
+  }
+
+  function onCopy() {
+    const text = bodyText(collect());
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        noteEl.textContent = 'Copied — paste it anywhere.';
+      }).catch(() => {
+        noteEl.textContent = 'Copy failed — use Send instead.';
+      });
+    } else {
+      noteEl.textContent = 'Copy not supported here — use Send instead.';
+    }
+  }
+
+  document.querySelectorAll('[data-feedback]').forEach(btn => {
+    btn.addEventListener('click', () => openFeedback(btn.dataset.feedback));
+  });
+  document.getElementById('fbClose').addEventListener('click', closeFeedback);
+  document.getElementById('fbCancel').addEventListener('click', closeFeedback);
+  scrim.addEventListener('click', closeFeedback);
+  document.getElementById('fbCopy').addEventListener('click', onCopy);
+  document.getElementById('fbForm').addEventListener('submit', onSubmit);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !modal.hidden) closeFeedback();
+  });
+})();

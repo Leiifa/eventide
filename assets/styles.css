@@ -2007,6 +2007,49 @@ body.nav-compact .server-select { padding-top: 4px; padding-bottom: 4px; }
   color: var(--ink-2);
 }
 
+/* ---------------- feedback popup ---------------- */
+
+.fb-modal {
+  width: min(560px, 92%);
+}
+.fb-row { margin-bottom: 14px; }
+.fb-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: var(--ink-2);
+  margin-bottom: 6px;
+}
+.fb-opt { font-weight: 500; color: var(--ink-3); }
+.fb-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-sm);
+  transition: border-color .15s ease;
+}
+.fb-input:focus {
+  outline: none;
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line-2));
+}
+.fb-input::placeholder { color: var(--ink-3); }
+textarea.fb-input { min-height: 84px; resize: vertical; }
+.fb-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.fb-note {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+.fb-note:empty { display: none; }
+
 /* ---------------- back to top + scroll progress ---------------- */
 
 .to-top {
