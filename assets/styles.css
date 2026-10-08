@@ -1997,6 +1997,14 @@ body.nav-compact .server-select { padding-top: 4px; padding-bottom: 4px; }
   100% { transform: rotate(0) scale(1); }
 }
 
+.footer-disclaimer {
+  margin: 14px 0 0;
+  max-width: 720px;
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
 /* ---------------- back to top + scroll progress ---------------- */
 
 .to-top {
