@@ -1107,6 +1107,7 @@
     if (navBtn) {
       state.view = navBtn.dataset.view;
       render();
+      syncUrl();
       return;
     }
 
@@ -1142,6 +1143,7 @@
     if (goto) {
       state.view = goto.dataset.goto;
       render();
+      syncUrl();
       window.scrollTo(0, 0);
       return;
     }
@@ -1151,6 +1153,7 @@
       state.gameId = gameCard.dataset.gameDetail;
       state.view = 'game';
       render();
+      syncUrl();
       window.scrollTo(0, 0);
       return;
     }
@@ -1159,6 +1162,7 @@
     if (backBtn) {
       state.view = 'games';
       render();
+      syncUrl();
       window.scrollTo(0, 0);
       return;
     }
@@ -1393,5 +1397,54 @@
     updateHeader();
   }
 
-  render();
+  /* ---------------- URL routing: one app, real page paths ----------------
+     /home /games /game/<id> /events /timeline /radar — bookmarkable and
+     shareable, with back/forward support. Deep links arrive via 404.html's
+     ?r= handoff (GitHub Pages) and are restored to the pretty URL here. */
+  const ROUTE_BASE = location.pathname
+    .replace(/\/index\.html$/, '')
+    .replace(/\/$/, '');
+  const ROUTE_VIEWS = ['home', 'games', 'events', 'timeline', 'radar'];
+
+  function routePath() {
+    if (state.view === 'game' && state.gameId) return '/game/' + state.gameId;
+    return '/' + (state.view || 'home');
+  }
+
+  function syncUrl() {
+    const url = ROUTE_BASE + routePath();
+    if ((location.pathname.replace(/\/$/, '') || '/') !== url) {
+      history.pushState({ view: state.view, gameId: state.gameId }, '', url);
+    }
+  }
+
+  function applyRoute() {
+    let path = location.pathname.replace(/\/$/, '') || '/';
+    const handoff = new URLSearchParams(location.search).get('r');
+    if (handoff) {
+      path = handoff.split('?')[0] || '/';
+      history.replaceState(null, '', ROUTE_BASE + path);
+    }
+    if (path.indexOf(ROUTE_BASE) === 0) path = path.slice(ROUTE_BASE.length) || '/';
+    const parts = path.split('/').filter(Boolean);
+    let view = 'home';
+    let gameId = null;
+    if (parts[0] === 'game' && parts[1]) {
+      view = 'game';
+      gameId = parts[1];
+    } else if (ROUTE_VIEWS.indexOf(parts[0]) >= 0) {
+      view = parts[0];
+    }
+    if (view === 'game' && !GAME_BY_ID[gameId]) {
+      view = 'games';
+      gameId = null;
+    }
+    state.view = view;
+    state.gameId = gameId;
+    render();
+  }
+
+  window.addEventListener('popstate', () => applyRoute());
+
+  applyRoute();
 })();

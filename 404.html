@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Eventide</title>
+<script>
+  // GitHub Pages deep-link fallback: /games, /timeline, /game/<id> … have no
+  // real file behind them, so hand the requested path to the app (which then
+  // restores the pretty URL). Keep the base in sync with the Pages path.
+  (function () {
+    var path = location.pathname;
+    var base = path.indexOf('/eventide/') === 0 ? '/eventide' : '';
+    var rest = path.slice(base.length) || '/';
+    location.replace(location.origin + base + '/index.html?r=' + encodeURIComponent(rest));
+  })();
+</script>
+</head>
+<body style="background:#0a0c10"></body>
+</html>
