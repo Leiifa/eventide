@@ -514,7 +514,7 @@
       "datesPrecision": "approx",
       "version": "3.7",
       "summary": "The currently active redemption codes for Wuthering Waves and what each one gives.",
-      "description": "Checked 7 Oct 2026. The three Version 3.7 livestream codes (FALLINGSANCTUM, FINDSENTINEL, WAKINGMOON) expired on 21 Sep 2026 and are not listed above. Limited codes typically die within 24-48 hours, so the limited one may already be dead.",
+      "description": "Checked 9 Oct 2026. The three Version 3.7 livestream codes (FALLINGSANCTUM, FINDSENTINEL, WAKINGMOON) expired on 21 Sep 2026 and are not listed above. DVME2MOHOQJT (the hololive collab code reported 5 Oct) ran on a 2-day window and is gone from the active lists — only WUTHERINGGIFT remains.",
       "gameplay": "Open Settings > Other Settings > Redemption Code in-game, enter the code exactly (case-sensitive), and claim the mailed rewards before the mail auto-deletes after ~2 weeks.",
       "requirements": [
         "Union Level 2"
@@ -554,27 +554,12 @@
           "category": "currency",
           "rarity": null,
           "note": "code WUTHERINGGIFT; some sources list 10,000 — discrepancy unverified"
-        },
-        {
-          "item": "Astrite",
-          "amount": 20,
-          "category": "currency",
-          "rarity": null,
-          "note": "code DVME2MOHOQJT (limited, reported 2026-10-05)"
-        },
-        {
-          "item": "Shell Credit",
-          "amount": 20000,
-          "category": "currency",
-          "rarity": null,
-          "note": "code DVME2MOHOQJT (limited)"
         }
       ],
       "codes": [
-        { "code": "WUTHERINGGIFT", "note": "50 Astrite, 2 Premium Resonance Potion, 2 Medium Revival Inhaler, 2 Medium Energy Bag, 15,000 Shell Credit — one redemption per account", "permanent": true },
-        { "code": "DVME2MOHOQJT", "note": "20 Astrite, 20,000 Shell Credit — reported 5 Oct 2026", "expiryNote": "limited code — expiry unlisted" }
+        { "code": "WUTHERINGGIFT", "note": "50 Astrite, 2 Premium Resonance Potion, 2 Medium Revival Inhaler, 2 Medium Energy Bag, 15,000 Shell Credit — one redemption per account", "permanent": true }
       ],
-      "rewardsSummary": "WUTHERINGGIFT: 50 Astrite + 2 Premium Resonance Potion + 2 Medium Revival Inhaler + 2 Medium Energy Bag + 15,000 Shell Credit; DVME2MOHOQJT: 20 Astrite + 20,000 Shell Credit (may expire soon)",
+      "rewardsSummary": "WUTHERINGGIFT: 50 Astrite + 2 Premium Resonance Potion + 2 Medium Revival Inhaler + 2 Medium Energy Bag + 15,000 Shell Credit (one redemption per account). DVME2MOHOQJT (20 Astrite + 20,000 Shell Credit) died with its 2-day hololive window in early Oct 2026 and is no longer listed.",
       "servers": [
         "global"
       ],

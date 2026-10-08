@@ -742,23 +742,15 @@
           "category": "material",
           "rarity": null,
           "note": "code ZAU2SYXHWX5L4ZH"
-        },
-        {
-          "item": "Oroberyl",
-          "amount": 100,
-          "category": "currency",
-          "rarity": null,
-          "note": "code AKENDFIELDSUB (YouTube subscription code — listed by topuplive, wotpack and mmoculture; not on Game8's active list)"
         }
       ],
       "codes": [
         { "code": "ENDFIELDGIFT", "note": "150 Oroberyl, 10,000 T-Creds, 20 Intermediate Combat Records, 20 Arms INSP Kits", "permanent": true },
         { "code": "ENDFIELD4PC", "note": "13,000 T-Creds, 2 Advanced Combat Records, 2 Arms INSP Kits — PC only", "permanent": true },
         { "code": "ENDFIELDSTEAM", "note": "8,000 T-Creds, 2 Elementary Cognitive Carriers, 2 Arms INSP Sets, Portrait Frame: Heat-Driven Cog", "expiryNote": "expiry TBA" },
-        { "code": "ZAU2SYXHWX5L4ZH", "note": "5,000 T-Creds, 10 Arms INSP Kits" },
-        { "code": "AKENDFIELDSUB", "note": "100 Oroberyl — listed by topuplive, wotpack and mmoculture (added 16 Aug 2026); not on Game8's active list", "expiryNote": "expiry unlisted" }
+        { "code": "ZAU2SYXHWX5L4ZH", "note": "5,000 T-Creds, 10 Arms INSP Kits" }
       ],
-      "rewardsSummary": "250 Oroberyl + 36,000 T-Creds total across the listed codes, plus cognitive carriers, combat records, Arms INSP items and the Heat-Driven Cog portrait frame",
+      "rewardsSummary": "150 Oroberyl + 36,000 T-Creds total across the listed codes, plus cognitive carriers, combat records, Arms INSP items and the Heat-Driven Cog portrait frame. AKENDFIELDSUB (100 Oroberyl) ended with its YouTube subscription campaign on 9 Sep 2026 and is no longer listed.",
       "servers": [
         "global"
       ],
