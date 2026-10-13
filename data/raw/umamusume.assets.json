@@ -1,0 +1,25 @@
+{
+  "game": {
+    "icon": "https://parts.umamusume.com/assets/images/app_icon.png",
+    "banner": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_26800001_L1791410400.png?c=20260817013042",
+    "publisher": "Cygames",
+    "developer": "Cygames",
+    "genre": "Training simulation / horse-racing simulation",
+    "platforms": ["iOS", "Android", "PC (Steam)", "Google Play Games"],
+    "releaseDate": "2025-06-26",
+    "description": "Umamusume: Pretty Derby is a training simulation game in which players train horse-girl athletes, develop their skills through Career scenarios, and compete in races. The Global edition features story events, limited-time races, trainee and Support Card scouts, and team competitions."
+  },
+  "currencies": [
+    {
+      "name": "Carats",
+      "note": "Premium scout currency."
+    }
+  ],
+  "banners": {
+    "umamusume-sagittarius-cup": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311202_L1791669600.png?c=20260909085908",
+    "umamusume-holiday-celebration-part-2": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_26800001_L1791410400.png?c=20260817013042",
+    "umamusume-sparkly-magic-show-story-event": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/header_26800001_L1791410400.png?c=20260817013042",
+    "umamusume-spotlight-scouts-zenno-rob-roy": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3134_L1791410400.png?c=20260904083346",
+    "umamusume-career-japan-cup-star-piece-bonus": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_25800008_L1791324000.png?c=20260901042000"
+  }
+}
