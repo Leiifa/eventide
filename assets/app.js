@@ -753,7 +753,7 @@
                 ${gameIconHtml(g, 'gicon')}
                 <span class="mini-game-text">
                   <b>${esc(g.shortName || g.name)}</b>
-                  <small>${esc(g.currentVersion ? 'patch ' + g.currentVersion : (g.genre || ''))}</small>
+                  <small>${esc(g.currentVersion ? 'patch ' + g.currentVersion : 'version not listed')}</small>
                 </span>
                 <span class="mini-game-live"><b>${gLive}</b> live</span>
               </button>`;

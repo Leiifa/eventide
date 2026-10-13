@@ -32,6 +32,11 @@ Scope: site code and display (`assets/app.js`, `assets/styles.css`, `index.html`
 | Rumors empty | Nothing floating around right now. | No rumors right now. |
 | Games page intro (index.html) | Banner, icon, reward currencies and event art for every game we track. Open one for the full rundown. | Banners, icons, reward currencies and event art for each game. Open one for details. |
 
+## Game-card detail consistency
+
+- In Home → Games on this tracker, cards without a current version now say “version not listed” instead of showing the game's genre. Cards with version data still show their patch number.
+- Bumped the `app.js` cache query so the change loads on the deployed site.
+
 ## Footer sources
 
 - Added a collapsible “Sources used” list in the footer. It builds from unique HTTPS hostnames in the event source URLs, links to one cited page per source site, and updates automatically when source URLs are added or removed.
@@ -46,7 +51,7 @@ Scope: site code and display (`assets/app.js`, `assets/styles.css`, `index.html`
 
 - Hermes's redeem-code and unannounced-event data rules remain unchanged.
 - Layout, colors, nav order, and mobile behavior are untouched.
-- The Waking Moon Fishing addition was committed as `00e85ef`; the footer update is currently uncommitted.
+- The Waking Moon Fishing addition was committed as `00e85ef`; the footer source list as `09efa38`; the game-card detail fix is included in the current commit.
 
 ## Still open
 
