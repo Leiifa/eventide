@@ -1,0 +1,18 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const root = path.resolve(__dirname, '..');
+const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const app = fs.readFileSync(path.join(root, 'assets/app.js'), 'utf8');
+assert.match(html, /id="languageSelect"/, 'language selector is present in the UI');
+assert.match(app, /function setLanguage\(/, 'language switching behavior is implemented');
+assert.match(app, /eventide\.language/, 'language choice is persisted locally');
+assert.match(app, /id-ID/, 'Indonesian locale is used for dates');
+assert.match(html, /Bahasa Indonesia/, 'Indonesian UI label exists');
+assert.match(html, /<option value="en">English<\/option>/, 'English remains selectable');
+assert.match(html, /<option value="id">Bahasa Indonesia<\/option>/, 'Indonesian is selectable');
+assert.match(app, /new URLSearchParams\(location\.search\)\.get\('lang'\)/, 'shareable language query is supported');
+assert.match(app, /setLanguage\(value\).*localStorage\.setItem\('eventide\.language'/, 'selection is saved across visits');
+assert.match(app, /MONTHS_ID/, 'Indonesian month names are available');
+assert.match(app, /Gacha events, one calendar\./, 'core site copy has an Indonesian translation');
+assert.match(html, /assets\/app\.js\?v=20261013k/, 'script cache version is updated');

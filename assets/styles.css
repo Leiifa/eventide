@@ -320,6 +320,9 @@ code {
   align-items: center;
   gap: 14px;
 }
+.language-wrap { display:flex; align-items:center; gap:6px; color:var(--ink-2); font-size:11px; font-weight:700; }
+.language-wrap select { color:var(--ink); background:var(--bg-elev); border:1px solid var(--line); padding:6px 26px 6px 10px; }
+.language-wrap select:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 
 .server-wrap {
   display: flex;
@@ -2318,6 +2321,11 @@ body.nav-compact .server-select { padding-top: 4px; padding-bottom: 4px; }
   /* CTA hierarchy: primary leads its own row, secondaries pair up after */
   .home-cta .btn { flex: 1 1 calc(50% - 5px); justify-content: center; }
   .home-cta .btn-primary { flex: 1 1 100%; }
+}
+
+@media (max-width: 600px) {
+  .language-label { display: none; }
+  .topbar-right { gap: 6px; flex-wrap: wrap; }
 }
 
 /* Desktop default size: 150% (identical to browser zoom 150%) */

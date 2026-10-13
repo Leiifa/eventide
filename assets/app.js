@@ -7,13 +7,145 @@
 (() => {
   'use strict';
 
+  const UI_ID = { Home:'Beranda', Games:'Game', Events:'Acara', Timeline:'Linimasa', Radar:'Radar', 'All servers':'Semua server', Filters:'Filter', Live:'Berlangsung', Upcoming:'Akan datang', All:'Semua', Ended:'Berakhir', 'All types':'Semua jenis', 'Supported games':'Game yang didukung', Game:'Game', Event:'Acara', Dates:'Tanggal', Rewards:'Hadiah', Status:'Status', Sort:'Urutkan', 'Sort: start date':'Urutkan: tanggal mulai', 'Sort: latest first':'Urutkan: terbaru', 'Sort: ending soon':'Urutkan: segera berakhir', 'Sort: game':'Urutkan: game', 'Search events, rewards…':'Cari acara, hadiah…', 'Search events':'Cari acara', 'Back to top':'Kembali ke atas', 'Language':'Bahasa', 'Browse games':'Jelajahi game', "See what's live":"Lihat yang sedang berlangsung", 'Open the timeline':'Buka linimasa', 'Right now':'Saat ini', 'Most rewarding event':'Acara dengan hadiah terbanyak', 'Starting soon':'Segera dimulai', 'Ending soon':'Segera berakhir', 'Games on this tracker':'Game dalam pelacak ini', 'On the calendar':'Dalam kalender', 'Rumors & leaks':'Rumor & bocoran', 'Today':'Hari ini', 'Permanent code list':'Daftar kode permanen', 'Not announced yet':'Belum diumumkan', 'No end date':'Tidak ada tanggal akhir', 'Starts today':'Dimulai hari ini', 'Ends today':'Berakhir hari ini', 'No games loaded yet.':'Belum ada game yang dimuat.', 'Nothing live right now.':'Tidak ada yang berlangsung saat ini.', 'Nothing announced yet.':'Belum ada yang diumumkan.', 'Recently ended':'Baru saja berakhir', 'About this game':'Tentang game ini', 'Requirements':'Persyaratan', 'Reliability':'Keandalan', 'Source':'Sumber', 'All games':'Semua game', 'Data as of ':'Data per ' };
+  let language = (() => {
+    const requested = new URLSearchParams(location.search).get('lang');
+    if (requested === 'id' || requested === 'en') return requested;
+    try { const saved = localStorage.getItem('eventide.language'); if (saved) return saved === 'id' ? 'id' : 'en'; } catch (_) {}
+    return /^id(?:-|$)/i.test(navigator.language || '') ? 'id' : 'en';
+  })();
+  try { localStorage.setItem('eventide.language', language); } catch (_) {}
+  function setLanguage(value) { language = value === 'id' ? 'id' : 'en'; try { localStorage.setItem('eventide.language', language); } catch (_) {} document.documentElement.lang = language; const select = document.getElementById('languageSelect'); if (select) select.value = language; render(); }
+
+  Object.assign(UI_ID, {
+    'GACHA EVENT TRACKER':'PELACAK EVENT GACHA', 'Views':'Tampilan', 'Server':'Server',
+    'Choose interface language':'Pilih bahasa antarmuka', 'Most events run on every server at the same dates — this only filters the rare region-specific ones.':'Sebagian besar event berjalan serentak di semua server — filter ini hanya untuk event tertentu yang berbeda wilayah.',
+    'Filter by game':'Filter berdasarkan game', 'Filter by status':'Filter berdasarkan status', 'Filter by event type':'Filter berdasarkan jenis event',
+    'Gacha events, one calendar.':'Event gacha, satu kalender.',
+    'Rewards, dates and rumors for every game you play, all on one calendar. Rumors are labeled as rumors.':'Hadiah, tanggal, dan rumor dari semua game yang kamu mainkan dalam satu kalender. Rumor selalu ditandai dengan jelas.',
+    'RIGHT NOW':'SAAT INI', 'home shows every game on the tracker — filters apply on other tabs':'Beranda menampilkan semua game — filter berlaku di tab lainnya',
+    'live now':'sedang berlangsung', 'starting ≤14 days':'dimulai dalam ≤14 hari', 'rumors / leaks':'rumor / bocoran', 'events on the board':'event tercatat',
+    'Next up:':'Berikutnya:', 'Highest first · live and upcoming':'Terbanyak dahulu · sedang berlangsung dan akan datang',
+    'all events':'semua event', 'closing soon':'segera berakhir', 'game pages':'halaman game',
+    'patch ':'patch ', 'version not listed':'versi belum dicantumkan', ' live':' berlangsung',
+    'floating around —':'beredar —', 'unconfirmed dates and rewards, kept off the schedule on purpose.':'tanggal dan hadiah belum pasti, sengaja dipisahkan dari jadwal.',
+    'one calendar':'satu kalender', 'tracked':'tercatat', 'events tracked':'event tercatat', 'updated':'diperbarui',
+    'No event data loaded.':'Data event belum dimuat.', 'Nothing matches these filters.':'Tidak ada yang cocok dengan filter ini.',
+    'Try clearing the search or status filter.':'Coba hapus pencarian atau filter status.', 'No upcoming events or rumors in the current dataset.':'Tidak ada event mendatang atau rumor dalam data saat ini.',
+    'announced with real dates —':'diumumkan dengan tanggal pasti —', 'unconfirmed — dates and rewards may change ·':'belum dikonfirmasi — tanggal dan hadiah dapat berubah ·',
+    'Nothing announced yet in this filter.':'Belum ada pengumuman untuk filter ini.', 'No rumors right now.':'Belum ada rumor saat ini.',
+    'today':'hari ini', 'rumor / leak':'rumor / bocoran', 'scroll sideways — past months sit to the left':'Gulir ke samping — bulan sebelumnya ada di sebelah kiri',
+    'No dates yet':'Tanggal belum tersedia', 'without dates yet':'tanpa tanggal', 'No dated events match these filters.':'Tidak ada event bertanggal yang cocok dengan filter ini.',
+    'No currency rewards published right now.':'Belum ada hadiah mata uang yang diumumkan.', 'No events start in the next 14 days.':'Tidak ada event yang dimulai dalam 14 hari ke depan.',
+    'No events end in the next 7 days.':'Tidak ada event yang berakhir dalam 7 hari ke depan.',
+    'Banners, icons, reward currencies and event art for each game. Open one for details.':'Banner, ikon, mata uang hadiah, dan ilustrasi event untuk setiap game. Buka untuk melihat detail.',
+    'CURRENT PATCH':'PATCH SAAT INI', 'NEXT UPDATE':'PEMBARUAN BERIKUTNYA', 'LIVE NOW':'SEDANG BERLANGSUNG', 'EVENTS TRACKED':'EVENT TERCATAT',
+    'ABOUT THIS GAME':'TENTANG GAME INI', 'REWARD CURRENCIES & ITEMS':'MATA UANG & ITEM HADIAH', '← All games':'← Semua game',
+    'Sources used':'Sumber yang digunakan', 'Sites cited in the event data. Each event links its own source.':'Situs yang dikutip dalam data event. Setiap event memiliki tautan sumber.',
+    'Support me on Ko-fi':'Dukung saya di Ko-fi', 'Report a problem':'Laporkan masalah', 'Request a feature':'Ajukan fitur',
+    'Close details':'Tutup detail', 'Close full banner':'Tutup banner penuh', 'Eventide home':'Beranda Eventide',
+    'Eventide is an unofficial fan project. Not affiliated with, endorsed by or sponsored by HoYoverse, Kuro Games, Hypergryph, Gryphline or Cygames — all game names, artwork and trademarks belong to their respective owners.':'Eventide adalah proyek penggemar tidak resmi. Tidak berafiliasi dengan, didukung oleh, atau disponsori HoYoverse, Kuro Games, Hypergryph, Gryphline, maupun Cygames — seluruh nama game, ilustrasi, dan merek dagang adalah milik pemiliknya masing-masing.',
+    'No dataset loaded yet':'Data belum dimuat', 'No games loaded yet.':'Belum ada game yang dimuat.',
+    'Nothing live right now.':'Tidak ada yang sedang berlangsung.', 'Nothing announced yet.':'Belum ada pengumuman.',
+    'rewards not published':'hadiah belum diumumkan', '+ more':'+ lainnya', 'Leak':'Bocoran', 'Rumor':'Rumor',
+    'confirmed':'dikonfirmasi', 'leaked':'bocoran', 'rumor':'rumor', 'Live':'Berlangsung', 'Upcoming':'Akan datang', 'Ended':'Berakhir',
+    'Story Event':'Event Cerita', 'Login Event':'Event Login', 'Race Event':'Event Balapan', 'Gacha Banner':'Banner Gacha', 'Other':'Lainnya',
+    'Filter':'Filter', 'Game':'Game', 'Event':'Event', 'Dates':'Tanggal', 'Rewards':'Hadiah', 'Status':'Status',
+    'Report a problem':'Laporkan masalah', 'Request a feature':'Ajukan fitur', 'Reliability':'Keandalan', 'Requirements':'Persyaratan', 'Source':'Sumber',
+    'not announced':'belum diumumkan', 'No dates yet':'Tanggal belum tersedia', 'No end date':'Tidak ada tanggal akhir',
+    'Starts today':'Dimulai hari ini', 'Ends today':'Berakhir hari ini', 'Ended today':'Berakhir hari ini',
+    'Permanent code list':'Daftar kode permanen', 'Not announced yet':'Belum diumumkan', 'Starts in':'Dimulai dalam', 'Ends in':'Berakhir dalam', 'days ago':'hari lalu', 'day':'hari', 'days':'hari',
+    'Home':'Beranda', 'Games':'Game', 'Events':'Acara', 'Timeline':'Linimasa', 'Radar':'Radar', 'Search events, rewards…':'Cari event, hadiah…', 'Search events':'Cari event',
+    'Sort: start date':'Urutkan: tanggal mulai', 'Sort: latest first':'Urutkan: terbaru', 'Sort: ending soon':'Urutkan: segera berakhir', 'Sort: game':'Urutkan: game', 'All types':'Semua jenis',
+    'Sources used':'Sumber yang digunakan', 'About this game':'Tentang game ini', 'Reward currencies & items':'Mata uang & item hadiah', 'Current patch':'Patch saat ini', 'Next update':'Pembaruan berikutnya',
+    'Live now':'Sedang berlangsung', 'Recently ended':'Baru saja berakhir', 'Supported games':'Game yang didukung', 'Back to top':'Kembali ke atas', 'All games':'Semua game',
+    'Starts':'Mulai', 'Ends':'Berakhir', 'Servers':'Server', 'What it is':'Tentang event', 'About':'Tentang', 'How it plays':'Cara bermain',
+    'Total':'Total', 'Item':'Item', 'Amount':'Jumlah', 'Rarity':'Kelangkaan', 'Note':'Catatan', 'Reward list not published yet.':'Daftar hadiah belum diumumkan.',
+    'Official source':'Sumber resmi', 'View full banner':'Lihat banner penuh', 'Full banner':'Banner penuh', 'Active redeem codes':'Kode redeem aktif', 'Redeem codes':'Kode redeem',
+    'Permanent':'Permanen', 'Limited':'Terbatas', 'limited':'terbatas', 'permanent':'permanen', 'expires':'berakhir', 'No end date':'Tidak ada tanggal akhir',
+    'No dates yet':'Tanggal belum tersedia', 'not announced':'belum diumumkan', 'No dates yet':'Tanggal belum tersedia', 'All servers':'Semua server',
+    'Filter':'Filter', 'Game':'Game', 'Event':'Event', 'Dates':'Tanggal', 'Rewards':'Hadiah', 'Status':'Status', 'Reliability':'Keandalan', 'Requirements':'Persyaratan', 'Source':'Sumber',
+    'Seasonal Event':'Event Musiman', 'Building Event':'Event Membangun', 'Camera Event':'Event Kamera', 'Co-op Event':'Event Kerja Sama', 'Collab':'Kolaborasi', 'Combat Event':'Event Pertarungan',
+    'Community Event':'Event Komunitas', 'Exploration Event':'Event Eksplorasi', 'Fun and Games Event':'Event Permainan', 'Minigame Event':'Event Mini-game', 'Redeem Codes':'Kode Redeem', 'Spending Event':'Event Belanja', 'Web Event':'Event Web', 'Wish Banner':'Banner Wish',
+    'announced':'diumumkan', 'not announced':'belum diumumkan', 'full banner':'banner penuh', 'icon':'ikon', 'key art':'ilustrasi utama', 'patch':'patch',
+    'No upcoming events or rumors in the current dataset.':'Tidak ada event mendatang atau rumor dalam data saat ini.', 'No event data loaded.':'Data event belum dimuat.', 'Nothing matches these filters.':'Tidak ada yang cocok dengan filter ini.',
+    'Try clearing the search or status filter.':'Coba hapus pencarian atau filter status.', 'No dated events match these filters.':'Tidak ada event bertanggal yang cocok dengan filter ini.',
+    'No currency rewards published right now.':'Belum ada hadiah mata uang yang diumumkan.', 'No events start in the next 14 days.':'Tidak ada event yang dimulai dalam 14 hari ke depan.', 'No events end in the next 7 days.':'Tidak ada event yang berakhir dalam 7 hari ke depan.',
+    'Nothing live right now.':'Tidak ada yang sedang berlangsung.', 'Nothing announced yet.':'Belum ada pengumuman.', 'No rumors right now.':'Belum ada rumor saat ini.', 'Nothing announced yet in this filter.':'Belum ada pengumuman pada filter ini.',
+    'English':'English', 'Bahasa Indonesia':'Bahasa Indonesia',
+    'home shows':'beranda menampilkan', 'every game on the tracker':'semua game di pelacak', '— filters apply on other tabs':'— filter berlaku di tab lain',
+    'Next up':'Berikutnya', 'No dates yet':'Tanggal belum tersedia', 'No.':'No.', 'updated':'diperbarui',
+    'Live':'Berlangsung', 'Upcoming':'Akan datang', 'Ended':'Berakhir', 'Rumor':'Rumor', 'Leak':'Bocoran',
+    'Sources used':'Sumber yang digunakan', 'Compiled from official announcements — HoYoLAB, official game sites and in-game notices — plus community trackers and wikis like Game8, karendar and WuWaBuild. Every event links its source, and dates are day-level on purpose (no times).':'Disusun dari pengumuman resmi — HoYoLAB, situs resmi game, dan pemberitahuan dalam game — serta pelacak komunitas dan wiki seperti Game8, karendar, dan WuWaBuild. Setiap event mencantumkan sumber; tanggal hanya ditampilkan per hari, tanpa jam.',
+    'and are never mixed into confirmed dates.':'dan tidak pernah dicampur dengan jadwal yang sudah dikonfirmasi.',
+    'Active redeem codes':'Kode redeem aktif', 'Released':'Dirilis', 'Official site':'Situs resmi', 'Unknown game.':'Game tidak dikenal.',
+    'No dataset loaded yet':'Data belum dimuat', 'See what’s live':'Lihat yang sedang berlangsung', 'No event data loaded.':'Data event belum dimuat.',
+    'Team Rank':'Peringkat Tim', 'Live now':'Sedang berlangsung', 'Upcoming':'Akan datang', 'Recently ended':'Baru saja berakhir',
+    'Permanently':'Permanen', 'Source':'Sumber', 'Sources used':'Sumber yang digunakan', 'Version not listed':'Versi belum dicantumkan', 'Gacha game':'Game gacha',
+    'Track':'Lacak', 'filter':'filter', 'all servers':'semua server', 'all games':'semua game', 'Clear':'Hapus',
+    'no event data loaded':'data event belum dimuat', 'current patch':'patch saat ini', 'next update':'pembaruan berikutnya',
+    'released':'dirilis', 'Events tracked':'Event tercatat', 'Rumors & leaks':'Rumor & bocoran', 'On the calendar':'Dalam kalender',
+    'Server':'Server', 'Language':'Bahasa', 'Search events':'Cari event', 'Sort':'Urutkan', 'All types':'Semua jenis', 'All servers':'Semua server', 'Filter':'Filter',
+    'No event data loaded. Fill':'Data event belum dimuat. Isi', 'then run':'lalu jalankan', 'No dates yet':'Tanggal belum tersedia',
+    'Permanent code list':'Daftar kode permanen', 'No end date':'Tidak ada tanggal akhir', 'days':'hari', 'day':'hari',
+    'Top':'Teratas', 'Month':'Bulan', 'Back to top':'Kembali ke atas', 'live':'berlangsung', 'upcoming':'akan datang', 'rumors':'rumor', 'events':'event', 'games':'game',
+    'GACHA EVENT TRACKER':'PELACAK EVENT GACHA', 'gacha event tracker':'pelacak event gacha', 'RUMOR':'RUMOR', 'Data per':'Data per', 'Leaks and rumors are marked':'Kebocoran dan rumor ditandai',
+    '· Compiled from official announcements — HoYoLAB, official game sites and in-game notices — plus community trackers and wikis like Game8, karendar and WuWaBuild. Every event links its source, and dates are day-level on purpose (no times).':'· Disusun dari pengumuman resmi — HoYoLAB, situs resmi game, dan pemberitahuan dalam game — serta pelacak komunitas dan wiki seperti Game8, karendar, dan WuWaBuild. Setiap event mencantumkan sumber; tanggal hanya ditampilkan per hari, tanpa jam.',
+    '2 rumors floating around — unconfirmed dates and rewards, kept off the schedule on purpose.':'2 rumor beredar — tanggal dan hadiah belum dikonfirmasi, sengaja tidak dimasukkan ke jadwal.',
+    'Open the radar':'Buka radar', 'Open radar':'Buka radar', 'See all events':'Lihat semua event', 'game pages':'halaman game', 'floating around':'beredar', 'unconfirmed':'belum dikonfirmasi', 'kept off the schedule on purpose':'sengaja tidak dimasukkan ke jadwal'
+  });
+  function translateUiText(value) {
+    if (language !== 'id') return value;
+    const trimmed = value.trim();
+    const normalized = trimmed.replace(/\s+/g, ' ');
+    if (UI_ID[trimmed]) return value.replace(trimmed, UI_ID[trimmed]);
+    if (UI_ID[normalized]) return value.replace(trimmed, UI_ID[normalized]);
+    let m = normalized.match(/^([0-9]+) rumors?$/);
+    if (m) return value.replace(trimmed, `${m[1]} rumor`);
+    m = normalized.match(/^floating around — unconfirmed dates and rewards, kept off the schedule on purpose\.$/);
+    if (m) return value.replace(trimmed, 'beredar — tanggal dan hadiah belum dikonfirmasi, sengaja tidak dimasukkan ke jadwal.');
+    m = normalized.match(/^2 rumors floating around — unconfirmed dates and rewards, kept off the schedule on purpose\.$/);
+    if (m) return value.replace(trimmed, '2 rumor beredar — tanggal dan hadiah belum dikonfirmasi, sengaja tidak dimasukkan ke jadwal.');
+    m = normalized.match(/^rumors? floating around — unconfirmed dates and rewards, kept off the schedule on purpose\.$/);
+    if (m) return value.replace(trimmed, 'rumor beredar — tanggal dan hadiah belum dikonfirmasi, sengaja tidak dimasukkan ke jadwal.');
+    m = normalized.match(/^Data as of (.+?) · Compiled from official announcements — (.+?)\. Every event links its source, and dates are day-level on purpose \(no times\)\.$/);
+    if (m) return value.replace(trimmed, `Data per ${m[1]} · Disusun dari pengumuman resmi — ${m[2]}. Setiap event mencantumkan sumber; tanggal hanya ditampilkan per hari, tanpa jam.`);
+    m = normalized.match(/^Starts in ([0-9]+) days?$/);
+    if (m) return value.replace(trimmed, `Dimulai dalam ${m[1]} hari`);
+    m = normalized.match(/^Ends in ([0-9]+) days?$/);
+    if (m) return value.replace(trimmed, `Berakhir dalam ${m[1]} hari`);
+    m = normalized.match(/^Ended ([0-9]+) days? ago$/);
+    if (m) return value.replace(trimmed, `Berakhir ${m[1]} hari lalu`);
+    m = normalized.match(/^([0-9]+) games · ([0-9]+) events tracked(?: · updated (.+))?$/i);
+    if (m) return value.replace(trimmed, `${m[1]} game · ${m[2]} event tercatat${m[3] ? ' · diperbarui ' + m[3] : ''}`);
+    m = normalized.match(/^Sources used [(]([0-9]+)[)]$/);
+    if (m) return value.replace(trimmed, `Sumber yang digunakan (${m[1]})`);
+    m = normalized.match(/^from (.+)$/);
+    if (m) return value.replace(trimmed, `mulai ${m[1]}`);
+    m = normalized.match(/^until (.+)$/);
+    if (m) return value.replace(trimmed, `sampai ${m[1]}`);
+    m = normalized.match(/^([0-9]+) events? without dates yet$/);
+    if (m) return value.replace(trimmed, `${m[1]} event tanpa tanggal`);
+    m = normalized.match(/^announced with real dates — ([0-9]+) events?$/);
+    if (m) return value.replace(trimmed, `diumumkan dengan tanggal pasti — ${m[1]} event`);
+    m = normalized.match(/^unconfirmed — dates and rewards may change · ([0-9]+)$/);
+    if (m) return value.replace(trimmed, `belum dikonfirmasi — tanggal dan hadiah dapat berubah · ${m[1]}`);
+    m = normalized.match(/^Data as of (.+)$/);
+    if (m) return value.replace(trimmed, `Data per ${m[1]}`);
+    return value;
+  }
+
   const DATA = window.GACHA_DATA || { generatedAt: null, games: [], events: [] };
   const GAMES = DATA.games || [];
   const EVENTS = DATA.events || [];
   const GAME_BY_ID = Object.fromEntries(GAMES.map(g => [g.id, g]));
 
-  const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const MONTHS_FULL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const MONTHS_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const MONTHS_ID = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+  const MONTHS_FULL_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const MONTHS_FULL_ID = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+  const MONTHS = new Proxy(MONTHS_EN, { get: (target, key) => (language === 'id' ? MONTHS_ID : target)[key] });
+  const MONTHS_FULL = new Proxy(MONTHS_FULL_EN, { get: (target, key) => (language === 'id' ? MONTHS_FULL_ID : target)[key] });
 
   /* ---------------- date helpers (UTC, day-level only) ---------------- */
 
@@ -1122,6 +1254,46 @@
     updateToTop();
     updateHeader();
     updateFilterSummary();
+    applyLanguage();
+  }
+
+  function applyLanguage() {
+    const id = language === 'id';
+    document.documentElement.lang = id ? 'id' : 'en';
+    const select = document.getElementById('languageSelect');
+    if (select) select.value = language;
+    document.querySelectorAll('body *').forEach(el => {
+      for (const node of el.childNodes) {
+        if (node.nodeType !== Node.TEXT_NODE) continue;
+        if (node.__eventideEnglish === undefined) node.__eventideEnglish = node.nodeValue;
+        node.nodeValue = translateUiText(node.__eventideEnglish);
+      }
+      for (const attr of ['placeholder', 'title', 'aria-label']) {
+        const originalAttr = 'data-eventide-en-' + attr.replace('aria-label', 'aria');
+        if (!el.hasAttribute(attr)) continue;
+        if (!el.hasAttribute(originalAttr)) el.setAttribute(originalAttr, el.getAttribute(attr));
+        const original = el.getAttribute(originalAttr);
+        el.setAttribute(attr, translateUiText(original));
+      }
+    });
+    const locale = id ? 'id-ID' : 'en-GB';
+    const todayEl = document.getElementById('todayDate');
+    if (todayEl) todayEl.textContent = new Intl.DateTimeFormat(locale, { day:'numeric', month:'short', year:'numeric', timeZone:'UTC' }).format(today);
+    const title = document.querySelector('title');
+    if (title) {
+      const routeLabel = state.view === 'game' && GAME_BY_ID[state.gameId]
+        ? GAME_BY_ID[state.gameId].name
+        : (VIEW_TITLES[state.view] || 'Home');
+      const localizedLabel = id ? (UI_ID[routeLabel] || routeLabel) : routeLabel;
+      title.textContent = state.view === 'home'
+        ? (id ? 'Eventide — pelacak event gacha' : 'Eventide — gacha event tracker')
+        : `${localizedLabel} · Eventide`;
+    }
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      if (!meta.dataset.eventideEnglish) meta.dataset.eventideEnglish = meta.content;
+      meta.content = id ? 'Satu kalender untuk semua event gacha: Genshin Impact, Honkai: Star Rail, Wuthering Waves, Arknights: Endfield, Punishing: Gray Raven, Zenless Zone Zero, dan Umamusume. Tanggal, syarat, hadiah, linimasa, dan rumor.' : meta.dataset.eventideEnglish;
+    }
   }
 
   /* ---------------- events ---------------- */
@@ -1222,6 +1394,7 @@
     else closeDrawer();
   });
 
+  document.getElementById('languageSelect').addEventListener('change', e => setLanguage(e.target.value));
   document.getElementById('serverSelect').addEventListener('change', (e) => {
     state.server = e.target.value;
     store.set('server', state.server);
