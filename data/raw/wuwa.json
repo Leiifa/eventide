@@ -174,6 +174,29 @@
       "rumorNotes": null
     },
     {
+      "id": "wuwa-waking-moon-fishing",
+      "title": "Waking Moon Fishing",
+      "type": "Web Event",
+      "status": "upcoming",
+      "start": "2026-10-15",
+      "end": "2026-11-01",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Fishing challenge at the Waking Moon Festival stall.",
+      "description": "Take part in the Waking Moon Festival fishing challenge at the festival stall.",
+      "gameplay": "Complete the fishing challenge at the Waking Moon Festival stall.",
+      "requirements": [],
+      "rewards": [],
+      "rewardsSummary": "Rewards not listed",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Official Version 3.7 patch notes",
+      "sourceUrl": "https://www.wuwabuild.com/news/wuthering-waves-3-7-update",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
       "id": "wuwa-back-to-solaris",
       "title": "Back to Solaris",
       "type": "Web Event",

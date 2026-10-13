@@ -1,6 +1,6 @@
 # Changes by Bingus (website, this session)
 
-Scope: site code and display only (`assets/app.js`, `index.html`). No data files were changed by Bingus. Data changes for redeem codes and unannounced events were made by Hermes in `data/raw/` and `scripts/build_data.py`.
+Scope: site code and display (`assets/app.js`, `assets/styles.css`, `index.html`) plus the Wuthering Waves event addition described below. Hermes handled the redeem-code and unannounced-event data rules; Bingus added the confirmed Waking Moon Fishing event to `data/raw/wuwa.json` and rebuilt `data/events.js`.
 
 ## Display logic (assets/app.js)
 
@@ -32,13 +32,17 @@ Scope: site code and display only (`assets/app.js`, `index.html`). No data files
 | Rumors empty | Nothing floating around right now. | No rumors right now. |
 | Games page intro (index.html) | Banner, icon, reward currencies and event art for every game we track. Open one for the full rundown. | Banners, icons, reward currencies and event art for each game. Open one for details. |
 
+## Event addition
+
+- Added confirmed Wuthering Waves 3.7 web event **Waking Moon Fishing** (`wuwa-waking-moon-fishing`), 15/10/2026–1/11/2026, with source URL from the official patch notes via WuWaBuild. Rewards were not listed in the supplied findings, so none were invented. It appears in Home → Starting soon.
+- Rebuilt `data/events.js` from raw data (93 total events; Wuthering Waves 15). `index.html` data cache tag bumped to `20261013`.
+
 ## Not changed
 
-- Hermes's data rules are untouched (redeem codes have no date span, unannounced events have `datesPrecision: "unannounced"`).
+- Hermes's redeem-code and unannounced-event data rules remain unchanged.
 - Layout, colors, nav order, and mobile behavior are untouched.
-- Nothing has been committed.
+- Nothing has been committed yet.
 
 ## Still open
 
-- Leifa to review the remaining copy on Home and Games pages.
-- Patch-limited flags on 30 redeem codes (genshin 11, hsr 10, enfield 2, pgr 4, zzz 3). These are Hermes's classifications. Leifa needs to say which, if any, are evergreen. Hermes then flips them to `"permanent": true` in `data/raw/`. Hermes does this, not Bingus.
+- No open decisions from this change. The 30 patch-limited codes stay limited unless Leifa identifies a specific evergreen code; ENDFIELD4PC remains permanent with its PC-only note.
