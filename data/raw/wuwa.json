@@ -551,6 +551,13 @@
           "note": "code WUTHERINGGIFT (permanent, one redemption per account)"
         },
         {
+          "item": "Astrite",
+          "amount": 160,
+          "category": "currency",
+          "rarity": null,
+          "note": "80 each from STARRYSTAGE2 and KEEPONSHINING (Solaris Starry Stage livestream, expiring 13 Oct 2026)"
+        },
+        {
           "item": "Premium Resonance Potion",
           "amount": 2,
           "category": "xp",
@@ -580,9 +587,11 @@
         }
       ],
       "codes": [
-        { "code": "WUTHERINGGIFT", "note": "50 Astrite, 2 Premium Resonance Potion, 2 Medium Revival Inhaler, 2 Medium Energy Bag, 15,000 Shell Credit — one redemption per account", "permanent": true }
+        { "code": "WUTHERINGGIFT", "note": "50 Astrite, 2 Premium Resonance Potion, 2 Medium Revival Inhaler, 2 Medium Energy Bag, 15,000 Shell Credit — one redemption per account", "permanent": true },
+        { "code": "STARRYSTAGE2", "note": "80 Astrite — Solaris Starry Stage livestream code", "expires": "2026-10-13", "expiryNote": "window closes 13 Oct 2026 08:59 (UTC-7)" },
+        { "code": "KEEPONSHINING", "note": "80 Astrite — Solaris Starry Stage livestream code", "expires": "2026-10-13", "expiryNote": "window closes 13 Oct 2026 08:59 (UTC-7)" }
       ],
-      "rewardsSummary": "WUTHERINGGIFT: 50 Astrite + 2 Premium Resonance Potion + 2 Medium Revival Inhaler + 2 Medium Energy Bag + 15,000 Shell Credit (one redemption per account). DVME2MOHOQJT (20 Astrite + 20,000 Shell Credit) died with its 2-day hololive window in early Oct 2026 and is no longer listed.",
+      "rewardsSummary": "WUTHERINGGIFT: 50 Astrite + 2 Premium Resonance Potion + 2 Medium Revival Inhaler + 2 Medium Energy Bag + 15,000 Shell Credit (one redemption per account). STARRYSTAGE2 + KEEPONSHINING: 80 Astrite each (Solaris Starry Stage livestream, expiring 13 Oct 2026) — 210 Astrite total if all three are fresh. DVME2MOHOQJT (20 Astrite + 20,000 Shell Credit) died with its 2-day hololive window in early Oct 2026 and is no longer listed.",
       "servers": [
         "global"
       ],

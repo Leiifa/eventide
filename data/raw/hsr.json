@@ -470,10 +470,10 @@
       "rewards": [
         {
           "item": "Stellar Jade",
-          "amount": 430,
+          "amount": 370,
           "category": "currency",
           "rarity": null,
-          "note": "sum across the 9 active codes (Pocket Tactics values)"
+          "note": "sum across the 8 active codes (Pocket Tactics values)"
         },
         {
           "item": "Fuel",
@@ -534,18 +534,15 @@
       ],
       "codes": [
         { "code": "STARRAILGIFT", "note": "evergreen code — no expiry announced", "permanent": true },
-        { "code": "RT4BPNA8FBS3", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "PEARLAPPRAISE", "patchLimited": true, "expiryNote": "expires with v4.7" },
+        { "code": "RT4BPNA8FBS3", "note": "50 Stellar Jade, 10,000 Credit — added 30 Sep 2026 (Game8 omits it; HoYoLAB + HappyGamer list it)", "patchLimited": true, "expiryNote": "expires with v4.7" },
+        { "code": "PEARLAPPRAISE", "note": "3 Traveler's Guide, 2 Cold Joke — added 28 Sep 2026", "patchLimited": true, "expiryNote": "expires with v4.7" },
         { "code": "OMEGA", "patchLimited": true, "expiryNote": "expires with v4.7" },
         { "code": "CREATIONNYMPH", "patchLimited": true, "expiryNote": "expires with v4.7" },
         { "code": "FAREWELL", "patchLimited": true, "expiryNote": "expires with v4.7" },
         { "code": "IFYOUAREREADINGTHIS", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "4TKSX77Y58QK", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "5S6ZHRWTDNJB", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "WA4AV2F24PYX", "note": "50 Stellar Jade, 10,000 Credit (Game8 listing)", "patchLimited": true },
-        { "code": "WAVEFLAIRSTYLE", "note": "3 Traveler's Guide, 2 Speeding Jet Surfboard (Game8 listing)", "patchLimited": true }
+        { "code": "4TKSX77Y58QK", "note": "30 Stellar Jade, 3 Traveler's Guide, 5 Condensed Aether, 4 Lost Gold Fragment, 20,000 Credit (HappyGamer/PC Gamer listing)", "patchLimited": true, "expiryNote": "expires with v4.7" }
       ],
-      "rewardsSummary": "~430 Stellar Jade + 4 Fuel + 8 Traveler's Guide + 40,000 Credit + 5 Condensed Aether + 4 Lost Gold Fragment + consumables across 9 active codes (Game8 lists different STARRAILGIFT values and 2 extra codes)",
+      "rewardsSummary": "~370 Stellar Jade + 4 Fuel + 8 Traveler's Guide + 40,000 Credit + 5 Condensed Aether + 4 Lost Gold Fragment + consumables across 8 active codes (Game8 lists different STARRAILGIFT values and extra codes)",
       "servers": [
         "global"
       ],
