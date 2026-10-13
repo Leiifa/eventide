@@ -4,10 +4,10 @@
     "name": "Punishing: Gray Raven",
     "shortName": "PGR",
     "currentVersion": "4.8 - Anchored in Faith",
-    "nextVersion": "Unannounced (post-Anchored in Faith)",
-    "nextVersionDate": null,
+    "nextVersion": "A Comet's Afterglow",
+    "nextVersionDate": "2026-11-05",
     "officialUrl": "https://pgr.kurogame.com/",
-    "notes": "Global server dates used (UTC); global has largely caught up to CN via combined patches, and the next global version has not been officially announced yet."
+    "notes": "Global server dates used (UTC); global has largely caught up to CN via combined patches. The next version [A Comet's Afterglow] was officially announced on the PGR Global X account for Nov 5, 2026, headlined by S-Rank Omniframe Leia: Fortunaster; no version number has been published for it yet."
   },
   "events": [
     {
@@ -161,8 +161,8 @@
       "end": "2026-11-03",
       "datesPrecision": "exact",
       "version": "4.8",
-      "summary": "Collab sign-in event handing out 42 free R&D attempts plus Event Construct R&D Tickets.",
-      "description": "A limited-time sign-in event tied to the Date A Live V collaboration. Signing in during the event grants free research attempts for the collab pools along with a Commandant Portrait and standard R&D tickets. Free R&D attempts expire when the event ends, so they must be used before November 3.",
+      "summary": "Collab sign-in event handing out free collab R&D attempts plus Event Construct R&D Tickets.",
+      "description": "A limited-time sign-in event tied to the Date A Live V collaboration. Signing in during the event grants free research attempts for the collab pools along with a Commandant Portrait and standard R&D tickets. Free R&D attempts expire when the event ends, so they must be used before November 3. The official notice itemizes 24 + 14 collab R&D attempts (38 total); the 42-pull figure in the event's marketing does not reconcile with that itemization and is kept only in the title.",
       "gameplay": "Log in during the event period and claim sign-in rewards; free collab R&D attempts are used directly on the Kurumi/weapon collab pools.",
       "requirements": [
         "Sign in during the event period"
@@ -197,7 +197,7 @@
           "note": "profile portrait"
         }
       ],
-      "rewardsSummary": "42 free pulls (24 character + 14 weapon) plus Event Construct R&D Ticket x1,000 and the Ember Ceremony portrait",
+      "rewardsSummary": "Otherworld Character Target R&D Attempt x24, Collab Weapon Target R&D Attempt x14 (38 collab pulls itemized), Event Construct R&D Ticket x1,000, and the Ember Ceremony portrait",
       "servers": [
         "global"
       ],
@@ -379,8 +379,8 @@
       "servers": [
         "global"
       ],
-      "sourceName": "karendar.com (PGR event calendar)",
-      "sourceUrl": "https://karendar.com/events/banner-rate-up-oblivion-aeternion-dirge",
+      "sourceName": "Official PGR on X (@PGR_GLOBAL)",
+      "sourceUrl": "https://x.com/PGR_GLOBAL/status/2105190914456965482",
       "confidence": "confirmed",
       "rumorNotes": null
     },
@@ -394,7 +394,7 @@
       "datesPrecision": "permanent",
       "version": "4.8",
       "summary": "The currently active gift codes for Punishing: Gray Raven and what each one gives.",
-      "description": "Community-tracked codes, checked 4 Oct 2026 via Pocket Gamer. Exact reward contents are not confirmed by current sources — older listings are inconsistent — and code expiry dates are not published.",
+      "description": "Community-tracked codes; Pocket Gamer checked 11 Oct 2026 and UrGameTips checked 12 Oct 2026. Only PGR2026 is listed as active by every source - see rewardsSummary for the codes the trackers disagree on. Exact reward contents are not published by the dev and no active code carries a dev-stated expiry. The official Anchored in Faith livestream code PUNISHING0924 expired 29 Sep 2026 and is not listed here.",
       "gameplay": "Open the player profile screen, enter the code in the gift-code box after clearing the prologue, and claim rewards from the in-game mailbox.",
       "requirements": [
         "Clear the prologue / Main Story 1-1 to unlock code redemption"
@@ -424,13 +424,13 @@
       "id": "pgr-wreck-it-huhu",
       "title": "Wreck-It Huhu",
       "type": "Other",
-      "status": "upcoming",
+      "status": "live",
       "start": "2026-10-08",
       "end": "2026-11-04",
       "datesPrecision": "exact",
       "version": "4.8",
-      "summary": "Puzzle-minigame event starting October 8 with Event Construct R&D Tickets and a Huhu stamp.",
-      "description": "An officially announced Anchored in Faith event going live on October 8. It features a new enhancement system where you clear special cubes to gain enhancement charges and use items to clear the board faster. The event has 3 chapters of 4 stages each, all with turn limits; early clears by hitting specified turn limits or target ratings earn higher ratings.",
+      "summary": "Puzzle-minigame event, live since October 8, with Event Construct R&D Tickets and a Huhu stamp.",
+      "description": "An officially announced Anchored in Faith event that went live on October 8 and runs until November 4. It features a new enhancement system where you clear special cubes to gain enhancement charges and use items to clear the board faster. The event has 3 chapters of 4 stages each, all with turn limits; early clears by hitting specified turn limits or target ratings earn higher ratings.",
       "gameplay": "Move one cube per turn on a puzzle board, meet clear conditions to score points, and earn higher ratings for event mission rewards.",
       "requirements": [
         "Commandant Lv.40 or above"
@@ -468,27 +468,68 @@
       "rumorNotes": null
     },
     {
+      "id": "pgr-7-day-signin",
+      "title": "7-Day Sign-In Rewards",
+      "type": "Login Event",
+      "status": "live",
+      "start": "2026-09-24",
+      "end": "2026-11-04",
+      "datesPrecision": "exact",
+      "version": "4.8",
+      "summary": "Standard version sign-in: log in for 7 days total to claim rewards including Basic Construct R&D Tickets.",
+      "description": "The regular Anchored in Faith sign-in event. Sign in for a total of 7 days during the event to claim all rewards, including Basic Construct R&D Tickets. The claim window runs until the version ends on November 4.",
+      "gameplay": "Log in on up to 7 separate days during the event; each sign-in day claims the next reward tier.",
+      "requirements": [
+        "Commandant Lv.20 or above",
+        "Sign in during the event period"
+      ],
+      "rewards": [
+        {
+          "item": "Basic Construct R&D Ticket",
+          "amount": null,
+          "category": "gacha",
+          "rarity": 3,
+          "note": "included among the 7-day sign-in rewards; exact amount not published"
+        },
+        {
+          "item": "Other sign-in rewards",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "official notice says rewards 'include' Basic Construct R&D Tickets; remaining items not specified"
+        }
+      ],
+      "rewardsSummary": "Basic Construct R&D Tickets (amounts not published) plus unspecified additional items across 7 sign-in days",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "karendar.com (PGR event calendar)",
+      "sourceUrl": "https://karendar.com/events/event-7-day-signin",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
       "id": "pgr-leia-debut-rumor",
-      "title": "Leia - Upcoming Character Debut (unannounced)",
+      "title": "Leia: Fortunaster - A Comet's Afterglow Debut",
       "type": "Wish Banner",
       "status": "upcoming",
-      "start": "2026-11",
-      "end": "2026-11",
-      "datesPrecision": "approx",
-      "version": "unannounced",
-      "summary": "New character Leia teased in a recent official livestream; banner dates and kit not yet announced.",
-      "description": "Community trackers list Leia as the next upcoming character with dates and details to be confirmed. Leia is part of Egret in the story and has made brief narrative appearances; she appeared among upcoming characters teased in an official livestream alongside the Date A Live collab teaser. No official banner window, rank, or kit details have been published, and the version following Anchored in Faith (expected around early/mid November 2026) has not been named.",
-      "gameplay": "Expected to debut on a standard character research banner once officially announced.",
+      "start": "2026-11-05",
+      "end": null,
+      "datesPrecision": "exact",
+      "version": "A Comet's Afterglow",
+      "summary": "S-Rank Omniframe Leia: Fortunaster debuts with the new version A Comet's Afterglow, officially announced for November 5.",
+      "description": "Leia: Fortunaster is officially confirmed as the headline character of the next version, A Comet's Afterglow, launching November 5, 2026. Her frame dossier lists Element: Ice, Frame Type: Breaker, Weapon: Rhythmic Ray, Effect: Glaciation. Leia is part of Egret in the story and previously appeared in teasers. The banner window beyond the debut date, the version number, and full kit details have not been published.",
+      "gameplay": "Expected to debut on a standard S-Rank character research banner; details not yet published.",
       "requirements": [],
       "rewards": [],
       "rewardsSummary": "unknown (no officially announced rewards)",
       "servers": [
         "global"
       ],
-      "sourceName": "karendar.com (PGR event calendar)",
-      "sourceUrl": "https://karendar.com/events/event-leia",
-      "confidence": "rumor",
-      "rumorNotes": "Leia is listed as an upcoming banner with dates TBC by community trackers and was teased among upcoming characters in an official livestream (community discussion on r/PunishingGrayRaven). Timing (November 2026) is an estimate based on Anchored in Faith ending Nov 4; nothing officially confirmed beyond the teaser."
+      "sourceName": "Official PGR on X (@PGR_GLOBAL)",
+      "sourceUrl": "https://x.com/PGR_GLOBAL/status/2109479174939292025",
+      "confidence": "confirmed",
+      "rumorNotes": "Originally a user-approved rumor entry (teased in an official livestream alongside the Date A Live collab, dates TBC). Officially confirmed 12 Oct 2026 via the [New Frame Dossier Decryption] post on @PGR_GLOBAL: Ice Breaker, weapon Rhythmic Ray, effect Glaciation, new version [A Comet's Afterglow] arriving Nov 5, 2026. Banner end date and remaining version contents are still unannounced."
     },
     {
       "id": "pgr-moonlit-osmanthus-signin",

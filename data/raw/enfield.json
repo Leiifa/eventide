@@ -7,7 +7,7 @@
     "nextVersion": "1.6",
     "nextVersionDate": "2026-10-15",
     "officialUrl": "https://endfield.gryphline.com/",
-    "notes": "Version 1.5 'Dreamscape of Wind and Snow' (Sep 2) runs until the 1.6 'Sanctuary of Ink' update on Oct 15, 2026, which launches simultaneously on Steam."
+    "notes": "Version 1.5 'Dreamscape of Wind and Snow' (Sep 2) runs until the 1.6 'Sanctuary of Ink' update on Oct 15, 2026, which launches simultaneously on Steam (maintenance 06:00-12:00 UTC+8)."
   },
   "events": [
     {
@@ -67,7 +67,7 @@
       "datesPrecision": "exact",
       "version": "1.5",
       "summary": "Typhoeus's Version 1.5 narrative event: complete her side mission in the Snowy Forest for Oroberyl and cognitive carriers.",
-      "description": "The narrative event tied to 6-star operator Typhoeus, playable as the side mission of the same name in the newly opened Wuling - Snowy Forest region. Typhoeus resolves to visit shattered memories one by one, recording them in her notebook as past snow and fog give way to dark woods and an endless dream. Official notes list Oroberyl x600 and an Elementary Cognitive Carrier among the completion rewards, with more unlisted items. After the event page is removed the side mission remains playable from the Mission menu.",
+      "description": "The narrative event tied to 6-star operator Typhoeus, playable as the side mission of the same name in the newly opened Wuling - Snowy Forest region. Typhoeus resolves to visit shattered memories one by one, recording them in her notebook as past snow and fog give way to dark woods and an endless dream. Official notes list Oroberyl x600 and an Elementary Cognitive Carrier among the completion rewards, with more unlisted items. After the event page is removed the side mission remains playable from the Mission menu. Endfield Build lists the window as Sep 2 - Oct 14, 2026.",
       "gameplay": "Play through the narrative side mission stages and claim completion rewards from the event page.",
       "requirements": [
         "Access to the Wuling - Snowy Forest area"
@@ -107,7 +107,7 @@
       "datesPrecision": "approx",
       "version": "1.5",
       "summary": "Training-mode challenge event built around Typhoeus at her Archery Range, paying Oroberyl and progression crates.",
-      "description": "Complete Simulations at Typhoeus's Archery Range and event Trial Missions during the event to earn rewards including Oroberyl x1200, an Advanced Cognitive Carrier, a Mark of Perseverance and an Advanced Progression Selection Crate I. The mode is built around Typhoeus with Basic and Advanced Training stages using swappable Set Chips; per-stage clears also pay T-Creds, Arms INSP Kits and Marks of Perseverance. After the event ends Trial Missions close, but the Archery Range stays playable and Simulation first-clear rewards remain claimable.",
+      "description": "Complete Simulations at Typhoeus's Archery Range and event Trial Missions during the event to earn rewards including Oroberyl x1200, an Advanced Cognitive Carrier, a Mark of Perseverance and an Advanced Progression Selection Crate I. The mode is built around Typhoeus with Basic and Advanced Training stages using swappable Set Chips; per-stage clears also pay T-Creds, Arms INSP Kits and Marks of Perseverance. After the event ends Trial Missions close, but the Archery Range stays playable and Simulation first-clear rewards remain claimable. The Trial Mission window closes Oct 14, 2026 (UTC+8) per EnjoyGM; Game8 lists the event period as Sep 9 - Oct 15 — Oct 14 is used here.",
       "gameplay": "Clear Basic and Advanced Training Simulations with a preset Typhoeus team and finish the Trial Mission objectives.",
       "requirements": [
         "Unlocks with the Trial of the Bow event on 2026-09-09"
@@ -321,6 +321,53 @@
       "rumorNotes": null
     },
     {
+      "id": "enfield-orbipom-merge",
+      "title": "OrbiPom! MERGE!",
+      "type": "Web Event",
+      "status": "live",
+      "start": "2026-10-01",
+      "end": "2026-10-15",
+      "datesPrecision": "exact",
+      "version": "1.5",
+      "summary": "Suika-style web merge minigame: combine identical OrbiPoms for points and clear five objectives for 300 Oroberyl and materials.",
+      "description": "A Version 1.5 Phase 2 web event where you merge two of the same OrbiPom type to create larger OrbiPoms for points, chaining merges for combo bonuses. The run ends when an OrbiPom overflows the container's height threshold for more than 3 seconds. Merging two Liino OrbiPoms creates the massive Golden Endmin, and four SP skills (Cast Off, Protocol: Levitate, Shake Up!, Fated Exchange) help recover from bad stacks. Five objectives - merge OrbiPom 20 times, use skills 3 times, reach a high score of 1,500, share the event once, and create the Golden Endmin once - each pay Oroberyl x60, Advanced Combat Record x10 and T-Creds x10,000.",
+      "gameplay": "Merge identical OrbiPoms in the web event container to score points and complete the five listed objectives.",
+      "requirements": [
+        "Open the web event from the event page"
+      ],
+      "rewards": [
+        {
+          "item": "Oroberyl",
+          "amount": 300,
+          "category": "currency",
+          "rarity": null,
+          "note": "60 x 5 objectives"
+        },
+        {
+          "item": "Advanced Combat Record",
+          "amount": 50,
+          "category": "xp",
+          "rarity": null,
+          "note": "10 x 5 objectives"
+        },
+        {
+          "item": "T-Creds",
+          "amount": 50000,
+          "category": "currency",
+          "rarity": null,
+          "note": "10,000 x 5 objectives"
+        }
+      ],
+      "rewardsSummary": "300 Oroberyl + 50 Advanced Combat Records + 50,000 T-Creds across five web-event objectives",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 (OrbiPom! MERGE! Web Event Guide)",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/616551",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
       "id": "enfield-resplendent-spectrum-yvonne",
       "title": "[Resplendent Spectrum] RE-Factor Headhunting #1 (Yvonne)",
       "type": "Wish Banner",
@@ -519,12 +566,12 @@
       "id": "enfield-sanity-supply",
       "title": "Sanity Supply",
       "type": "Login Event",
-      "status": "upcoming",
+      "status": "live",
       "start": "2026-10-08",
       "end": "2026-10-15",
       "datesPrecision": "exact",
       "version": "1.5",
-      "summary": "One-week daily mail giveaway of Sanity recovery items starting Oct 8.",
+      "summary": "One-week daily mail giveaway of Sanity recovery items running Oct 8-15.",
       "description": "The second Sanity Supply window of Version 1.5: during the event, complete specified missions every day to claim Sanity Supply rewards of Sanity Usage Permits and Emergency Sanity Boosters. Asia server window is Oct 8 04:00 to Oct 15 04:00 server time; the Americas/Europe server window ends Oct 14 17:00 server time. A first run of the same event already ran Sept 17-24.",
       "gameplay": "Log in and complete the daily mission to collect the Sanity items from your in-game mail.",
       "requirements": [
@@ -564,8 +611,8 @@
       "end": "2026-11-05",
       "datesPrecision": "exact",
       "version": "1.6",
-      "summary": "1.6 Phase 1 banner 'Rejuvenation' with rate-up 6-star Si (Oct 15 - Nov 5), followed by Argent Flow's Phase 2 banner and a Tangtang rerun.",
-      "description": "The Version 1.6 'Sanctuary of Ink' update arrives Oct 15, 2026 alongside the game's Steam launch. Phase 1 headhunting banner 'Rejuvenation' features rate-up 6-star Cryo Supporter Si and runs Oct 15 to Nov 5, 2026. Phase 2 starts Nov 5 with 6-star Electric Guard Argent Flow (rendered 'Mingha'/'Ye Minghui' in some translations) on the banner 'The Hearth Fire Beckons the Starry Flow' (end date TBD), and Tangtang's headhunting banner reruns Oct 29 to Nov 19. The version's login events give 5 limited Headhunting Permits per banner phase, and visiting the official New Version Guide webpage mails 1,000 Oroberyl, 10,000 T-Creds, 8 Elementary Cognitive Carriers and 4 Arms INSP Sets.",
+      "summary": "1.6 Phase 1 banner 'Rejuvenation' with rate-up 6-star Si (Oct 15 - Nov 5), a Tangtang RE-Factor rerun (Oct 29 - Nov 19) and Argent Flow's Phase 2 banner from Nov 5; per-phase login sign-ins give 5 limited pulls each.",
+      "description": "The Version 1.6 'Sanctuary of Ink' update arrives Oct 15, 2026 alongside the game's Steam launch (maintenance 06:00-12:00 UTC+8). Phase 1 headhunting banner 'Rejuvenation' features rate-up 6-star Cryo Supporter Si and runs Oct 15 to Nov 5, 2026, with the matching [Seal of Jade Issue] weapon banner (rate-up 6-star Jade Vessel, Oct 15, end TBD). Tangtang's RE-Factor Headhunting #1 'Ancestral Spring Flows Anew' reruns Oct 29 to Nov 19. Phase 2 starts Nov 5 with 6-star Electric Guard Argent Flow (rendered 'Mingha'/'Ye Minghui' in some translations) on the banner 'The Hearth Fire Beckons the Starry Flow' (end TBD, runs until the next version update). The sign-in events Spirit's Restoration (Oct 15 - Nov 5) and The Stars Are With Me (Nov 5 - Nov 26) give 5 limited Headhunting Permits per banner phase plus operator materials, and visiting the official New Version Guide webpage mails 1,000 Oroberyl, 10,000 T-Creds, 8 Elementary Cognitive Carriers and 4 Arms INSP Sets. Argent Flow's story event 'Into the Wild' (also rendered 'Back to the Rustics') opens in the second half with dates unannounced. Endgame updates: Umbral Monument 'Murmurs of the Deep Forest' (Oct 22), Echoes of War 'Phantasia' (Oct 15) and 'Fervor' (Nov 5), and Contingency Contract Season 2 (Nov 5).",
       "gameplay": "Spend Chartered Headhunting Permits on the limited banners; claim the accompanying per-phase login permits once 1.6 opens.",
       "requirements": [
         "Version 1.6 installed (releases 2026-10-15)"
@@ -576,7 +623,7 @@
           "amount": 5,
           "category": "gacha",
           "rarity": null,
-          "note": "from the 1.6 login event, 5 per banner phase"
+          "note": "5 per banner phase via the Spirit's Restoration / The Stars Are With Me sign-ins"
         },
         {
           "item": "Si",
@@ -586,33 +633,68 @@
           "note": "6-star rate-up operator, banner 'Rejuvenation' Oct 15 - Nov 5"
         },
         {
+          "item": "Argent Flow",
+          "amount": null,
+          "category": "gacha",
+          "rarity": null,
+          "note": "6-star rate-up operator, banner 'The Hearth Fire Beckons the Starry Flow' from Nov 5"
+        },
+        {
+          "item": "Tangtang",
+          "amount": null,
+          "category": "gacha",
+          "rarity": null,
+          "note": "6-star rate-up rerun, RE-Factor 'Ancestral Spring Flows Anew' Oct 29 - Nov 19"
+        },
+        {
           "item": "Oroberyl",
           "amount": 1000,
           "category": "currency",
           "rarity": null,
           "note": "from visiting the official New Version Guide webpage (endfield.gryphline.com/version_briefing/latest)"
+        },
+        {
+          "item": "T-Creds",
+          "amount": 10000,
+          "category": "currency",
+          "rarity": null,
+          "note": "New Version Guide webpage mail"
+        },
+        {
+          "item": "Elementary Cognitive Carrier",
+          "amount": 8,
+          "category": "material",
+          "rarity": null,
+          "note": "New Version Guide webpage mail"
+        },
+        {
+          "item": "Arms INSP Set",
+          "amount": 4,
+          "category": "material",
+          "rarity": null,
+          "note": "New Version Guide webpage mail"
         }
       ],
-      "rewardsSummary": "5x limited Headhunting Permit per banner phase via login, plus 1,000 Oroberyl web-page giveaway (banner itself gives no event rewards)",
+      "rewardsSummary": "5x limited Headhunting Permit per banner phase via login, plus the New Version Guide webpage mail (1,000 Oroberyl + 10,000 T-Creds + 8 Elementary Cognitive Carriers + 4 Arms INSP Sets); banners themselves give no event rewards",
       "servers": [
         "global"
       ],
-      "sourceName": "Game8 (1.6 update overview) / Inven Global (1.6 special broadcast)",
+      "sourceName": "Game8 (1.6 update overview / 1.6 livestream summary)",
       "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/618761",
       "confidence": "confirmed",
       "rumorNotes": null
     },
     {
       "id": "enfield-bond-sealed-in-flames",
-      "title": "Bond Sealed in Flames",
+      "title": "Yuanyuan's Blazing Stoves (Bond Sealed in Flames)",
       "type": "Building Event",
       "status": "upcoming",
-      "start": null,
-      "end": null,
-      "datesPrecision": "unannounced",
+      "start": "2026-10-15",
+      "end": "2026-11-26",
+      "datesPrecision": "exact",
       "version": "1.6",
-      "summary": "1.6 limited-time inn management simulation event in Si's Painting, rewarding inn star-rating payouts.",
-      "description": "After unlocking the new 'Painting of Si' (Si's Painting) region in the Version 1.6 update, the limited-time inn management event Bond Sealed in Flames opens. Starting from tilling fields and raising Originium Slugs, players manage and operate a countryside inn: set menus, prepare ingredients, welcome guests and serve orders as requested. Successfully fulfilling customer orders raises the inn's star rating and yields greater rewards, which can be reinvested into equipment and facilities to run the inn more efficiently. Other Version 1.6 events announced at the Oct 6 special broadcast include the combat event 'Diverse Martial Arts', the photo event 'Carly's Tale of Flowers and Herbs', Mingha's story event 'Into the Wild' in the second half, and the commemorative event 'Colors Blooming from Ink' with a Talosight Exchange.",
+      "summary": "1.6 inn management simulation at Yuanyuan Manor in Si's Painting: farm ingredients, serve guests and raise the inn's star rating for payouts (Oct 15 - Nov 26).",
+      "description": "After unlocking the new 'Painting of Si' (Si's Painting) region in the Version 1.6 update, the limited-time inn management event opens - called 'Yuanyuan's Blazing Stoves' by Game8, GamingOnPhone and the Thai broadcast summary, and 'Bond Sealed in Flames' in the Inven Global broadcast summary. Starting from tilling fields and raising Originium Slugs (with new AIC facilities including the Auto-Farmer, plus animal pens for livestock), players manage and operate the countryside inn at Yuanyuan Manor: choose the day's dish theme, prepare ingredients, welcome guests and serve orders as requested. Successfully fulfilling customer orders raises the inn's star rating and yields greater rewards and funds, which can be reinvested into the farmland, equipment and restaurant facilities. The event missions are limited-time (Oct 15 - Nov 26, 2026) but the gameplay becomes permanent after Version 1.6.",
       "gameplay": "Run the inn simulation - farm ingredients, set the menu and serve customer orders - to raise the star rating and claim better payouts.",
       "requirements": [
         "Version 1.6 installed",
@@ -631,8 +713,149 @@
       "servers": [
         "global"
       ],
-      "sourceName": "Inven Global (Version 1.6 special broadcast summary)",
-      "sourceUrl": "https://www.invenglobal.com/articles/26865/rhodes-island-teased-in-arknights-endfield-version-16-special-broadcast",
+      "sourceName": "Game8 (Yuanyuan's Blazing Stoves guide) / Inven Global (1.6 special broadcast summary)",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/629928",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-all-the-inky-hues",
+      "title": "All the Inky Hues (Colors Blooming from Ink)",
+      "type": "Exploration Event",
+      "status": "upcoming",
+      "start": "2026-10-15",
+      "end": "2026-11-05",
+      "datesPrecision": "exact",
+      "version": "1.6",
+      "summary": "1.6 guide event in Si's Painting: complete exploration missions in the new area for rewards exchangeable at the Talosight Exchange.",
+      "description": "The Version 1.6 Guide Event in Si's Painting, the new Wuling exploration area, in the style of Echoing Bell of an Old City and Snow Over Deep Woods: complete event missions while exploring the area, which unlocks via the new main mission. Announced at the Oct 6 special program as the commemorative event 'Colors Blooming from Ink' (Inven Global's broadcast summary): completing event missions in Si's Painting during the event period earns points exchangeable at the Talosight Exchange for various rewards, including Tangtang's 'Power of the Evil Eye' photo pose. Runs Oct 15 until the start of Phase 2 on Nov 5, 2026. The full reward list has not yet been published.",
+      "gameplay": "Complete the listed exploration/event missions across Si's Painting and exchange earned points at the Talosight Exchange.",
+      "requirements": [
+        "Version 1.6 installed",
+        "Si's Painting unlocked via the main mission"
+      ],
+      "rewards": [
+        {
+          "item": "Tangtang's \"Power of the Evil Eye\" Photo Pose",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "Talosight Exchange reward"
+        },
+        {
+          "item": "Talosight Exchange rewards (unspecified)",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "full exchange reward list not yet published"
+        }
+      ],
+      "rewardsSummary": "unknown - Talosight Exchange list not yet published; includes Tangtang's 'Power of the Evil Eye' photo pose",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 (All the Inky Hues guide) / Inven Global (1.6 special broadcast summary)",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/630289",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-carlys-verdant-anthology",
+      "title": "Carly's Verdant Anthology (Carly's Tale of Flowers and Herbs)",
+      "type": "Camera Event",
+      "status": "upcoming",
+      "start": "2026-10-22",
+      "end": "2026-11-05",
+      "datesPrecision": "exact",
+      "version": "1.6",
+      "summary": "1.6 Carly camera event: photograph locations across Si's Painting for Carly's story to earn rewards.",
+      "description": "The Version 1.6 limited-time landscape photography event featuring Carly (called 'Carly's Verdant Anthology' by Game8 and 'Carly's Tale of Flowers and Herbs' in Inven Global's broadcast summary). Refer to Carly for ideas for her story and take photos at different locations in Si's Painting, following each photography target before snapping the picture; once all photography missions are complete, return to Carly to finish the event quest. It follows the format of the earlier Carly's Fairytale camera events in Valley IV and Wuling. Runs Oct 22 to Nov 5, 2026 (server time), closing with the start of Phase 2. The reward list has not yet been published.",
+      "gameplay": "Complete the photography missions at the specified Si's Painting locations and report back to Carly.",
+      "requirements": [
+        "Version 1.6 installed",
+        "Si's Painting unlocked"
+      ],
+      "rewards": [
+        {
+          "item": "Event rewards (unspecified)",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "reward list not yet published"
+        }
+      ],
+      "rewardsSummary": "unknown - reward list not yet published",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 (Carly's Verdant Anthology guide)",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/630331",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-arena-of-games",
+      "title": "Arena of Games (Diverse Martial Arts)",
+      "type": "Combat Event",
+      "status": "upcoming",
+      "start": "2026-10-29",
+      "end": "2026-11-19",
+      "datesPrecision": "exact",
+      "version": "1.6",
+      "summary": "1.6 challenge event reviving the Trial of Swordmancy plate-draw combat with new Dataplate combinations and score multipliers.",
+      "description": "The Version 1.6 limited-time combat challenge (called 'Arena of Games' by Game8 and 'Diverse Martial Arts' in Inven Global's broadcast summary), inheriting and enhancing the plate-draw combat mechanics of the Version 1.3 Trial of Swordmancy tournament. Draw up to 5 Dataplates at random - each shows an enemy and its Battle Points - then fight two consecutive rounds with total rewards tallied at the end; setting more points raises the difficulty. Certain Dataplate combinations trigger special effects that multiply the point total (the highest applicable multiplier is used) while buffing the enemies. Runs Oct 29 to Nov 19, 2026 (server time). The reward list has not yet been published.",
+      "gameplay": "Draw Dataplates to build the challenge, clear the two battle rounds, and hit point thresholds for rewards.",
+      "requirements": [
+        "Version 1.6 installed"
+      ],
+      "rewards": [
+        {
+          "item": "Event rewards (unspecified)",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "reward list not yet published"
+        }
+      ],
+      "rewardsSummary": "unknown - reward list not yet published",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 (Arena of Games guide)",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/618907",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "enfield-new-era-for-the-myriad-souls",
+      "title": "New Era for the Myriad Souls",
+      "type": "Fun and Games Event",
+      "status": "upcoming",
+      "start": "2026-10-31",
+      "end": "2026-11-14",
+      "datesPrecision": "exact",
+      "version": "1.6",
+      "summary": "1.6 Sauin (Halloween-season) celebration event with festive minigames and prizes.",
+      "description": "The Version 1.6 celebration event for Sauin - the Arknights setting's harvest festival, which falls around Halloween: 'Celebrate Sauin in Arknights: Endfield on Halloween' with fun and games to get various prizes. Runs Oct 31 to Nov 14, 2026 (server time). The exact activities and reward list have not yet been published.",
+      "gameplay": "Take part in the festive minigames and activities during the window to earn the event prizes.",
+      "requirements": [
+        "Version 1.6 installed"
+      ],
+      "rewards": [
+        {
+          "item": "Event rewards (unspecified)",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "'various prizes' per Game8; exact list not yet published"
+        }
+      ],
+      "rewardsSummary": "unknown - 'various prizes' only; exact list not yet published",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8 (New Era for the Myriad Souls guide)",
+      "sourceUrl": "https://game8.co/games/Arknights-Endfield/archives/630349",
       "confidence": "confirmed",
       "rumorNotes": null
     },
@@ -646,7 +869,7 @@
       "datesPrecision": "permanent",
       "version": "1.5",
       "summary": "The currently active redemption codes for Arknights: Endfield and what each one gives.",
-      "description": "Mailed rewards must be claimed within 14 days. The 1.6 livestream code was announced at the 6 Oct 2026 livestream celebrating the 15 Oct Steam launch. Source note: one tracker (gachafeed.moe) lists 0 active codes and gamingonphone values the livestream code differently — the Game8 livestream breakdown is used here.",
+      "description": "Mailed rewards must be claimed within 14 days. The 1.6 livestream code ENDFIELDSTEAM was announced at the 6 Oct 2026 'Sanctuary of Ink' special program celebrating the 15 Oct Steam launch, with a dev-stated redemption window closing 25 Nov 2026. Source note: one tracker (gachafeed.moe) lists 0 active codes, gamingonphone values ENDFIELDSTEAM as 1,000 Oroberyl, and Game8 still shows 'Expires TBA' for all four codes — the Game8 livestream breakdown of contents is used here, and the dev-stated ENDFIELDSTEAM expiry (25 Nov 2026) is followed. GamesRadar, gameboost and BuffHub agree with Game8 on the other three codes' contents.",
       "gameplay": "Open Settings > Platform & Account > Exchange Code, enter the code exactly, and collect the rewards from your in-game mailbox.",
       "requirements": [
         "Complete the Process: Cold Start prologue and unlock the Settings menu"

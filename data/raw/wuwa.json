@@ -7,7 +7,7 @@
     "nextVersion": "3.8",
     "nextVersionDate": "2026-11-12",
     "officialUrl": "https://wutheringwaves.kurogames.com/en/",
-    "notes": "Version 3.7 'Prism's Illusion, Heart's Illumination' runs 2026-09-30 to 2026-11-12; 3.8 start on 2026-11-12 is an estimate, not officially announced."
+    "notes": "Version 3.7 'Prism's Illusion, Heart's Illumination' runs 2026-09-30 to 2026-11-12; 3.8 start on 2026-11-12 is an estimate, not officially announced. 3.7 events end 2026-11-11; trackers put the 3.8 start anywhere from Nov 10 to Nov 12."
   },
   "events": [
     {
@@ -81,9 +81,9 @@
       "end": "2026-11-11",
       "datesPrecision": "exact",
       "version": "3.7",
-      "summary": "Exploration event for the new Simulacrum Nexus area of Mengzhou, rewarding Astrite and premium materials via CSC Cipherlocks.",
-      "description": "Dreams in the Capsule explores the Simulacrum Nexus in Mengzhou across four phases that unlock as you progress the main quest. Tasks mix puzzles, combat, and item collection throughout the region. Rewards are unlocked based on how many CSC Cipherlocks you collect from tasks. The event is effectively gated by story progress through Chapter IV Act IV.",
-      "gameplay": "Complete puzzle, combat, and collection tasks in each of the four phases; CSC Cipherlocks earned from tasks advance the reward track.",
+      "summary": "Exploration event for the new Simulacrum Nexus area of Mengzhou: CSC Cipherlocks from tasks unlock a reward track totalling 500 Astrite.",
+      "description": "Dreams in the Capsule explores the Simulacrum Nexus in Mengzhou across four phases that unlock as you progress the main quest. Tasks mix puzzles, combat, and item collection throughout the region, and rewards unlock based on how many CSC Cipherlocks you collect. Game8's task and milestone breakdown totals 500 Astrite — 280 from the sixteen phase tasks and 220 from the five CSC Cipherlock milestones — which resolves the earlier 500-vs-200 discrepancy in favor of 500. The event is effectively gated by story progress through Chapter IV Act IV.",
+      "gameplay": "Complete puzzle, combat, and collection tasks in each of the four phases; CSC Cipherlocks earned from tasks advance the milestone reward track at 25/50/75/100/120 locks.",
       "requirements": [
         "Meet the Nexus Fox Shadow in Mengxuan Vale during Main Quest 'Simulacrum of the Heart'"
       ],
@@ -93,43 +93,113 @@
           "amount": 500,
           "category": "currency",
           "rarity": null,
-          "note": "WuWaBuild quotes in-game text 'Astrite x500'; WutheringPity cites 200 from the content notice — discrepancy unverified"
+          "note": "280 from task rewards + 220 from CSC Cipherlock milestones per Game8 breakdown; the earlier 200 figure from WutheringPity is contradicted by the itemized tables"
+        },
+        {
+          "item": "Forgery Advanced Supply - Lahai-Roi",
+          "amount": 12,
+          "category": "material",
+          "rarity": null,
+          "note": "CSC Cipherlock milestones, 2 tiers x 6"
         },
         {
           "item": "Forgery Premium Supply - Lahai-Roi",
-          "amount": null,
+          "amount": 12,
           "category": "material",
           "rarity": null,
-          "note": "quantity unlisted"
+          "note": "CSC Cipherlock milestones, 3 tiers x 4"
         },
         {
-          "item": "Premium Resonance Potion",
-          "amount": null,
+          "item": "Advanced Resonance Potion",
+          "amount": 8,
           "category": "xp",
           "rarity": null,
-          "note": "quantity unlisted"
+          "note": "CSC Cipherlock milestone"
+        },
+        {
+          "item": "Advanced Energy Core",
+          "amount": 8,
+          "category": "material",
+          "rarity": null,
+          "note": "CSC Cipherlock milestone"
         },
         {
           "item": "Premium Sealed Tube",
-          "amount": null,
+          "amount": 5,
           "category": "xp",
           "rarity": null,
-          "note": "quantity unlisted"
+          "note": "CSC Cipherlock milestone"
+        },
+        {
+          "item": "Premium Resonance Potion",
+          "amount": 5,
+          "category": "xp",
+          "rarity": null,
+          "note": "CSC Cipherlock milestone"
+        },
+        {
+          "item": "Premium Energy Core",
+          "amount": 5,
+          "category": "material",
+          "rarity": null,
+          "note": "CSC Cipherlock milestone"
         },
         {
           "item": "Bloom of Hearkening",
-          "amount": null,
+          "amount": 10,
           "category": "material",
           "rarity": null,
-          "note": "quantity unlisted"
+          "note": "task rewards, 2 x 5"
+        },
+        {
+          "item": "Miasmic Branch",
+          "amount": 10,
+          "category": "material",
+          "rarity": null,
+          "note": "task rewards, 2 x 5"
+        },
+        {
+          "item": "Broken String",
+          "amount": 20,
+          "category": "material",
+          "rarity": null,
+          "note": "task rewards, 2 x 10"
+        },
+        {
+          "item": "Monowing Polarizer",
+          "amount": 20,
+          "category": "material",
+          "rarity": null,
+          "note": "task rewards, 2 x 10"
+        },
+        {
+          "item": "MF Exoswarm Core",
+          "amount": 40,
+          "category": "material",
+          "rarity": null,
+          "note": "task rewards, 2 x 20"
+        },
+        {
+          "item": "MF Mech Core",
+          "amount": 40,
+          "category": "material",
+          "rarity": null,
+          "note": "task rewards, 2 x 20"
+        },
+        {
+          "item": "Shell Credit",
+          "amount": 200000,
+          "category": "currency",
+          "rarity": null,
+          "note": "task rewards, 4 x 50,000"
         }
       ],
-      "rewardsSummary": "500 Astrite (one source says 200) + Forgery Premium Supply - Lahai-Roi + Premium Resonance Potion + Premium Sealed Tube + Bloom of Hearkening",
+      "rewardsSummary": "500 Astrite (280 tasks + 220 Cipherlock milestones) + Forgery Advanced Supply x12 + Forgery Premium Supply x12 + potions/cores/tubes + Bloom of Hearkening x10 + Miasmic Branch x10 + low-grade task materials + 200,000 Shell Credit",
       "servers": [
         "global"
       ],
-      "sourceName": "WuWaBuild",
-      "sourceUrl": "https://www.wuwabuild.com/events/dreams-in-the-capsule",
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Wuthering-Waves/archives/625190",
       "confidence": "confirmed",
       "rumorNotes": null
     },
@@ -182,17 +252,55 @@
       "end": "2026-11-01",
       "datesPrecision": "exact",
       "version": "3.7",
-      "summary": "Fishing challenge at the Waking Moon Festival stall.",
-      "description": "Take part in the Waking Moon Festival fishing challenge at the festival stall.",
-      "gameplay": "Complete the fishing challenge at the Waking Moon Festival stall.",
-      "requirements": [],
-      "rewards": [],
-      "rewardsSummary": "Rewards not listed",
+      "summary": "Fishing challenge at the Waking Moon Festival stall, paying 100 Astrite and Advanced materials via the Fishing Index.",
+      "description": "Waking Moon Fishing is Version 3.7's browser event at a stall in the Waking Moon Festival. Fish to fill the Fishing Index — new Index entries are what pay the Astrite — and finish event tasks for the Advanced material rewards, which are sent to your in-game account. It runs 10:00 October 15 to 09:59 November 1 (UTC+8), so it closes the evening of October 31 in the Americas.",
+      "gameplay": "Play the fishing challenge in the browser event, register new catches in the Fishing Index for Astrite, and complete the event tasks for materials.",
+      "requirements": [
+        "Union Level 8"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 100,
+          "category": "currency",
+          "rarity": null,
+          "note": "from new Fishing Index entries"
+        },
+        {
+          "item": "Advanced Resonance Potion",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Advanced Sealed Tube",
+          "amount": null,
+          "category": "xp",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Advanced Energy Core",
+          "amount": null,
+          "category": "material",
+          "rarity": null,
+          "note": "quantity unlisted"
+        },
+        {
+          "item": "Shell Credit",
+          "amount": null,
+          "category": "currency",
+          "rarity": null,
+          "note": "quantity unlisted"
+        }
+      ],
+      "rewardsSummary": "100 Astrite + Advanced Resonance Potion + Advanced Sealed Tube + Advanced Energy Core + Shell Credit (material quantities unlisted)",
       "servers": [
         "global"
       ],
-      "sourceName": "Official Version 3.7 patch notes",
-      "sourceUrl": "https://www.wuwabuild.com/news/wuthering-waves-3-7-update",
+      "sourceName": "WuWaBuild",
+      "sourceUrl": "https://www.wuwabuild.com/events/waking-moon-fishing",
       "confidence": "confirmed",
       "rumorNotes": null
     },
@@ -252,6 +360,231 @@
       "rumorNotes": null
     },
     {
+      "id": "wuwa-artisans-search",
+      "title": "Artisan's Search",
+      "type": "Combat Event",
+      "status": "live",
+      "start": "2026-10-08",
+      "end": "2026-10-26",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Multi-wave combat event across six Apprentice's Log domains, paying 500 Astrite plus premium materials and 580,000 Shell Credit.",
+      "description": "Artisan's Search is Version 3.7's limited combat event, open October 8-26. Rovers battle multiple waves of enemies in six 'Apprentice's Log' domains, each with its own Domain Effect buffs and a trio of trial characters. Choosing a higher difficulty multiplies coins earned (1x/2x/4x); 25,000 coins per stage unlocks that stage's reward, and total accumulated coins up to 600,000 pay the main milestone track. Game8's stage and coin tables sum to exactly 500 Astrite. It closes at 03:59 on October 26, over two weeks before the version ends.",
+      "gameplay": "Fight through multi-wave stages with trial or owned Resonators, stacking Domain Effects as waves clear; push coin multipliers via difficulty to hit the 25,000-per-stage and 600,000-total coin objectives.",
+      "requirements": [
+        "Union Level 14",
+        "Activate Four Chime Shaftpost in Main Quest 'The Wind Before the Storm'"
+      ],
+      "rewards": [
+        {
+          "item": "Astrite",
+          "amount": 500,
+          "category": "currency",
+          "rarity": null,
+          "note": "300 from six stage objectives (50 each) + 200 from accumulated-coin milestones per Game8 breakdown"
+        },
+        {
+          "item": "Advanced Resonance Potion",
+          "amount": 10,
+          "category": "xp",
+          "rarity": null,
+          "note": "stage rewards, 2 x 5"
+        },
+        {
+          "item": "Advanced Energy Core",
+          "amount": 10,
+          "category": "material",
+          "rarity": null,
+          "note": "stage rewards, 2 x 5"
+        },
+        {
+          "item": "Advanced Sealed Tube",
+          "amount": 9,
+          "category": "xp",
+          "rarity": null,
+          "note": "stage rewards, 4 + 5"
+        },
+        {
+          "item": "Premium Resonance Potion",
+          "amount": 10,
+          "category": "xp",
+          "rarity": null,
+          "note": "coin milestones, 2 x 5"
+        },
+        {
+          "item": "Premium Sealed Tube",
+          "amount": 5,
+          "category": "xp",
+          "rarity": null,
+          "note": "coin milestone"
+        },
+        {
+          "item": "Premium Energy Core",
+          "amount": 5,
+          "category": "material",
+          "rarity": null,
+          "note": "coin milestone"
+        },
+        {
+          "item": "Premium Tuner",
+          "amount": 100,
+          "category": "material",
+          "rarity": null,
+          "note": "coin milestones, 2 x 50"
+        },
+        {
+          "item": "Forgery Premium Supply - Lahai-Roi",
+          "amount": 4,
+          "category": "material",
+          "rarity": null,
+          "note": "coin milestones, 2 x 2"
+        },
+        {
+          "item": "Premium Enclosure Tank - Land of Xuanfang",
+          "amount": 8,
+          "category": "material",
+          "rarity": null,
+          "note": "coin milestones, 2 x 4"
+        },
+        {
+          "item": "Shell Credit",
+          "amount": 580000,
+          "category": "currency",
+          "rarity": null,
+          "note": "300,000 stage rewards + 280,000 coin milestones"
+        }
+      ],
+      "rewardsSummary": "500 Astrite + Premium Tuner x100 + Premium Enclosure Tank - Land of Xuanfang x8 + Forgery Premium Supply x4 + Advanced/Premium potions, cores and tubes + 580,000 Shell Credit",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Wuthering-Waves/archives/624767",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-37-moonlit-path",
+      "title": "3.7 Moonlit Path",
+      "type": "Spending Event",
+      "status": "live",
+      "start": "2026-09-30",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Version 3.7 top-up spending event: earn Moonlit Rings from eligible purchases and claim milestone rewards up to a selectable 5-star Resonator.",
+      "description": "Moonlit Path is Version 3.7's returning spending event. Eligible purchases marked for Moonlit Path during the version grant Moonlit Rings — 1 Ring per 10 Lunite topped up, plus fixed Ring amounts for marked event packs and the Lunite Subscription. The Ring ladder pays: Lustrous Tide x1 free; Radiant Tide x1 (30 Rings); Motorbike Accessory: Hsin Cube (88); Forging Tide x2 (198); Hsin Accessory: Where Dreams Shine Clear (328); 5-Star Weapon Supply Chest: Synth Armament (450); Transducer x3 (680); selectable 5-Star Resonator — Shorekeeper, Carlotta or Phoebe — or Transducer x8 (980); Version 3.7 Cosmetics Set (1,600); Cloudview Seat (2,200). Only purchases showing the Moonlit Path mark count — Battle Pass and unmarked packs grant nothing.",
+      "gameplay": "Top up Lunites or buy marked event packs during Version 3.7 to collect Moonlit Rings, then claim milestone rewards from the event page as your Ring total grows.",
+      "requirements": [
+        "Eligible in-game purchases marked for Moonlit Path during Version 3.7"
+      ],
+      "rewards": [
+        {
+          "item": "Lustrous Tide",
+          "amount": 1,
+          "category": "gacha",
+          "rarity": null,
+          "note": "free first milestone, no Rings needed"
+        },
+        {
+          "item": "Radiant Tide",
+          "amount": 1,
+          "category": "gacha",
+          "rarity": null,
+          "note": "30 Moonlit Rings"
+        },
+        {
+          "item": "Forging Tide",
+          "amount": 2,
+          "category": "gacha",
+          "rarity": null,
+          "note": "198 Moonlit Rings"
+        },
+        {
+          "item": "Transducer",
+          "amount": 3,
+          "category": "material",
+          "rarity": null,
+          "note": "680 Moonlit Rings; x8 available as the 980-Ring alternative to the Resonator selector"
+        },
+        {
+          "item": "5-Star Resonator Selector (Shorekeeper / Carlotta / Phoebe)",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "980 Moonlit Rings; Resonators at max wavebands cannot be selected"
+        },
+        {
+          "item": "5-Star Weapon Supply Chest: Synth Armament",
+          "amount": 1,
+          "category": "other",
+          "rarity": 5,
+          "note": "450 Moonlit Rings; choose one standard Synth Armament series weapon"
+        },
+        {
+          "item": "Hsin Cube (Motorbike Accessory)",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "88 Moonlit Rings"
+        },
+        {
+          "item": "Where Dreams Shine Clear (Hsin Accessory)",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "328 Moonlit Rings"
+        },
+        {
+          "item": "Version 3.7 Cosmetics Set (Avatar, Sigil, Custom Accessory)",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "1,600 Moonlit Rings"
+        },
+        {
+          "item": "Cloudview Seat (Collection Item)",
+          "amount": 1,
+          "category": "cosmetic",
+          "rarity": null,
+          "note": "2,200 Moonlit Rings; equippable on the Utility Wheel"
+        }
+      ],
+      "rewardsSummary": "Moonlit Ring milestones: free Lustrous Tide x1, Radiant Tide x1 (30), Hsin Cube (88), Forging Tide x2 (198), Where Dreams Shine Clear (328), 5-Star Weapon Chest: Synth Armament (450), Transducer x3 (680), selectable 5-Star Resonator or Transducer x8 (980), v3.7 Cosmetics Set (1,600), Cloudview Seat (2,200)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Wuthering-Waves/archives/624672",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-bountiful-crescendo",
+      "title": "Bountiful Crescendo",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-10-15",
+      "end": "2026-10-22",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Recurring one-week double-drop event: double leveling materials from Forgery and Simulation Challenges ahead of Phase 2.",
+      "description": "Bountiful Crescendo is the recurring mid-patch double-drop event, running October 15-22 just before Phase 2 opens. During the window, claiming stage rewards from Forgery Challenges and Simulation Challenges with Waveplates pays double the usual leveling materials — Resonance Potions, Energy Cores, Shell Credits and forgery materials. It is a farming window rather than a reward track: there are no milestone rewards beyond the doubled drops.",
+      "gameplay": "Spend Waveplates on Forgery Challenges and Simulation Challenges during the event window to receive double drops from each claim.",
+      "requirements": [
+        "Union Level 14"
+      ],
+      "rewards": [],
+      "rewardsSummary": "No fixed event rewards — double leveling-material drops from Forgery and Simulation Challenges (Resonance Potions, Energy Cores, Shell Credits)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Wuthering-Waves/archives/458244",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
       "id": "wuwa-37-phase-1-convenes",
       "title": "Version 3.7 Phase 1 Convenes: As Full as Tonight, Forever (Hsin) / Horizon of Dawnbreak (Chisa) / Across Time's Waxes and Wanes (Iuno)",
       "type": "Wish Banner",
@@ -298,67 +631,6 @@
       "rumorNotes": null
     },
     {
-      "id": "wuwa-artisans-search",
-      "title": "Artisan's Search",
-      "type": "Combat Event",
-      "status": "upcoming",
-      "start": "2026-10-08",
-      "end": "2026-10-26",
-      "datesPrecision": "exact",
-      "version": "3.7",
-      "summary": "Combat event where Rovers battle enemies across multiple waves for Astrite and premium materials.",
-      "description": "Artisan's Search is Version 3.7's limited combat event, opening at 04:00 on October 8 and closing at 03:59 on October 26 — two weeks before the version ends. Rovers face enemies across multiple waves of escalating encounters. It pays Astrite plus a bundle of premium upgrade materials, including the Land of Xuanfang Enclosure Tank. It is the first event to close in 3.7 after Bountiful Crescendo.",
-      "gameplay": "Fight through multi-wave combat stages with your Resonator teams and clear reward milestones.",
-      "requirements": [
-        "Union Level 14"
-      ],
-      "rewards": [
-        {
-          "item": "Astrite",
-          "amount": 500,
-          "category": "currency",
-          "rarity": null,
-          "note": "per WuWaBuild listing; official notice lists Astrite without a number"
-        },
-        {
-          "item": "Forgery Premium Supply - Lahai-Roi",
-          "amount": null,
-          "category": "material",
-          "rarity": null,
-          "note": "quantity unlisted"
-        },
-        {
-          "item": "Premium Enclosure Tank - Land of Xuanfang",
-          "amount": null,
-          "category": "material",
-          "rarity": null,
-          "note": "quantity unlisted"
-        },
-        {
-          "item": "Premium Resonance Potion",
-          "amount": null,
-          "category": "xp",
-          "rarity": null,
-          "note": "quantity unlisted"
-        },
-        {
-          "item": "Premium Tuner",
-          "amount": null,
-          "category": "material",
-          "rarity": null,
-          "note": "quantity unlisted"
-        }
-      ],
-      "rewardsSummary": "500 Astrite + Forgery Premium Supply - Lahai-Roi + Premium Enclosure Tank - Land of Xuanfang + Premium Resonance Potion + Premium Tuner",
-      "servers": [
-        "global"
-      ],
-      "sourceName": "WuWaBuild",
-      "sourceUrl": "https://www.wuwabuild.com/events/artisans-search",
-      "confidence": "confirmed",
-      "rumorNotes": null
-    },
-    {
       "id": "wuwa-echo-erase",
       "title": "Echo Erase",
       "type": "Other",
@@ -368,8 +640,8 @@
       "datesPrecision": "exact",
       "version": "3.7",
       "summary": "Leisure puzzle event mixing echoes on a board to clear matches and recharge Resonator skills.",
-      "description": "Echo Erase is a leisure puzzle event opening with Phase 2 on October 22. Players move echoes around a board to clear matching echoes, which recharges their Resonator's skills. Clearing stages and reward tracks pays Astrite and premium materials. It closes at 03:59 on November 9, two days before the version's main deadline.",
-      "gameplay": "Slide and match echoes on a puzzle board to clear them and charge skill effects, working through stage reward tracks.",
+      "description": "Echo Erase is a leisure puzzle event opening with Phase 2 on October 22. Players move echoes around a board to clear matching echoes, which recharges their Resonator's skills; new levels unlock daily across Normal and Hard difficulties. Clearing stages and reward tracks pays Astrite and premium materials. It closes at 03:59 on November 9, two days before the version's main deadline.",
+      "gameplay": "Slide and match echoes on a puzzle board to clear matching lines and charge skill effects, working through daily stage releases on both difficulties.",
       "requirements": [
         "Union Level 14"
       ],
@@ -428,8 +700,8 @@
       "end": "2026-11-11",
       "datesPrecision": "exact",
       "version": "3.7",
-      "summary": "Phase 2 login event paying 10 Radiant Tides total plus Premium Tuners and Crystal Solvents.",
-      "description": "Gifts of Singing Drizzle is the Version 3.7 Phase 2 login event, opening at 10:00 on October 22 and closing at 03:59 on November 11. Logging in on its cumulative day tiers pays Radiant Tide at the 1-day and 3-day marks — 10 Radiant Tide in total. It also pays Premium Tuners and Crystal Solvents. It is direct pull currency aimed at the Phase 2 banners.",
+      "summary": "Phase 2 login event paying 10 Radiant Tides total plus 100 Premium Tuners and Crystal Solvents.",
+      "description": "Gifts of Singing Drizzle is the Version 3.7 Phase 2 login event, opening at 10:00 on October 22 and closing at 03:59 on November 11. Cumulative login tiers pay Radiant Tide x5 with Premium Tuners at the 1-day tier and Radiant Tide x5 with Crystal Solvent at the 3-day tier — 10 Radiant Tide in total (Game8's guide text says a 4th login day wraps up the claims). It is direct pull currency aimed at the Phase 2 banners.",
       "gameplay": "Log in on the event's cumulative day tiers and claim rewards from the event page.",
       "requirements": [
         "Union Level 8"
@@ -440,29 +712,29 @@
           "amount": 10,
           "category": "gacha",
           "rarity": null,
-          "note": "total across the 1-day and 3-day login tiers"
+          "note": "5 at the 1-day tier and 5 at the 3-day tier"
         },
         {
           "item": "Premium Tuner",
           "amount": 100,
           "category": "material",
           "rarity": null,
-          "note": "per WuWaBuild listing"
+          "note": "both Game8 and WuWaBuild list 100"
         },
         {
           "item": "Crystal Solvent",
-          "amount": 5,
+          "amount": 10,
           "category": "other",
           "rarity": null,
-          "note": "per WuWaBuild listing"
+          "note": "3-day tier per Game8; WuWaBuild lists 5 — discrepancy unverified"
         }
       ],
-      "rewardsSummary": "10 Radiant Tide + 100 Premium Tuner + 5 Crystal Solvent",
+      "rewardsSummary": "10 Radiant Tide + 100 Premium Tuner + 10 Crystal Solvent (WuWaBuild lists 5 Crystal Solvent — conflict)",
       "servers": [
         "global"
       ],
-      "sourceName": "WuWaBuild",
-      "sourceUrl": "https://www.wuwabuild.com/events/gifts-of-singing-drizzle",
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Wuthering-Waves/archives/624839",
       "confidence": "confirmed",
       "rumorNotes": null
     },
@@ -476,8 +748,8 @@
       "datesPrecision": "exact",
       "version": "3.7",
       "summary": "Tile-reveal board event: log in daily and complete tasks to win rewards across the Land of Xuanfang.",
-      "description": "Beyond the Waves: Land of Xuanfang opens at 04:00 on October 29 and runs to the version's final deadline. Players log in daily and complete tasks to reveal tiles on a board, winning random rewards from the revealed spaces. It pays 400 Astrite, a Lustrous Tide bundle, and premium materials. It is one of the last events to open in Version 3.7.",
-      "gameplay": "Complete daily tasks to earn tile reveals on a reward board and claim whatever the revealed tiles contain.",
+      "description": "Beyond the Waves: Land of Xuanfang opens at 04:00 on October 29 and runs to the version's final deadline. Players earn Adventure Logs — 2 from logging in and 1 per 40 Waveplates spent, up to 10 per day — and spend them to reveal tiles on a board, winning random rewards from the revealed spaces. It pays 400 Astrite, a Lustrous Tide bundle, and premium materials. It is one of the last events to open in Version 3.7.",
+      "gameplay": "Log in daily and spend Waveplates to earn Adventure Logs, then reveal tiles on the reward board and claim whatever the revealed tiles contain.",
       "requirements": [
         "Union Level 14"
       ],
@@ -501,7 +773,14 @@
           "amount": null,
           "category": "material",
           "rarity": null,
-          "note": "quantity unlisted"
+          "note": "quantity unlisted; WuWaBuild lists this item where Game8 lists Crystal Solvent — sources conflict"
+        },
+        {
+          "item": "Crystal Solvent",
+          "amount": null,
+          "category": "other",
+          "rarity": null,
+          "note": "quantity unlisted; Game8 lists this item where WuWaBuild lists Premium Enclosure Tank - Land of Xuanfang — sources conflict"
         },
         {
           "item": "Premium Tuner",
@@ -518,12 +797,37 @@
           "note": "quantity unlisted"
         }
       ],
-      "rewardsSummary": "400 Astrite + 5 Lustrous Tide + Premium Enclosure Tank - Land of Xuanfang + Premium Tuner + Premium Sealed Tube",
+      "rewardsSummary": "400 Astrite + 5 Lustrous Tide + Premium Tuner + Premium Sealed Tube + one of Premium Enclosure Tank - Land of Xuanfang / Crystal Solvent (sources conflict)",
       "servers": [
         "global"
       ],
       "sourceName": "WuWaBuild",
       "sourceUrl": "https://www.wuwabuild.com/events/beyond-the-waves-land-of-xuanfang",
+      "confidence": "confirmed",
+      "rumorNotes": null
+    },
+    {
+      "id": "wuwa-chord-cleansing",
+      "title": "Chord Cleansing",
+      "type": "Other",
+      "status": "upcoming",
+      "start": "2026-11-04",
+      "end": "2026-11-11",
+      "datesPrecision": "exact",
+      "version": "3.7",
+      "summary": "Recurring Echo double-drop event: double Echo and Echo upgrade drops from Tacet Suppressions for the final week of 3.7.",
+      "description": "Chord Cleansing is the recurring Echo double-drop event, running November 4-11 in the final week of Version 3.7. Complete Tacet Suppressions at the normal 60-Waveplate cost for double Echoes and Echo upgrade materials — three doubled claims per day, refreshing at 04:00 server time; the 120-Waveplate claim option is unavailable during bonus runs. Doubled: Echoes, Echo EXP items (Sealed Tubes), Tuners, Union EXP, Shell Credits and Intimacy. Not doubled: Astrite — field Astrite is a one-time first-clear bonus that never doubles.",
+      "gameplay": "Run Tacet Suppression challenges and spend Waveplates to claim doubled Echo and Echo development drops, up to three times a day.",
+      "requirements": [
+        "Union Level 19"
+      ],
+      "rewards": [],
+      "rewardsSummary": "No fixed event rewards — double Echo and Echo upgrade drops from Tacet Suppressions (3 doubled claims per day; no bonus Astrite)",
+      "servers": [
+        "global"
+      ],
+      "sourceName": "Game8",
+      "sourceUrl": "https://game8.co/games/Wuthering-Waves/archives/457211",
       "confidence": "confirmed",
       "rumorNotes": null
     },
@@ -537,7 +841,7 @@
       "datesPrecision": "permanent",
       "version": "3.7",
       "summary": "The currently active redemption codes for Wuthering Waves and what each one gives.",
-      "description": "Checked 9 Oct 2026. The three Version 3.7 livestream codes (FALLINGSANCTUM, FINDSENTINEL, WAKINGMOON) expired on 21 Sep 2026 and are not listed above. DVME2MOHOQJT (the hololive collab code reported 5 Oct) ran on a 2-day window and is gone from the active lists — only WUTHERINGGIFT remains.",
+      "description": "Checked 13 Oct 2026. The two Solaris Starry Stage livestream codes STARRYSTAGE2 and KEEPONSHINING are live today but their window closes 13 Oct 2026 at 08:59 (UTC-7). The three Version 3.7 livestream codes (FALLINGSANCTUM, FINDSENTINEL, WAKINGMOON) expired on 21 Sep 2026 and are not listed above. DVME2MOHOQJT (the hololive collab code reported 5 Oct) ran on a 2-day window and is gone from the active lists — WUTHERINGGIFT is the only permanently active code.",
       "gameplay": "Open Settings > Other Settings > Redemption Code in-game, enter the code exactly (case-sensitive), and claim the mailed rewards before the mail auto-deletes after ~2 weeks.",
       "requirements": [
         "Union Level 2"
@@ -583,7 +887,7 @@
           "amount": 15000,
           "category": "currency",
           "rarity": null,
-          "note": "code WUTHERINGGIFT; some sources list 10,000 — discrepancy unverified"
+          "note": "code WUTHERINGGIFT; Game8 lists 15,000, WuWaBuild/BeeBom/Pocket Gamer list 10,000 — discrepancy unverified"
         }
       ],
       "codes": [
