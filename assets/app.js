@@ -75,7 +75,7 @@
   function statusOf(ev) {
     const s = evStart(ev);
     const e = evEnd(ev);
-    if (!s || !e || ev.datesPrecision === 'approx') {
+    if (!s || !e) {
       return ['live', 'upcoming', 'ended'].includes(ev.status) ? ev.status : 'upcoming';
     }
     if (today < s) return 'upcoming';
