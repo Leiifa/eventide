@@ -251,7 +251,29 @@
 
   /* ---------------- header / chrome ---------------- */
 
+  function renderFooterSources() {
+    const list = document.getElementById('sourceList');
+    const summary = document.getElementById('sourceSummary');
+    if (!list || !summary) return;
+    const sources = new Map();
+    EVENTS.forEach(ev => {
+      if (!ev.sourceUrl) return;
+      try {
+        const url = new URL(ev.sourceUrl);
+        if (url.protocol !== 'https:') return;
+        const host = url.hostname.toLowerCase().replace(/^www\./, '');
+        if (!sources.has(host)) sources.set(host, url.href);
+      } catch (_) {}
+    });
+    const entries = [...sources.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+    summary.textContent = `Sources used (${entries.length})`;
+    list.innerHTML = entries.map(([host, url]) =>
+      `<li><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(host)}</a></li>`
+    ).join('');
+  }
+
   function renderChrome() {
+    renderFooterSources();
     document.getElementById('todayDate').textContent =
       `${today.getUTCDate()} ${MONTHS[today.getUTCMonth()]} ${today.getUTCFullYear()}`;
 

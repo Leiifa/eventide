@@ -32,16 +32,21 @@ Scope: site code and display (`assets/app.js`, `assets/styles.css`, `index.html`
 | Rumors empty | Nothing floating around right now. | No rumors right now. |
 | Games page intro (index.html) | Banner, icon, reward currencies and event art for every game we track. Open one for the full rundown. | Banners, icons, reward currencies and event art for each game. Open one for details. |
 
+## Footer sources
+
+- Added a collapsible “Sources used” list in the footer. It builds from unique HTTPS hostnames in the event source URLs, links to one cited page per source site, and updates automatically when source URLs are added or removed.
+- Added responsive grid styling; bumped the stylesheet and app script cache tags.
+
 ## Event addition
 
 - Added confirmed Wuthering Waves 3.7 web event **Waking Moon Fishing** (`wuwa-waking-moon-fishing`), 15/10/2026–1/11/2026, with source URL from the official patch notes via WuWaBuild. Rewards were not listed in the supplied findings, so none were invented. It appears in Home → Starting soon.
-- Rebuilt `data/events.js` from raw data (93 total events; Wuthering Waves 15). `index.html` data cache tag bumped to `20261013`.
+- Rebuilt `data/events.js` from raw data (93 total events; Wuthering Waves 15 at addition time). `index.html` data cache tag bumped to `20261013`.
 
 ## Not changed
 
 - Hermes's redeem-code and unannounced-event data rules remain unchanged.
 - Layout, colors, nav order, and mobile behavior are untouched.
-- Nothing has been committed yet.
+- The Waking Moon Fishing addition was committed as `00e85ef`; the footer update is currently uncommitted.
 
 ## Still open
 
