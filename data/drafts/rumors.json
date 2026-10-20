@@ -1,0 +1,172 @@
+{
+  "note": "HELD FOR APPROVAL - NOT COMMITTED, NOT PUSHED. New rumors/leaks collected by the 13/10/2026 research sweep. Nothing here is in data/raw/ or on the site. Promote an entry into data/raw/<game>.json only after Leifa approves it.",
+  "collected": "2026-10-20",
+  "promotionsThisRun": [
+    {
+      "game": "pgr",
+      "entry": "pgr-leia-debut-rumor",
+      "detail": "Promoted rumor -> confirmed inside data/raw/pgr.json (already user-approved entry): officially announced on @PGR_GLOBAL 12/10/2026 - S-Rank Leia: Fortunaster debuts 5/11/2026 with 'A Comet's Afterglow'."
+    },
+    {
+      "game": "zzz",
+      "entry": "zzz-33-phoenix-severian-signal-search",
+      "detail": "Promoted rumor -> confirmed inside data/raw/zzz.json (already user-approved entry): the 9/10/2026 Special Program confirmed the 3.3 banners (Phoenix + Velina 21/10/2026, Severian + Norma 11/11/2026)."
+    }
+  ],
+  "rumors": [
+    {
+      "game": "genshin",
+      "title": "Version 7.2 schedule leak: launch 4/11/2026 with Mitya banner same day; one event 11/10/2026 paying 420 Primogems (840 combined across two events); Special Program 23/10/2026; Imaginarium Theater update 1/11/2026",
+      "dates": "4/11/2026 (leaked launch)",
+      "source": "gamesandchill.com leak report dated 7/10/2026",
+      "confidence": "leaked"
+    },
+    {
+      "game": "genshin",
+      "title": "Version 7.2 characters: 5-star Mitya (Electro Linchpin) + 4-star Valery - Mitya teased officially as upcoming in 7.2, but banner placement/dates unconfirmed",
+      "dates": "not announced",
+      "source": "wotpack.ru, Game8",
+      "confidence": "leaked"
+    },
+    {
+      "game": "genshin",
+      "title": "Tsaritsa and Danica beta testing begins",
+      "dates": "4/11/2026",
+      "source": "gamesandchill.com (7/10/2026 schedule leak)",
+      "confidence": "leaked"
+    },
+    {
+      "game": "genshin",
+      "title": "Version 7.2 map leak: new Snezhnaya area with 38 teleport points including Statues of the Seven",
+      "dates": "not announced",
+      "source": "gamesandchill.com (6/10/2026)",
+      "confidence": "leaked"
+    },
+    {
+      "game": "genshin",
+      "title": "Version 7.2 banner phases leak: Phase 1 4/11/2026-25/11/2026 (Mitya), Phase 2 25/11/2026-15/12/2026",
+      "dates": "4/11/2026-15/12/2026 (leaked)",
+      "source": "wotpack.ru",
+      "confidence": "leaked"
+    },
+    {
+      "game": "hsr",
+      "title": "Nihilux - Aha Character Event Warp (4.7 Phase 1) - character officially confirmed via HoYoverse drip marketing (5-star Quantum/Elation), but banner placement and dates are estimates (Game8 expects 10/11/2026-2/12/2026)",
+      "dates": "not announced (est. 10/11/2026)",
+      "source": "Game8/Sportskeeda",
+      "confidence": "rumor"
+    },
+    {
+      "game": "hsr",
+      "title": "4.7 rerun Character Event Warps: Silver Wolf LV.999, Yao Guang, Sparxie",
+      "dates": "not announced",
+      "source": "Sportskeeda citing Seele Leaks (4.7 closed beta)",
+      "confidence": "leaked"
+    },
+    {
+      "game": "hsr",
+      "title": "4.7 Special Program livestream expected",
+      "dates": "30/10/2026 (expected)",
+      "source": "hsrtierlist.net",
+      "confidence": "rumor"
+    },
+    {
+      "game": "hsr",
+      "title": "4.7 version release expected 10/11/2026 (NA) / 11/11/2026 (EU/Asia) - from the 6-week cadence, not dev-stated (raw file keeps nextVersionDate 2026-11-10)",
+      "dates": "10/11/2026 (expected)",
+      "source": "Game8",
+      "confidence": "rumor"
+    },
+    {
+      "game": "wuwa",
+      "title": "3.8 Phase 1 debut leak: Lily, 5-star Spectro Pistols support (Unison) - drip marketing is official but banner placement unconfirmed",
+      "dates": "not announced",
+      "source": "earlygg.com, genshin-builds.com, ldshop.gg, mone.gg",
+      "confidence": "leaked"
+    },
+    {
+      "game": "wuwa",
+      "title": "3.8 Phase 1 rerun rumor: Sigrika + Hiyuki (Hiyuki tied to a new skin rumor)",
+      "dates": "not announced",
+      "source": "earlygg.com / ldshop.gg",
+      "confidence": "rumor"
+    },
+    {
+      "game": "wuwa",
+      "title": "3.8 Phase 2 rumor: Xiangli Yao + Zhezhi reruns (mone.gg instead says Xiao Yan) plus an unnamed 4-star male resonator",
+      "dates": "not announced",
+      "source": "genshin-builds.com / mone.gg",
+      "confidence": "rumor"
+    },
+    {
+      "game": "wuwa",
+      "title": "3.8 rumored to bridge into 4.0 'New Federation', with leaked 'Flower of Crimson Memory' echo set supporting Lily's healer/support role and a Hiyuki skin",
+      "dates": "not announced",
+      "source": "genshin-builds.com / ldshop.gg",
+      "confidence": "rumor"
+    },
+    {
+      "game": "wuwa",
+      "title": "3.8 start date estimates span 10-12 Nov 2026 (Game8 12 Nov, wudamage 11 Nov, ggseason 10 Nov) - nothing official; raw file keeps 2026-11-12",
+      "dates": "10/11/2026-12/11/2026 (estimates)",
+      "source": "Game8 / wudamage / ggseason",
+      "confidence": "rumor"
+    },
+    {
+      "game": "enfield",
+      "title": "Leaked banner roadmap 1.5-1.7 (community): M3 in '1.6 Phase 2', unnamed 'Manor Mistress of Yuanyuan Manor' in '1.7 Phase 1' - parts contradicted by the official 1.6 lineup",
+      "dates": "not announced",
+      "source": "u7buy.com upcoming characters roundup",
+      "confidence": "leaked"
+    },
+    {
+      "game": "enfield",
+      "title": "1.7 story leaks: expected to be the final Wuling update with the last explorable Wuling area before a new region; playable characters unknown",
+      "dates": "not announced",
+      "source": "enjoygm.com 1.4-to-1.7 leaks roundup",
+      "confidence": "rumor"
+    },
+    {
+      "game": "enfield",
+      "title": "Unconfirmed operator speculation: Su ('13th agent'), unnamed blond-haired man, Typhon 'Reconvener' female, Warfarin/Frostnova Reconvener theory",
+      "dates": "not announced",
+      "source": "gamevika.com unconfirmed operators list",
+      "confidence": "rumor"
+    },
+    {
+      "game": "zzz",
+      "title": "Eldreda Sunbringer rumored to join as a playable Agent in Version 3.4",
+      "dates": "not announced",
+      "source": "X/Twitter leak roundup (Sep 2026)",
+      "confidence": "leaked"
+    },
+    {
+      "game": "zzz",
+      "title": "'Cecilia' floated as a possible Version 3.4 story-related character alongside the HSR collab",
+      "dates": "not announced",
+      "source": "topuplive 3.2-3.5 banner roadmap leak",
+      "confidence": "leaked"
+    },
+    {
+      "game": "zzz",
+      "title": "Version 3.4 estimated to start 2/12/2026 with the ZZZ x HSR collab (Kafka and Robin) - the collab itself is officially confirmed for 3.4 but has no announced dates or rewards",
+      "dates": "2/12/2026 (estimate)",
+      "source": "wotpack banner schedule",
+      "confidence": "rumor"
+    },
+    {
+      "game": "zzz",
+      "title": "Season 3 trailer characters 'The Storyteller' and 'Truvia' remain unreleased with no assigned version",
+      "dates": "not announced",
+      "source": "Game8",
+      "confidence": "rumor"
+    },
+    {
+      "game": "pgr",
+      "title": "PGR2026 is claimed by some code lists as active for Global, but active status and reward contents are unverified; competing tracker reports zero working codes. Do not list as confirmed until official/current redemption evidence is available.",
+      "dates": "checked 2026-10-20",
+      "source": "Pocket Gamer (regional listing) vs Gachafeed (zero active codes): https://www.pocketgamer.com/punishing-gray-raven/codes/ ; https://gachafeed.moe/pgr/codes/",
+      "confidence": "rumor"
+    }
+  ]
+}

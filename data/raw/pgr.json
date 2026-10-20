@@ -362,25 +362,25 @@
       "rumorNotes": null
     },
     {
-      "id": "pgr-rate-up-oblivion-aeternion-dirge",
-      "title": "70% Rate-Up: Luna: Oblivion, Kamui: Aeternion, Nirvatia: Dirge",
+      "id": "pgr-rate-up-pyroath-arete-aegis",
+      "title": "70% Rate-Up: Lucia: Pyroath, Rosetta: Arete, Veronica: Aegis",
       "type": "Wish Banner",
       "status": "live",
-      "start": "2026-10-01",
-      "end": "2026-10-15",
+      "start": "2026-10-15",
+      "end": "2026-10-29",
       "datesPrecision": "exact",
       "version": "4.8",
-      "summary": "Rotating 70% rate-up Arrival Construct banner for three S-Rank Omniframes.",
-      "description": "The official Global 70% rate-up window for S-Rank Omniframes Luna: Oblivion, Kamui: Aeternion, and Nirvatia: Dirge. It is a rotation banner with no participation rewards - players spend Event Construct R&D Tickets/Black Cards on research.",
-      "gameplay": "Pull on the Arrival-style research pool; when an S-Rank drops there is a 70% chance it is one of the three featured frames.",
+      "summary": "Global 70% rate-up banner for Lucia: Pyroath, Rosetta: Arete, and Veronica: Aegis, October 15–29.",
+      "description": "Official PGR Global announcement states the banner runs October 15 07:00 through October 29 06:59 UTC. No participation rewards were announced; this is a research banner.",
+      "gameplay": "Pull on the 70% rate-up research pool; rewards not independently itemized.",
       "requirements": [],
       "rewards": [],
-      "rewardsSummary": "no participation rewards - gacha banner only",
+      "rewardsSummary": "No participation rewards announced; gacha banner only.",
       "servers": [
         "global"
       ],
       "sourceName": "Official PGR on X (@PGR_GLOBAL)",
-      "sourceUrl": "https://x.com/PGR_GLOBAL/status/2105190914456965482",
+      "sourceUrl": "https://x.com/PGR_GLOBAL/status/2110309649802985960",
       "confidence": "confirmed",
       "rumorNotes": null
     },
@@ -394,29 +394,19 @@
       "datesPrecision": "permanent",
       "version": "4.8",
       "summary": "No confirmed active Global redeem codes as of October 20, 2026.",
-      "description": "Code trackers conflict: Pocket Gamer lists PGR2026 and other codes as active, but Gachafeed checked October 20, 2026 and reports zero working codes. Pocket Gamer's list includes Taiwan-only codes and therefore does not independently establish currently active Global codes. No code has been verified from a current official source, so none are listed as active.",
+      "description": "Code trackers conflict. Gachafeed reports zero working codes as of October 20; Pocket Gamer lists PGR2026 and mentions Taiwan-region codes. No active Global code or reward has been verified from an official current source, so no codes are listed.",
       "gameplay": "Open the player profile screen, enter the code in the gift-code box after clearing the prologue, and claim rewards from the in-game mailbox.",
       "requirements": [
         "Clear the prologue / Main Story 1-1 to unlock code redemption"
       ],
-      "rewards": [
-        {
-          "item": "PGR2026",
-          "amount": null,
-          "category": "other",
-          "rarity": null,
-          "note": "active code (Global & Taiwan) - reward contents unverified"
-        }
-      ],
-      "codes": [
-        { "code": "PGR2026", "note": "Global + TW · rewards unconfirmed", "patchLimited": true }
-      ],
-      "rewardsSummary": "unknown (code reward contents unverified as of Oct 2026). NEWROSETTA0203 (Global/TW), HAPPY6THBIRTHDAY and pbsz5dd0g (TW) were moved to trackers' expired lists on 10-12 Oct 2026 and are no longer listed; Pocket Gamer (11 Oct) still shows them active.",
+      "rewards": [],
+      "codes": [],
+      "rewardsSummary": "No confirmed active Global codes; reward figures not verified.",
       "servers": [
         "global"
       ],
-      "sourceName": "Pocket Gamer",
-      "sourceUrl": "https://www.pocketgamer.com/punishing-gray-raven/codes/",
+      "sourceName": "Gachafeed (checked Oct 20, 2026); Pocket Gamer (regional list conflict)",
+      "sourceUrl": "https://gachafeed.moe/pgr/codes/",
       "confidence": "confirmed",
       "rumorNotes": null
     },
