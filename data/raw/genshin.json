@@ -5,9 +5,9 @@
     "shortName": "Genshin",
     "currentVersion": "7.1",
     "nextVersion": "7.2",
-    "nextVersionDate": "2026-11-04",
+    "nextVersionDate": null,
     "officialUrl": "https://genshin.hoyoverse.com/en/",
-    "notes": "Version 7.1 'A Rekviem for the Underworld' live since 2026-09-23; 6th anniversary celebrations run through the version. Version 7.2 is unannounced: 2026-11-04 is the projected date (42-day cadence), with the Special Program projected for 23-24 Oct 2026."
+    "notes": "Version 7.1 'A Rekviem for the Underworld' live since 2026-09-23; 6th anniversary celebrations run through the version. Version 7.2 release and Special Program dates have not been officially announced; projections are intentionally omitted."
   },
   "events": [
     {
@@ -645,21 +645,13 @@
         }
       ],
       "codes": [
-        { "code": "GENSHINGIFT", "note": "Hero's Wit ×3 and, per most trackers, 50 Primogems (genshin-builds prints the Hero's Wit only) — works periodically rather than continuously: the Genshin Wiki records it hitting max usage (May 2026) and Pocket Gamer lists it expired, while IGN, BlueStacks and genshin-builds list it active", "permanent": true },
-        { "code": "VesnaOnPatrol", "note": "40 Primogems, 3 Hero's Wit, 20,000 Mora", "expires": "2026-10-22", "expiryNote": "valid until 2026-10-22 23:59 UTC+8" },
-        { "code": "NEEIJB764CA3", "note": "60 Primogems, 5 Adventurer's Experience — added 5 Oct 2026; NEEI family head (NEEI8A8341OW is a single-source family sibling with no published rewards)", "patchLimited": true },
-        { "code": "6LS3F3LS5K87", "note": "20 Primogems, 160 Geode of Replication — added 2 Oct 2026 (GameWith, HappyGamer and wotpack print 160 geodes; Pocket Tactics and games.gg print 60)", "patchLimited": true },
-        { "code": "Y6JYMKV6JKSL", "note": "60 Primogems, 5 Adventurer's Experience", "patchLimited": true },
-        { "code": "2BJ64QRZ7RT8", "note": "60 Primogems, 5 Adventurer's Experience — Pocket Gamer moved it to its expired list on/after 3 Oct; timesaver.gg and games.gg still list it working", "patchLimited": true },
-        { "code": "Y1INABQB6DEX", "note": "60 Primogems, 5 Adventurer's Experience", "patchLimited": true },
-        { "code": "OPERACOLLAB", "note": "30 Primogems, 20,000 Mora, 2 Hero's Wit — OperaGX sponsorship code; an earlier 40-Primogem figure was corrected to 30 (GameWith's 100-Primogem/10 Mystic Enhancement Ore listing is an outlier)", "patchLimited": true },
-        { "code": "EPIC2026", "note": "40 Primogems, 20,000 Mora, Hero's Wit ×3–5 (count disputed: 3 per Eurogamer/Notebookcheck, 5 per Pocket Tactics/KodeGG/GameWith)", "patchLimited": true },
-        { "code": "PNKZ3WLNN8G6", "note": "5 Teachings of Charity, 5 Teachings of Fortitude, 5 Teachings of Glory", "patchLimited": true },
-        { "code": "DATG5HG1PL89", "note": "10,000 Mora, 10 Adventurer's Experience, 5 Fine Enhancement Ore, 5 Jueyun Chili Chicken, 5 Stir-Fried Fish Noodles", "patchLimited": true },
-        { "code": "PLDXIB886Y1S", "note": "10,000 Mora, 10 Adventurer's Experience, 5 Fine Enhancement Ore, 5 Jueyun Chili Chicken, 5 Stir-Fried Fish Noodles — PLDX family (also PLDX12KCWMJ4, PLDXI8VFKI7C): redeeming any member locks the rest", "patchLimited": true },
-        { "code": "GS71XYNSYJ", "note": "30,000 Mora, 3 Hero's Wit, 5 Mystic Enhancement Ore — GS71 family (also GS71XDYGEO, GS71XOXYLG, GS71XAVWDS, GS71YTAICB): one per account", "patchLimited": true }
+        { "code": "6LS3F3LS5K87", "note": "20 Primogems, 160 Geode of Replication (Geode quantity disputed: 160 per GameWith/HappyGamer/wotpack; 60 per games.gg)", "patchLimited": true },
+        { "code": "EPIC2026", "note": "40 Primogems, 20,000 Mora, Hero's Wit ×3–5 (count disputed)", "patchLimited": true },
+        { "code": "VesnaOnPatrol", "note": "40 Primogems, 3 Hero's Wit, 20,000 Mora", "expires": "2026-10-22", "expiryNote": "valid until 22 Oct 2026 23:59 UTC+8" },
+        { "code": "OPERACOLLAB", "note": "30 Primogems, 20,000 Mora, 2 Hero's Wit — OperaGX sponsorship code", "patchLimited": true },
+        { "code": "Y6JYMKV6JKSL", "note": "60 Primogems, 5 Adventurer's Experience", "patchLimited": true }
       ],
-      "rewardsSummary": "370 Primogems total: 60 each (NEEIJB764CA3, Y6JYMKV6JKSL, 2BJ64QRZ7RT8, Y1INABQB6DEX) + 40 each (VesnaOnPatrol — expires Oct 22, EPIC2026) + 30 (OPERACOLLAB) + 20 (6LS3F3LS5K87, which also pays 160 Geode of Replication); plus Mora, Hero's Wit, Adventurer's Experience, talent books and food across the promo codes — the PLDX and GS71 families each pay only once per account. GENSHINGIFT is periodic and not counted.",
+      "rewardsSummary": "190 Primogems across five codes (6LS3F3LS5K87, EPIC2026, VesnaOnPatrol, OPERACOLLAB, Y6JYMKV6JKSL); VesnaOnPatrol expires 22 Oct 2026 23:59 UTC+8. 6LS3F3LS5K87 Geode payout and EPIC2026 Hero's Wit count remain disputed. Other codes previously listed (including PNKZ3WLNN8G6 and DATG5HG1PL89) are omitted after current trackers moved them to expired.",
       "sourceName": "timesaver.gg / Pocket Tactics / Pocket Gamer / Game8",
       "sourceUrl": "https://timesaver.gg/blog/genshin-impact-codes-october-2026",
       "confidence": "confirmed",

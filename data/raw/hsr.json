@@ -562,7 +562,7 @@
       "datesPrecision": "permanent",
       "version": "4.6",
       "summary": "The currently active redemption codes for Honkai: Star Rail and what each one gives.",
-      "description": "Checked 13 Oct 2026 against Pocket Tactics (updated 12 Oct), Game8 (updated 5 Oct), and kodegg/HappyGamer. The 4.6 livestream codes (KA5SV3FJM7WX, 7S4AD2X35NE3, MALSV2F247FP) expired on 21 Sep 2026 and are not listed above. Pocket Tactics also lists STARRAILFATE2026, BESTCOFFEEEVER, BladeFitCheck, PSJQKBQPYGMT, and NSJR3B97ZZ5X as expired, though PCGamer/kodegg still show some of them as active. Game8 gives different STARRAILGIFT values and lists 5S6ZHRWTDNJB as expired — noted per code below.",
+      "description": "Checked 20 Oct 2026. Codes retained as active by both Game8's October 2026 tracker and Pocket Tactics: RT4BPNA8FBS3, PEARLAPPRAISE, OMEGA, CREATIONNYMPH, FAREWELL, IFYOUAREREADINGTHIS, and STARRAILGIFT. Reward disagreements for STARRAILGIFT and IFYOUAREREADINGTHIS are noted with the codes; no expiry date is stated unless the developer confirms one. Codes appearing only in other community lists are excluded pending stronger corroboration.",
       "gameplay": "Enter codes at https://hsr.hoyoverse.com/gift or in-game; rewards arrive via in-game mail.",
       "requirements": [
         "HoYoverse account",
@@ -571,10 +571,10 @@
       "rewards": [
         {
           "item": "Stellar Jade",
-          "amount": 430,
+          "amount": 290,
           "category": "currency",
           "rarity": null,
-          "note": "sum across the 9 Pocket Tactics-listed codes"
+          "note": "sum of six cross-listed codes using Game8 values; STARRAILGIFT rewards vary by source and excluded from total"
         },
         {
           "item": "Fuel",
@@ -585,31 +585,17 @@
         },
         {
           "item": "Traveler's Guide",
-          "amount": 8,
+          "amount": 5,
           "category": "xp",
           "rarity": 3,
-          "note": "PEARLAPPRAISE, 4TKSX77Y58QK, STARRAILGIFT"
+          "note": "PEARLAPPRAISE x3 + STARRAILGIFT x2 per Pocket Tactics; Game8 lists x4 for STARRAILGIFT"
         },
         {
           "item": "Credit",
-          "amount": 40000,
+          "amount": 20000,
           "category": "currency",
           "rarity": null,
-          "note": "RT4BPNA8FBS3, 4TKSX77Y58QK, STARRAILGIFT"
-        },
-        {
-          "item": "Condensed Aether",
-          "amount": 5,
-          "category": "material",
-          "rarity": 3,
-          "note": "4TKSX77Y58QK"
-        },
-        {
-          "item": "Lost Gold Fragment",
-          "amount": 4,
-          "category": "material",
-          "rarity": 3,
-          "note": "4TKSX77Y58QK"
+          "note": "RT4BPNA8FBS3 x10,000 + STARRAILGIFT x10,000 per Pocket Tactics; Game8 lists 50,000 for STARRAILGIFT"
         },
         {
           "item": "Cold Joke",
@@ -624,33 +610,51 @@
           "category": "other",
           "rarity": 2,
           "note": "STARRAILGIFT"
-        },
-        {
-          "item": "Heroic Variable",
-          "amount": 1,
-          "category": "other",
-          "rarity": 3,
-          "note": "CREATIONNYMPH per Game8/kodegg (Pocket Tactics omits it)"
         }
       ],
       "codes": [
-        { "code": "STARRAILGIFT", "note": "50 Stellar Jade, 10,000 Credit, 2 Traveler's Guide, 5 Bottled Soda (Pocket Tactics values; Game8 lists 100 Jade, 4 Traveler's Guide, 50,000 Credit)", "permanent": true },
-        { "code": "RT4BPNA8FBS3", "note": "50 Stellar Jade, 10,000 Credit — added 30 Sep 2026 (Game8 omits it; HoYoLAB + HappyGamer + kodegg list it)", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "PEARLAPPRAISE", "note": "3 Traveler's Guide, 2 Cold Joke — added 28 Sep 2026 (Pearl promo code)", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "OMEGA", "note": "60 Stellar Jade, 1 Fuel", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "CREATIONNYMPH", "note": "60 Stellar Jade, 1 Fuel (Game8/kodegg also list Heroic Variable x1)", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "FAREWELL", "note": "60 Stellar Jade, 1 Fuel", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "IFYOUAREREADINGTHIS", "note": "60 Stellar Jade, 1 Fuel (HoYoLAB lists 50 Jade)", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "4TKSX77Y58QK", "note": "30 Stellar Jade, 3 Traveler's Guide, 5 Condensed Aether, 4 Lost Gold Fragment, 20,000 Credit (HappyGamer/PC Gamer/kodegg listing)", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "5S6ZHRWTDNJB", "note": "60 Stellar Jade (Pocket Tactics/kodegg/HappyGamer list it active; Game8 lists it expired)", "patchLimited": true, "expiryNote": "expires with v4.7" },
-        { "code": "CTK5DRQVT48F", "note": "reward details not published by sources (listed by kodegg/hoyo-codes and HappyGamer)", "patchLimited": true }
+        {
+          "code": "STARRAILGIFT",
+          "note": "50 Stellar Jade, 10,000 Credit, 2 Traveler's Guide, 5 Bottled Soda (Pocket Tactics); Game8 lists 100 Jade, 4 Traveler's Guide, 50,000 Credit",
+          "permanent": true
+        },
+        {
+          "code": "RT4BPNA8FBS3",
+          "note": "50 Stellar Jade, 10,000 Credit",
+          "patchLimited": true
+        },
+        {
+          "code": "PEARLAPPRAISE",
+          "note": "3 Traveler's Guide, 2 Cold Joke",
+          "patchLimited": true
+        },
+        {
+          "code": "OMEGA",
+          "note": "60 Stellar Jade, 1 Fuel",
+          "patchLimited": true
+        },
+        {
+          "code": "CREATIONNYMPH",
+          "note": "60 Stellar Jade, 1 Fuel; Game8 also lists Heroic Variable x1",
+          "patchLimited": true
+        },
+        {
+          "code": "FAREWELL",
+          "note": "60 Stellar Jade, 1 Fuel",
+          "patchLimited": true
+        },
+        {
+          "code": "IFYOUAREREADINGTHIS",
+          "note": "60 Stellar Jade, 1 Fuel; HoYoLAB community listing reports 50 Stellar Jade",
+          "patchLimited": true
+        }
       ],
-      "rewardsSummary": "~430 Stellar Jade + 4 Fuel + 8 Traveler's Guide + 40,000 Credit + 5 Condensed Aether + 4 Lost Gold Fragment + consumables across the 9 Pocket Tactics-listed codes (CTK5DRQVT48F rewards unlisted; Game8 gives different STARRAILGIFT values)",
+      "rewardsSummary": "290 Stellar Jade + 4 Fuel + 5 Traveler's Guide + 20,000 Credit + 2 Cold Joke + 5 Bottled Soda using Pocket Tactics values; STARRAILGIFT reward discrepancy noted above",
       "servers": [
         "global"
       ],
-      "sourceName": "Pocket Tactics",
-      "sourceUrl": "https://www.pockettactics.com/honkai-star-rail/codes",
+      "sourceName": "Game8 + Pocket Tactics",
+      "sourceUrl": "https://game8.co/games/Honkai-Star-Rail/archives/410296",
       "confidence": "confirmed",
       "rumorNotes": null
     },
